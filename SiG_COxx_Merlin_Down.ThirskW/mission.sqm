@@ -3,69 +3,11 @@ class Mission
 {
 	addOns[]=
 	{
-		"GLT_LHD",
-		"caweapons_baf",
-		"caweapons_e",
-		"rksl_lynx_ah",
-		"cawater2_fregata",
-		"cawater2_destroyer",
-		"ace_sys_wounds",
-		"acre_sys_radio",
-		"thirskw",
-		"mas_uk_sfwa_ace",
-		"ca_modules_functions",
-		"ace_sys_stamina",
-		"ca_modules_e_weather",
-		"ca_modules_clouds",
-		"THIRSK_Clouds",
-		"RKSL_PUMA",
-		"CACharacters_W_BAF",
-		"rksl_uk_merlin_pack",
-		"camisc3",
-		"Extra_Units",
-		"cacharacters2",
-		"cacharacters_e",
-		"cawheeled_e_v3s",
-		"CAWeapons_ZU23",
-		"acex_ru_veh_mi17",
-		"CAWheeled_Offroad",
-		"acex_c_weapon",
-		"CAWheeled",
-		"ace_sys_viewblock",
-		"ace_sys_aitalk"
+		
 	};
 	addOnsAuto[]=
 	{
-		"GLT_LHD",
-		"mas_uk_sfwa_ace",
-		"caweapons_baf",
-		"caweapons_e",
-		"CACharacters_W_BAF",
-		"rksl_lynx_ah",
-		"ca_modules_functions",
-		"ace_sys_stamina",
-		"ca_modules_e_weather",
-		"ca_modules_clouds",
-		"THIRSK_Clouds",
-		"Extra_Units",
-		"cacharacters2",
-		"cacharacters_e",
-		"CAWeapons_ZU23",
-		"CAWheeled_Offroad",
-		"CAWheeled",
-		"ace_sys_wounds",
-		"ace_sys_viewblock",
-		"ace_sys_aitalk",
-		"RKSL_PUMA",
-		"cawater2_fregata",
-		"cawater2_destroyer",
-		"acre_sys_radio",
-		"rksl_uk_merlin_pack",
-		"camisc3",
-		"cawheeled_e_v3s",
-		"acex_ru_veh_mi17",
-		"acex_c_weapon",
-		"thirskw"
+		
 	};
 	randomSeed=7561593;
 	class Intel
