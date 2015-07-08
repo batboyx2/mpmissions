@@ -61,7 +61,7 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="SiG CO50 VC Raid 01";
+		briefingName="SC CO50 VC Raid 01";
 		overviewText="The first mission in a series of scenarios where we play as the Vietcong.";
 		resistanceWest=0;
 		startWeather=0;
