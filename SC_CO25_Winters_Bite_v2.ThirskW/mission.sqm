@@ -39,7 +39,7 @@ class Mission
 	randomSeed=7561593;
 	class Intel
 	{
-		briefingName="SC CO25 Winter's Bite";
+		briefingName="SC CO25 Winter's Bite v2";
 		resistanceWest=0;
 		startWeather=0.10000002;
 		startFog=0.2;
