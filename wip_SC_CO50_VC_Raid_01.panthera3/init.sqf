@@ -1,11 +1,5 @@
-0 = [] spawn {
-	if (isServer) then {
-		while {true} do {
-			cur_zeus addCuratorEditableObjects [allMissionObjects "all", true];
-			sleep 5;
-		};
-	};
-};
+[] execVM "scripts\bsmrk_zeus_distribute.sqf";
+[] execVM "scripts\bsmrk_ai_stupid.sqf";
 // All things marked F3 come from F3 code. All things marked otherwise come from that source.
 // ====================================================================================
 
