@@ -371,6 +371,13 @@ class CfgFunctions
 	#include "ws_fnc\config.hpp"
 	#include "taw_vd\CfgFunctions.hpp"
 	
+	class F_DAC {
+	    class F_DAC {
+	        file = "DAC";
+	        class setupDacParams {};
+	    };
+	};
+	
 	#include "f\config.hpp"
 };
 

@@ -1,27 +1,3 @@
-private ["_face","_num"];
-if (time < 20) then {
-	{if (str (side _x) == "GUER") then {_x setVariable ["hasFace", 0];};} forEach allUnits;
-} else {
-	player setVariable ["hasFace", 0];
-};
-_spawnFunction = {
-	//[] execVM "scripts\bsmrk_ai.sqf"; // My glorious AI spawn method
-	[] execVM "scripts\bsmrk_comms.sqf"; // artificial ai communications script
-	true
-};
-
-HCPresent = if (isNil "HC") then {false} else {true}; //check if HC present
-
-if (HCPresent && isMultiplayer) then { //spawn on HC if present
-	if (!isServer && !hasInterface) then {
-		[] call _spawnFunction;
-	};
-} else { //spawn on server if HC not present
-	if (isServer) then {
-		[] call _spawnFunction;
-	};
-};
-
 0 = [] spawn {
 	if (isServer) then {
 		while {true} do {
@@ -200,14 +176,14 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 // BWMF: DAC Debug Params
 // This doesn't even call HC. DAC on-server doesn't call HC any more. This is just for DAC setup. It should be investigated in the future to make sure DAC units are going in the correct places, rather than a HC server.
 
-//[] call F_DAC_fnc_setupDacParams;
+[] call F_DAC_fnc_setupDacParams;
 
 // ====================================================================================
 // eulerfoiler - HC Round-Robin Load Balancing
 // This automatically carries over units and data from Zeus or main spawn. DAC spawn works as well.
 // This is currently in use. DAC HC is not in use, it should be turned off.
 
-//execVM "f\headlessclient\passToHCs.sqf";
+execVM "f\headlessclient\passToHCs.sqf";
 
 // ====================================================================================
 // Give everybody asian faces (lol)
