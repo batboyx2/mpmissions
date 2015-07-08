@@ -45,7 +45,20 @@ fnc_bsmrk_reAddWaypoints = { //readd removed waypoints to a group
 };
 #define addWaypoints(X) [X] call fnc_bsmrk_reAddWaypoints;
 // ====================================================================================
-private ["_target","_players","_time","_nearUnits","_nearUnitsHostile"];
+// any = [] call fnc_bsmrk_hasLOS
+fnc_bsmrk_hasLOS = { //check if pointer has a line of sight to target
+	private ["_return","_target","_pointer"];
+	_target = _this select 0;
+	_pointer = _this select 1;
+	if ((_target distance _pointer) > 1000) then {_return = false;};
+	_interObj = lineIntersects [(getPosASL _target), (getPosASL _pointer), _target, _pointer];
+	_interTer = terrainIntersectASL [(getPosASL _target), (getPosASL _pointer)];
+	if (_interObj || _interTer) then {_return = false} else {_return = true;};
+	_return
+};
+#define hasLOS(X,Y) [X,Y] call fnc_bsmrk_hasLOS;
+// ====================================================================================
+private ["_target","_players","_time","_nearUnits","_nearUnitsHostile","_varHelp","_nearHostileGroups"];
 
 while {true} do {
 	_players = [] call fnc_bsmrk_getPlayersCur;
@@ -79,10 +92,16 @@ while {true} do {
 			_wp setWaypointSpeed "FULL";
 			//diag_log format["diagnoseWP_%1",_wp];
 		} forEach _nearHostileGroups;
-		while {((WEST knowsAbout _target) > 2.0) && (alive _target)} do {
-			
-			sleep 10;
+		_varHelp = true;
+		while {(_varHelp) && ((WEST knowsAbout _target) > 2.0) && (alive _target)} do {
+			{
+				_pointer = _x;
+				if (_varHelp) then {_varHelp = hasLOS(_target, _pointer);};
+				sleep 0.01;
+			} forEach _nearUnitsHostile;
+			sleep 5;
 		};
+		
 	};
 	
 	waitUntil {time > (_time + 5)};
