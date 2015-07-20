@@ -369,7 +369,7 @@ class CfgRespawnTemplates
 class CfgFunctions
 {
 	#include "ws_fnc\config.hpp"
-	#include "taw_vd\CfgFunctions.hpp"
+	//#include "taw_vd\CfgFunctions.hpp"
 	/*
 	class F_DAC {
 	    class F_DAC {
