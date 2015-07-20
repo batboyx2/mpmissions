@@ -1,0 +1,6305 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_INDEP",
+		"A3_Characters_F_EPC",
+		"smd_sahrani_a3"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_INDEP",
+		"A3_Characters_F_EPC",
+		"smd_sahrani_a3"
+	};
+	randomSeed=11823142;
+	class Intel
+	{
+		briefingName="SC CT420 ATTACK DEFEND";
+		resistanceWest=0;
+		startWeather=0;
+		startWind=0;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0;
+		year=2035;
+		month=1;
+		day=1;
+		hour=12;
+		minute=0;
+		startFogDecay=0;
+		forecastFogDecay=0;
+	};
+	class Groups
+	{
+		items=135;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9547.8633,139.98311,10176.195};
+					id=0;
+					side="WEST";
+					vehicle="B_officer_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_PLT";
+					description="BLUFOR Platoon Leader";
+				};
+				class Item1
+				{
+					position[]={9550.9912,139.98311,10173.73};
+					id=1;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_PLT_M";
+					description="BLUFOR Platoon HQ Medic";
+				};
+				class Item2
+				{
+					position[]={9553.9697,139.98311,10173.563};
+					id=2;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_PSG";
+					description="BLUFOR Platoon Sergeant";
+				};
+				class Item3
+				{
+					position[]={9556.8438,139.98311,10173.477};
+					id=3;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_PLT_FO";
+					description="BLUFOR Forward Observer";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9570.7168,139.98311,10175.703};
+					id=4;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_ASL_SL";
+					description="BLUFOR Alpha Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9573.2285,139.98311,10174.113};
+					id=5;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_ASL_M";
+					description="BLUFOR Alpha Medic";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9570.6846,139.98311,10160.393};
+					id=6;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_A1_FTL";
+					description="BLUFOR Alpha 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9573.5596,139.98311,10158.67};
+					id=7;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_A1_AR";
+					description="BLUFOR Alpha 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9576.6699,139.98311,10158.572};
+					id=8;
+					side="WEST";
+					vehicle="B_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_A1_AAR";
+					description="BLUFOR Alpha 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9579.8584,139.98311,10158.541};
+					id=9;
+					side="WEST";
+					vehicle="B_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_A1_AT";
+					description="BLUFOR Alpha 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9570.4785,139.98311,10144.625};
+					id=10;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_A2_FTL";
+					description="BLUFOR Alpha 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9573.2129,139.98311,10142.719};
+					id=11;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_A2_AR";
+					description="BLUFOR Alpha 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9576.2949,139.98311,10142.621};
+					id=12;
+					side="WEST";
+					vehicle="B_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_A2_AAR";
+					description="BLUFOR Alpha 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9579.6084,139.98311,10142.609};
+					id=13;
+					side="WEST";
+					vehicle="B_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_A2_AT";
+					description="BLUFOR Alpha 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9570.4316,139.98311,10127.43};
+					id=14;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_A3_FTL";
+					description="BLUFOR Alpha 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9573.3027,139.98311,10125.496};
+					id=15;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_A3_AR";
+					description="BLUFOR Alpha 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9576.502,139.98311,10125.285};
+					id=16;
+					side="WEST";
+					vehicle="B_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_A3_AAR";
+					description="BLUFOR Alpha 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9579.792,139.98311,10125.203};
+					id=17;
+					side="WEST";
+					vehicle="B_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_A3_AT";
+					description="BLUFOR Alpha 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9594.6533,139.98311,10175.293};
+					id=18;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_BSL_SL";
+					description="BLUFOR Bravo Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9597.3447,139.98311,10173.727};
+					id=19;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_BSL_M";
+					description="BLUFOR Bravo Medic";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9594.8311,139.98311,10159.791};
+					id=20;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_B1_FTL";
+					description="BLUFOR Bravo 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9597.6982,139.98311,10158.166};
+					id=21;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_B1_AR";
+					description="BLUFOR Bravo 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9600.6855,139.98311,10158.064};
+					id=22;
+					side="WEST";
+					vehicle="B_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_B1_AAR";
+					description="BLUFOR Bravo 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9603.9678,139.98311,10158.049};
+					id=23;
+					side="WEST";
+					vehicle="B_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_B1_AT";
+					description="BLUFOR Bravo 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9594.2393,139.98311,10144.023};
+					id=24;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_B2_FTL";
+					description="BLUFOR Bravo 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9597.3975,139.98311,10142.26};
+					id=25;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_B2_AR";
+					description="BLUFOR Bravo 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9600.541,139.98311,10142.121};
+					id=26;
+					side="WEST";
+					vehicle="B_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_B2_AAR";
+					description="BLUFOR Bravo 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9603.9678,139.98311,10142.09};
+					id=27;
+					side="WEST";
+					vehicle="B_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_B2_AT";
+					description="BLUFOR Bravo 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9594.4912,139.98311,10126.945};
+					id=28;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_B3_FTL";
+					description="BLUFOR Bravo 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9597.6855,139.98311,10125.313};
+					id=29;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_B3_AR";
+					description="BLUFOR Bravo 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9600.8545,139.98311,10125.219};
+					id=30;
+					side="WEST";
+					vehicle="B_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_B3_AAR";
+					description="BLUFOR Bravo 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9604.0967,139.98311,10125.105};
+					id=31;
+					side="WEST";
+					vehicle="B_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_B3_AT";
+					description="BLUFOR Bravo 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9621.2568,139.98311,10174.715};
+					id=32;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_CSL_SL";
+					description="BLUFOR Charlie Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9623.7725,139.98311,10173.047};
+					id=33;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_CSL_M";
+					description="BLUFOR Charlie Medic";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9621.5303,139.98311,10159.076};
+					id=34;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_C1_FTL";
+					description="BLUFOR Charlie 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9624.4756,139.98311,10157.479};
+					id=35;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_C1_AR";
+					description="BLUFOR Charlie 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9627.6475,139.98311,10157.447};
+					id=36;
+					side="WEST";
+					vehicle="B_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_C1_AAR";
+					description="BLUFOR Charlie 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9630.9482,139.98311,10157.396};
+					id=37;
+					side="WEST";
+					vehicle="B_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_C1_AT";
+					description="BLUFOR Charlie 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9621.1475,139.98311,10143.129};
+					id=38;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_C2_FTL";
+					description="BLUFOR Charlie 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9624.1279,139.98311,10141.668};
+					id=39;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_C2_AR";
+					description="BLUFOR Charlie 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9627.2158,139.98311,10141.586};
+					id=40;
+					side="WEST";
+					vehicle="B_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_C2_AAR";
+					description="BLUFOR Charlie 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9630.5166,139.98311,10141.559};
+					id=41;
+					side="WEST";
+					vehicle="B_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_C2_AT";
+					description="BLUFOR Charlie 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9621.46,139.98311,10126.148};
+					id=42;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_C3_FTL";
+					description="BLUFOR Charlie 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9624.5557,139.98311,10124.766};
+					id=43;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_C3_AR";
+					description="BLUFOR Charlie 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9627.5381,139.98311,10124.68};
+					id=44;
+					side="WEST";
+					vehicle="B_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_C3_AAR";
+					description="BLUFOR Charlie 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9630.7178,139.98311,10124.66};
+					id=45;
+					side="WEST";
+					vehicle="B_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_C3_AT";
+					description="BLUFOR Charlie 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item13
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9920.1699,139.98311,10170.209};
+					id=46;
+					side="EAST";
+					vehicle="O_officer_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_PLT";
+					description="OPFOR Platoon Leader";
+				};
+				class Item1
+				{
+					position[]={9922.7949,139.98311,10167.967};
+					id=47;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_PLT_M";
+					description="OPFOR Platoon HQ Medic";
+				};
+				class Item2
+				{
+					position[]={9926.084,139.98311,10167.959};
+					id=48;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_PSG";
+					description="OPFOR Platoon Sergeant";
+				};
+				class Item3
+				{
+					position[]={9929.1045,139.98311,10167.859};
+					id=49;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_PLT_FO";
+					description="INDFOR Forward Observer";
+				};
+			};
+		};
+		class Item14
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9944.2207,139.98311,10170.217};
+					id=50;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_ASL_SL";
+					description="OPFOR Alpha Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9946.8105,139.98311,10168.557};
+					id=51;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_ASL_M";
+					description="OPFOR Alpha Medic";
+				};
+			};
+		};
+		class Item15
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9944.2031,139.98311,10153.781};
+					id=52;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_A1_FTL";
+					description="OPFOR Alpha 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9947.3066,139.98311,10151.961};
+					id=53;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_A1_AR";
+					description="OPFOR Alpha 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9950.5957,139.98311,10151.887};
+					id=54;
+					side="EAST";
+					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_A1_AAR";
+					description="OPFOR Alpha 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9954.1016,139.98311,10151.867};
+					id=55;
+					side="EAST";
+					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_A1_AT";
+					description="OPFOR Alpha 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item16
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9944.6934,139.98311,10138.246};
+					id=56;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_A2_FTL";
+					description="OPFOR Alpha 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9947.6113,139.98311,10136.123};
+					id=57;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_A2_AR";
+					description="OPFOR Alpha 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9950.8105,139.98311,10135.982};
+					id=58;
+					side="EAST";
+					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_A2_AAR";
+					description="OPFOR Alpha 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9954.3613,139.98311,10135.955};
+					id=59;
+					side="EAST";
+					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_A2_AT";
+					description="OPFOR Alpha 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item17
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9944.9912,139.98311,10120.875};
+					id=60;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_A3_FTL";
+					description="OPFOR Alpha 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9947.3457,139.98311,10118.547};
+					id=61;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_A3_AR";
+					description="OPFOR Alpha 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9950.6191,139.98311,10118.539};
+					id=62;
+					side="EAST";
+					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_A3_AAR";
+					description="OPFOR Alpha 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9953.8418,139.98311,10118.223};
+					id=63;
+					side="EAST";
+					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_A3_AT";
+					description="OPFOR Alpha 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item18
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9970.9238,139.98311,10170.572};
+					id=64;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_BSL_SL";
+					description="OPFOR Bravo Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9973.7168,139.98311,10168.689};
+					id=65;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_BSL_M";
+					description="OPFOR Bravo Medic";
+				};
+			};
+		};
+		class Item19
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9971.0293,139.98311,10153.574};
+					id=66;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_B1_FTL";
+					description="OPFOR Bravo 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9974.2813,139.98311,10152.059};
+					id=67;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_B1_AR";
+					description="OPFOR Bravo 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9977.6348,139.98311,10152.043};
+					id=68;
+					side="EAST";
+					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_B1_AAR";
+					description="OPFOR Bravo 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9981.1162,139.98311,10152.055};
+					id=69;
+					side="EAST";
+					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_B1_AT";
+					description="OPFOR Bravo 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item20
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9970.8184,139.98311,10137.99};
+					id=70;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_B2_FTL";
+					description="OPFOR Bravo 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9973.9844,139.98311,10136.393};
+					id=71;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_B2_AR";
+					description="OPFOR Bravo 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9977.3535,139.98311,10136.361};
+					id=72;
+					side="EAST";
+					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_B2_AAR";
+					description="OPFOR Bravo 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9981.0879,139.98311,10136.459};
+					id=73;
+					side="EAST";
+					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_B2_AT";
+					description="OPFOR Bravo 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item21
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9970.8184,139.98311,10121.039};
+					id=74;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_B3_FTL";
+					description="OPFOR Bravo 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9973.9844,139.98311,10119.098};
+					id=75;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_B3_AR";
+					description="OPFOR Bravo 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9977.2637,139.98311,10119.055};
+					id=76;
+					side="EAST";
+					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_B3_AAR";
+					description="OPFOR Bravo 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9980.998,139.98311,10118.984};
+					id=77;
+					side="EAST";
+					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_B3_AT";
+					description="OPFOR Bravo 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item22
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9996.3047,139.9496,10170.381};
+					id=78;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_CSL_SL";
+					description="OPFOR Charlie Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9998.7832,139.98311,10168.771};
+					id=79;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_CSL_M";
+					description="OPFOR Charlie Medic";
+				};
+			};
+		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9995.9844,139.98311,10153.43};
+					id=80;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_C1_FTL";
+					description="OPFOR Charlie 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9998.8945,139.98311,10151.832};
+					id=81;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_C1_AR";
+					description="OPFOR Charlie 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={10002.336,139.98311,10151.813};
+					id=82;
+					side="EAST";
+					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_C1_AAR";
+					description="OPFOR Charlie 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={10005.816,139.98311,10151.656};
+					id=83;
+					side="EAST";
+					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_C1_AT";
+					description="OPFOR Charlie 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9995.8945,139.98311,10138.367};
+					id=84;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_C2_FTL";
+					description="OPFOR Charlie 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9998.7852,139.98311,10136.736};
+					id=85;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_C2_AR";
+					description="OPFOR Charlie 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={10002.146,139.98311,10136.627};
+					id=86;
+					side="EAST";
+					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_C2_AAR";
+					description="OPFOR Charlie 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={10005.723,139.98311,10136.443};
+					id=87;
+					side="EAST";
+					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_C2_AT";
+					description="OPFOR Charlie 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item25
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9996.2656,139.98311,10121.059};
+					id=88;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_C3_FTL";
+					description="OPFOR Charlie 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9998.9941,139.98311,10119.238};
+					id=89;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_C3_AR";
+					description="OPFOR Charlie 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={10002.422,139.98311,10119.07};
+					id=90;
+					side="EAST";
+					vehicle="O_Soldier_AAR_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_C3_AAR";
+					description="OPFOR Charlie 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={10005.832,139.98311,10119.137};
+					id=91;
+					side="EAST";
+					vehicle="O_Soldier_LAT_F";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="UnitOPFOR_C3_AT";
+					description="OPFOR Charlie 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item26
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9570.3145,139.98311,10104.76};
+					id=92;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitNATO_TH1_P";
+					description="BLUFOR Transport Helo 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={9572.8418,139.98311,10103.225};
+					id=93;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_TH1_CP";
+					description="BLUFOR Transport Helo 1 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9574.4258,139.98311,10103.174};
+					id=94;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_TH1_G1";
+					description="BLUFOR Transport Helo 1 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9575.9746,139.98311,10103.143};
+					id=95;
+					side="WEST";
+					vehicle="B_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_TH1_G2";
+					description="BLUFOR Transport Helo 1 Gunner";
+				};
+			};
+		};
+		class Item27
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9944.7129,139.98311,10104.625};
+					id=96;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitOPFOR_TH1_P";
+					description="OPFOR Transport Helo 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={9946.6426,139.98311,10102.715};
+					id=97;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH1_CP";
+					description="OPFOR Transport Helo 1 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9949.0137,139.98311,10102.164};
+					id=98;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH1_G1";
+					description="OPFOR Transport Helo 1 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9951.3838,139.98311,10102.438};
+					id=99;
+					side="EAST";
+					vehicle="O_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_TH1_G2";
+					description="OPFOR Transport Helo 1 Gunner";
+				};
+			};
+		};
+		class Item28
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9737.9678,139.98311,10170.989};
+					id=100;
+					side="GUER";
+					vehicle="I_officer_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_PLT";
+					description="INDFOR Platoon Leader";
+				};
+				class Item1
+				{
+					position[]={9741.2646,139.98311,10168.028};
+					id=101;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_PLT_M";
+					description="INDFOR Platoon HQ Medic";
+				};
+				class Item2
+				{
+					position[]={9744.1572,139.98311,10167.831};
+					id=102;
+					side="GUER";
+					vehicle="I_Soldier_SL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_PSG";
+					description="INDFOR Platoon Sergeant";
+				};
+				class Item3
+				{
+					position[]={9747.5186,139.98311,10167.79};
+					id=103;
+					side="GUER";
+					vehicle="I_Soldier_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_PLT_FO";
+					description="INDFOR Forward Observer";
+				};
+			};
+		};
+		class Item29
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9761.4131,139.98311,10171.271};
+					id=104;
+					side="GUER";
+					vehicle="I_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_ASL_SL";
+					description="INDFOR Alpha Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9763.9971,139.98311,10170.108};
+					id=105;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_ASL_M";
+					description="INDFOR Alpha Medic";
+				};
+			};
+		};
+		class Item30
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9761.9131,139.98311,10157.962};
+					id=106;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_A1_FTL";
+					description="INDFOR Alpha 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9764.5459,139.98311,10156.036};
+					id=107;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A1_AR";
+					description="INDFOR Alpha 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9767.21,139.98311,10155.864};
+					id=108;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A1_AAR";
+					description="INDFOR Alpha 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9770.0381,139.98311,10155.833};
+					id=109;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A1_AT";
+					description="INDFOR Alpha 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item31
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9762.0107,139.98311,10140.626};
+					id=110;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_A2_FTL";
+					description="INDFOR Alpha 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9764.6729,139.98311,10139.458};
+					id=111;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A2_AR";
+					description="INDFOR Alpha 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9767.3428,139.98311,10139.403};
+					id=112;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A2_AAR";
+					description="INDFOR Alpha 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9770.0967,139.98311,10139.396};
+					id=113;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A2_AT";
+					description="INDFOR Alpha 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item32
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9762.1299,139.98311,10124.513};
+					id=114;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_A3_FTL";
+					description="INDFOR Alpha 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9764.7275,139.98311,10122.72};
+					id=115;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A3_AR";
+					description="INDFOR Alpha 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9767.3643,139.98311,10122.673};
+					id=116;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A3_AAR";
+					description="INDFOR Alpha 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9770.0166,139.98311,10122.661};
+					id=117;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A3_AT";
+					description="INDFOR Alpha 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item33
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9785.7959,139.98311,10171.872};
+					id=118;
+					side="GUER";
+					vehicle="I_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_BSL_SL";
+					description="INDFOR Bravo Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9788.2256,139.98311,10170.56};
+					id=119;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_BSL_M";
+					description="INDFOR Bravo Medic";
+				};
+			};
+		};
+		class Item34
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9785.2471,139.98311,10158.204};
+					id=120;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_B1_FTL";
+					description="INDFOR Bravo 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9788.1826,139.98311,10156.708};
+					id=121;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B1_AR";
+					description="INDFOR Bravo 1 Automatic Riflemen";
+				};
+				class Item2
+				{
+					position[]={9791.0732,139.98311,10156.599};
+					id=122;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B1_AAR";
+					description="INDFOR Bravo 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9793.9365,139.98311,10156.536};
+					id=123;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B1_AT";
+					description="INDFOR Bravo 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item35
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9785.293,139.98311,10140.396};
+					id=124;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_B2_FTL";
+					description="INDFOR Bravo 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9788.2842,139.98311,10139.446};
+					id=125;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B2_AR";
+					description="INDFOR Bravo 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9791.1162,139.98311,10139.392};
+					id=126;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B2_AAR";
+					description="INDFOR Bravo 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9794.0908,139.98311,10139.38};
+					id=127;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B2_AT";
+					description="INDFOR Bravo 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item36
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9785.5752,139.98311,10124.61};
+					id=128;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_B3_FTL";
+					description="INDFOR Bravo 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9788.2021,139.98311,10122.966};
+					id=129;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B3_AR";
+					description="INDFOR Bravo 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9791.1396,139.98311,10122.896};
+					id=130;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B3_AAR";
+					description="INDFOR Bravo 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9793.9639,139.98311,10122.876};
+					id=131;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B3_AT";
+					description="INDFOR Bravo 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item37
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9812.6572,139.98311,10172.542};
+					id=132;
+					side="GUER";
+					vehicle="I_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_CSL_SL";
+					description="INDFOR Charlie Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9815.1201,139.98311,10171.532};
+					id=133;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_CSL_M";
+					description="INDFOR Charlie Medic";
+				};
+			};
+		};
+		class Item38
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9811.9082,139.98311,10158.722};
+					id=134;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_C1_FTL";
+					description="INDFOR Charlie 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9815.1475,139.98311,10156.954};
+					id=135;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_C1_AR";
+					description="INDFOR Charlie 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9818.0869,139.98311,10156.911};
+					id=136;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_C1_AAR";
+					description="INDFOR Charlie 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9820.8799,139.98311,10156.942};
+					id=137;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_C1_AT";
+					description="INDFOR Charlie 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item39
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9812.085,139.98311,10140.657};
+					id=138;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_C2_FTL";
+					description="INDFOR Charlie 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9815.0146,139.98311,10139.442};
+					id=139;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_C2_AR";
+					description="INDFOR Charlie 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9818.0811,139.98311,10139.333};
+					id=140;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_C2_AAR";
+					description="INDFOR Charlie 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9820.6865,139.98311,10139.376};
+					id=141;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_C2_AT";
+					description="INDFOR Charlie 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item40
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9812.335,139.98311,10124.448};
+					id=142;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_C3_FTL";
+					description="INDFOR Charlie 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9815.1279,139.98311,10123.063};
+					id=143;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_C3_AR";
+					description="INDFOR Charlie 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9817.9639,139.98311,10122.954};
+					id=144;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_C3_AAR";
+					description="INDFOR Charlie 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9820.5537,139.98311,10122.837};
+					id=145;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_C3_AT";
+					description="INDFOR Charlie 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item41
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9762.9014,139.98311,10101.392};
+					id=146;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitIND_TH1_P";
+					description="INDFOR Transport Helo 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={9765.0186,139.98311,10099.407};
+					id=147;
+					side="GUER";
+					vehicle="I_pilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_TH1_CP";
+					description="INDFOR Transport Helo 1 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9767.125,139.98311,10099.192};
+					id=148;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_TH1_G1";
+					description="INDFOR Transport Helo 1 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9769.4541,139.98311,10099.394};
+					id=149;
+					side="GUER";
+					vehicle="I_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_TH1_G2";
+					description="INDFOR Transport Helo 1 Gunner";
+				};
+			};
+		};
+		class Item42
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9570.5342,139.98311,10076.752};
+					id=150;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitNATO_TH2_P";
+					description="BLUFOR Transport Helo 2 Pilot";
+				};
+				class Item1
+				{
+					position[]={9573.0635,139.98311,10075.217};
+					id=151;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_TH2_CP";
+					description="BLUFOR Transport Helo 2 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9574.6455,139.98311,10075.166};
+					id=152;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_TH2_G1";
+					description="BLUFOR Transport Helo 2 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9576.1963,139.98311,10075.139};
+					id=153;
+					side="WEST";
+					vehicle="B_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_TH2_G2";
+					description="BLUFOR Transport Helo 2 Gunner";
+				};
+			};
+		};
+		class Item43
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9594.4092,139.98311,10104.885};
+					id=154;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitNATO_TH3_P";
+					description="BLUFOR Transport Helo 3 Pilot";
+				};
+				class Item1
+				{
+					position[]={9596.9355,139.98311,10103.35};
+					id=155;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_TH3_CP";
+					description="BLUFOR Transport Helo 3 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9598.5205,139.98311,10103.299};
+					id=156;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_TH3_G1";
+					description="BLUFOR Transport Helo 3 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9600.0693,139.98311,10103.271};
+					id=157;
+					side="WEST";
+					vehicle="B_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_TH3_G2";
+					description="BLUFOR Transport Helo 3 Gunner";
+				};
+			};
+		};
+		class Item44
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9595.1387,139.98311,10077.303};
+					id=158;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitNATO_TH4_P";
+					description="BLUFOR Transport Helo 4 Pilot";
+				};
+				class Item1
+				{
+					position[]={9597.666,139.98311,10075.768};
+					id=159;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_TH4_CP";
+					description="BLUFOR Transport Helo 4 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9599.25,139.98311,10075.721};
+					id=160;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_TH4_G1";
+					description="BLUFOR Transport Helo 4 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9600.7988,139.98311,10075.689};
+					id=161;
+					side="WEST";
+					vehicle="B_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_TH4_G2";
+					description="BLUFOR Transport Helo 4 Gunner";
+				};
+			};
+		};
+		class Item45
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9621.1631,139.98311,10105.137};
+					id=162;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitNATO_TH5_P";
+					description="BLUFOR Transport Helo 5 Pilot";
+				};
+				class Item1
+				{
+					position[]={9623.6943,139.98311,10103.604};
+					id=163;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_TH5_CP";
+					description="BLUFOR Transport Helo 5 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9625.2764,139.98311,10103.557};
+					id=164;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_TH5_G1";
+					description="BLUFOR Transport Helo 5 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9626.8271,139.98311,10103.525};
+					id=165;
+					side="WEST";
+					vehicle="B_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_TH5_G2";
+					description="BLUFOR Transport Helo 5 Gunner";
+				};
+			};
+		};
+		class Item46
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9621.3848,139.98311,10077.131};
+					id=166;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitNATO_TH6_P";
+					description="BLUFOR Transport Helo 6 Pilot";
+				};
+				class Item1
+				{
+					position[]={9623.9141,139.98311,10075.596};
+					id=167;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_TH6_CP";
+					description="BLUFOR Transport Helo 6 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9625.498,139.98311,10075.549};
+					id=168;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_TH6_G1";
+					description="BLUFOR Transport Helo 6 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9627.0488,139.98311,10075.518};
+					id=169;
+					side="WEST";
+					vehicle="B_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_TH6_G2";
+					description="BLUFOR Transport Helo 6 Gunner";
+				};
+			};
+		};
+		class Item47
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9645.2568,139.98311,10105.268};
+					id=170;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitNATO_TH7_P";
+					description="BLUFOR Transport Helo 7 Pilot";
+				};
+				class Item1
+				{
+					position[]={9647.7881,139.98311,10103.732};
+					id=171;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_TH7_CP";
+					description="BLUFOR Transport Helo 7 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9649.3711,139.98311,10103.682};
+					id=172;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_TH7_G1";
+					description="BLUFOR Transport Helo 7 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9650.9209,139.98311,10103.654};
+					id=173;
+					side="WEST";
+					vehicle="B_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_TH7_G2";
+					description="BLUFOR Transport Helo 7 Gunner";
+				};
+			};
+		};
+		class Item48
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9645.9863,139.98311,10077.686};
+					id=174;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitNATO_TH8_P";
+					description="BLUFOR Transport Helo 8 Pilot";
+				};
+				class Item1
+				{
+					position[]={9648.5176,139.98311,10076.15};
+					id=175;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_TH8_CP";
+					description="BLUFOR Transport Helo 8 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9650.0996,139.98311,10076.102};
+					id=176;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_TH8_G1";
+					description="BLUFOR Transport Helo 8 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9651.6504,139.98311,10076.072};
+					id=177;
+					side="WEST";
+					vehicle="B_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_TH8_G2";
+					description="BLUFOR Transport Helo 8 Gunner";
+				};
+			};
+		};
+		class Item49
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9543.6348,139.98311,10106.104};
+					id=178;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitNATO_AH1_P";
+					description="BLUFOR Attack Helo 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={9546.1074,139.98311,10104.451};
+					id=179;
+					side="WEST";
+					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitNATO_AH1_CP";
+					description="BLUFOR Attack Helo 1 Gunner";
+				};
+			};
+		};
+		class Item50
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9787.2471,139.98311,10101.392};
+					id=180;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitIND_TH2_P";
+					description="INDFOR Transport Helo 2 Pilot";
+				};
+				class Item1
+				{
+					position[]={9789.3662,139.98311,10099.407};
+					id=181;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_TH2_CP";
+					description="INDFOR Transport Helo 2 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9791.4658,139.98311,10099.192};
+					id=182;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_TH2_G1";
+					description="INDFOR Transport Helo 2 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9793.7959,139.98311,10099.392};
+					id=183;
+					side="GUER";
+					vehicle="I_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_TH2_G2";
+					description="INDFOR Transport Helo 2 Gunner";
+				};
+			};
+		};
+		class Item51
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9815.1455,139.98311,10101.771};
+					id=184;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitIND_TH3_P";
+					description="INDFOR Transport Helo 3 Pilot";
+				};
+				class Item1
+				{
+					position[]={9817.2646,139.98311,10099.786};
+					id=185;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_TH3_CP";
+					description="INDFOR Transport Helo 3 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9819.8379,139.98311,10099.624};
+					id=186;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_TH3_G1";
+					description="INDFOR Transport Helo 3 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9822.168,139.98311,10099.825};
+					id=187;
+					side="GUER";
+					vehicle="I_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_TH3_G2";
+					description="INDFOR Transport Helo 3 Gunner";
+				};
+			};
+		};
+		class Item52
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9839.4912,139.98311,10101.771};
+					id=188;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitIND_TH4_P";
+					description="INDFOR Transport Helo 4 Pilot";
+				};
+				class Item1
+				{
+					position[]={9841.6123,139.98311,10099.786};
+					id=189;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_TH4_CP";
+					description="INDFOR Transport Helo 4 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9843.7188,139.98311,10099.479};
+					id=190;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_TH4_G1";
+					description="INDFOR Transport Helo 4 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9846.0488,139.98311,10099.681};
+					id=191;
+					side="GUER";
+					vehicle="I_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_TH4_G2";
+					description="INDFOR Transport Helo 4 Gunner";
+				};
+			};
+		};
+		class Item53
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9970.7217,139.98311,10104.561};
+					id=192;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitOPFOR_TH2_P";
+					description="OPFOR Transport Helo 2 Pilot";
+				};
+				class Item1
+				{
+					position[]={9972.6494,139.98311,10102.65};
+					id=193;
+					side="EAST";
+					vehicle="O_Pilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH2_CP";
+					description="OPFOR Transport Helo 2 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9974.8174,139.98311,10102.404};
+					id=194;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH2_G1";
+					description="OPFOR Transport Helo 2 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9977.1885,139.98311,10102.678};
+					id=195;
+					side="EAST";
+					vehicle="O_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_TH2_G2";
+					description="OPFOR Transport Helo 2 Gunner";
+				};
+			};
+		};
+		class Item54
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10000.271,139.98311,10104.004};
+					id=196;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitOPFOR_TH3_P";
+					description="OPFOR Transport Helo 3 Pilot";
+				};
+				class Item1
+				{
+					position[]={10002.413,139.98311,10102.199};
+					id=197;
+					side="EAST";
+					vehicle="O_Pilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH3_CP";
+					description="OPFOR Transport Helo 3 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={10004.376,139.98311,10101.859};
+					id=198;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH3_G1";
+					description="OPFOR Transport Helo 3 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={10006.746,139.98311,10102.133};
+					id=199;
+					side="EAST";
+					vehicle="O_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_TH3_G2";
+					description="OPFOR Transport Helo 3 Gunner";
+				};
+			};
+		};
+		class Item55
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10031.431,139.98311,10103.867};
+					id=200;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitOPFOR_TH4_P";
+					description="OPFOR Transport Helo 4 Pilot";
+				};
+				class Item1
+				{
+					position[]={10033.358,139.98311,10101.957};
+					id=201;
+					side="EAST";
+					vehicle="O_Pilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH4_CP";
+					description="OPFOR Transport Helo 4 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={10035.483,139.98311,10101.785};
+					id=202;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH4_G1";
+					description="OPFOR Transport Helo 4 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={10037.854,139.98311,10102.059};
+					id=203;
+					side="EAST";
+					vehicle="O_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_TH4_G2";
+					description="OPFOR Transport Helo 4 Gunner";
+				};
+			};
+		};
+		class Item56
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9944.5361,139.98311,10077.35};
+					id=204;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitOPFOR_TH5_P";
+					description="OPFOR Transport Helo 5 Pilot";
+				};
+				class Item1
+				{
+					position[]={9946.4639,139.98311,10075.439};
+					id=205;
+					side="EAST";
+					vehicle="O_Pilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH5_CP";
+					description="OPFOR Transport Helo 5 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9948.6533,139.98311,10075.307};
+					id=206;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH5_G1";
+					description="OPFOR Transport Helo 3 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9951.0244,139.98311,10075.58};
+					id=207;
+					side="EAST";
+					vehicle="O_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_TH5_G2";
+					description="OPFOR Transport Helo 3 Gunner";
+				};
+			};
+		};
+		class Item57
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9970.9795,139.98311,10076.316};
+					id=208;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitOPFOR_TH6_P";
+					description="OPFOR Transport Helo 6 Pilot";
+				};
+				class Item1
+				{
+					position[]={9972.9072,139.98311,10074.406};
+					id=209;
+					side="EAST";
+					vehicle="O_Pilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH6_CP";
+					description="OPFOR Transport Helo 6 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9975.085,139.98311,10074.041};
+					id=210;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH6_G1";
+					description="OPFOR Transport Helo 6 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9977.4551,139.98311,10074.314};
+					id=211;
+					side="EAST";
+					vehicle="O_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_TH6_G2";
+					description="OPFOR Transport Helo 6 Gunner";
+				};
+			};
+		};
+		class Item58
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10000.396,139.98311,10076.033};
+					id=212;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitOPFOR_TH7_P";
+					description="OPFOR Transport Helo 7 Pilot";
+				};
+				class Item1
+				{
+					position[]={10002.323,139.98311,10074.123};
+					id=213;
+					side="EAST";
+					vehicle="O_Pilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH7_CP";
+					description="OPFOR Transport Helo 7 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={10004.512,139.98311,10073.939};
+					id=214;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH7_G1";
+					description="OPFOR Transport Helo 7 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={10006.882,139.98311,10074.213};
+					id=215;
+					side="EAST";
+					vehicle="O_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_TH7_G2";
+					description="OPFOR Transport Helo 7 Gunner";
+				};
+			};
+		};
+		class Item59
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10031.326,139.98311,10076.594};
+					id=216;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitOPFOR_TH8_P";
+					description="OPFOR Transport Helo 8 Pilot";
+				};
+				class Item1
+				{
+					position[]={10033.256,139.98311,10074.684};
+					id=217;
+					side="EAST";
+					vehicle="O_Pilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH8_CP";
+					description="OPFOR Transport Helo 8 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={10035.288,139.98311,10074.572};
+					id=218;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TH8_G1";
+					description="OPFOR Transport Helo 8 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={10037.659,139.98311,10074.846};
+					id=219;
+					side="EAST";
+					vehicle="O_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_TH8_G2";
+					description="OPFOR Transport Helo 8 Gunner";
+				};
+			};
+		};
+		class Item60
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9920.1621,139.98311,10109.104};
+					id=220;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitOPFOR_AH1_P";
+					description="OPFOR Attack Helo 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={9922.0332,139.98311,10107.133};
+					id=221;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_AH1_CP";
+					description="OPFOR Attack Helo 1 Gunner";
+				};
+			};
+		};
+		class Item61
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9488.125,139.98311,10095.772};
+					id=222;
+					side="CIV";
+					vehicle="C_journalist_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+					description="Mission Observer";
+				};
+			};
+		};
+		class Item62
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9495.3164,139.98311,10095.53};
+					id=223;
+					side="CIV";
+					vehicle="C_journalist_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+					description="Mission Observer";
+				};
+			};
+		};
+		class Item63
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10121.592,139.98311,10139.018};
+					id=224;
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="HC";
+				};
+			};
+		};
+		class Item64
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9762.0977,139.98311,10068.651};
+					id=225;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitIND_TH5_P";
+					description="INDFOR Transport Helo 5 Pilot";
+				};
+				class Item1
+				{
+					position[]={9764.2188,139.98311,10066.667};
+					id=226;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_TH5_CP";
+					description="INDFOR Transport Helo 5 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9766.3262,139.98311,10066.36};
+					id=227;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_TH5_G1";
+					description="INDFOR Transport Helo 5 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9768.6553,139.98311,10066.56};
+					id=228;
+					side="GUER";
+					vehicle="I_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_TH5_G2";
+					description="INDFOR Transport Helo 5 Gunner";
+				};
+			};
+		};
+		class Item65
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9786.625,139.98311,10067.698};
+					id=229;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitIND_TH6_P";
+					description="INDFOR Transport Helo 6 Pilot";
+				};
+				class Item1
+				{
+					position[]={9788.7461,139.98311,10065.714};
+					id=230;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_TH6_CP";
+					description="INDFOR Transport Helo 6 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9790.8535,139.98311,10065.407};
+					id=231;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_TH6_G1";
+					description="INDFOR Transport Helo 6 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9793.1836,139.98311,10065.608};
+					id=232;
+					side="GUER";
+					vehicle="I_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_TH6_G2";
+					description="INDFOR Transport Helo 6 Gunner";
+				};
+			};
+		};
+		class Item66
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9814.4873,139.98311,10068.651};
+					id=233;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitIND_TH7_P";
+					description="INDFOR Transport Helo 7 Pilot";
+				};
+				class Item1
+				{
+					position[]={9816.6084,139.98311,10066.667};
+					id=234;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_TH7_CP";
+					description="INDFOR Transport Helo 7 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9818.7148,139.98311,10066.36};
+					id=235;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_TH7_G1";
+					description="INDFOR Transport Helo 7 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9821.0449,139.98311,10066.56};
+					id=236;
+					side="GUER";
+					vehicle="I_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_TH7_G2";
+					description="INDFOR Transport Helo 7 Gunner";
+				};
+			};
+		};
+		class Item67
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9839.4912,139.98311,10068.175};
+					id=237;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitIND_TH8_P";
+					description="INDFOR Transport Helo 8 Pilot";
+				};
+				class Item1
+				{
+					position[]={9841.6123,139.98311,10066.19};
+					id=238;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_TH8_CP";
+					description="INDFOR Transport Helo 8 Co-Pilot";
+				};
+				class Item2
+				{
+					position[]={9843.7188,139.98311,10065.884};
+					id=239;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_TH8_G1";
+					description="INDFOR Transport Helo 8 Crew Chief";
+				};
+				class Item3
+				{
+					position[]={9846.0488,139.98311,10066.083};
+					id=240;
+					side="GUER";
+					vehicle="I_helicrew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_TH8_G2";
+					description="INDFOR Transport Helo 8 Gunner";
+				};
+			};
+		};
+		class Item68
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9738.4072,139.98311,10101.007};
+					id=241;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="UnitIND_AH1_P";
+					description="INDFOR Attack Helo 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={9740.5244,139.98311,10099.022};
+					id=242;
+					side="GUER";
+					vehicle="I_helipilot_F";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_AH1_CP";
+					description="INDFOR Attack Helo 1 Co-Pilot";
+				};
+			};
+		};
+		class Item69
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9540.2588,139.98311,10074.965};
+					id=243;
+					side="WEST";
+					vehicle="B_Pilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="MAJOR";
+					skill=0.60000002;
+					text="UnitNATO_FW1_P";
+					description="BLUFOR Fixed Wing Pilot 1";
+				};
+			};
+		};
+		class Item70
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9735.2422,139.98311,10064.063};
+					id=244;
+					side="GUER";
+					vehicle="I_pilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="MAJOR";
+					skill=0.60000002;
+					text="UnitIND_FW1_P";
+					description="INDFOR Fixed Wing Pilot 1";
+				};
+			};
+		};
+		class Item71
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9916.833,139.98311,10075.131};
+					id=245;
+					side="EAST";
+					vehicle="O_Pilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="MAJOR";
+					skill=0.60000002;
+					text="UnitOPFOR_FW1_P";
+					description="OPFOR Fixed Wing Pilot 1";
+				};
+			};
+		};
+		class Item72
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9553.9424,139.98311,10047.652};
+					id=246;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_IFV1_C";
+					description="BLUFOR IFV 1 Commander";
+				};
+				class Item1
+				{
+					position[]={9555.9229,139.98311,10045.15};
+					id=247;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_IFV1_G";
+					description="BLUFOR IFV 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={9558.6533,139.98311,10044.916};
+					id=248;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_IFV1_D";
+					description="BLUFOR IFV 1 Driver";
+				};
+			};
+		};
+		class Item73
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9566.3994,139.98311,10044.029};
+					id=249;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_IFV2_C";
+					description="BLUFOR IFV 2 Commander";
+				};
+				class Item1
+				{
+					position[]={9568.3799,139.98311,10041.533};
+					id=250;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_IFV2_G";
+					description="BLUFOR IFV 2 Gunner";
+				};
+				class Item2
+				{
+					position[]={9571.1123,139.98311,10041.299};
+					id=251;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_IFV2_D";
+					description="BLUFOR IFV 2 Driver";
+				};
+			};
+		};
+		class Item74
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9582.0596,139.98311,10047.539};
+					id=252;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_IFV3_C";
+					description="BLUFOR IFV 3 Commander";
+				};
+				class Item1
+				{
+					position[]={9584.041,139.98311,10045.041};
+					id=253;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_IFV3_G";
+					description="BLUFOR IFV 3 Gunner";
+				};
+				class Item2
+				{
+					position[]={9586.7705,139.98311,10044.803};
+					id=254;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_IFV3_D";
+					description="BLUFOR IFV 3 Driver";
+				};
+			};
+		};
+		class Item75
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9594.5166,139.98311,10043.918};
+					id=255;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_IFV4_C";
+					description="BLUFOR IFV 4 Commander";
+				};
+				class Item1
+				{
+					position[]={9596.4971,139.98311,10041.418};
+					id=256;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_IFV4_G";
+					description="BLUFOR IFV 4 Gunner";
+				};
+				class Item2
+				{
+					position[]={9599.2305,139.98311,10041.186};
+					id=257;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_IFV4_D";
+					description="BLUFOR IFV 4 Driver";
+				};
+			};
+		};
+		class Item76
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9608.6064,139.98311,10048.051};
+					id=258;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_APC1_C";
+					description="BLUFOR APC 1 Commander";
+				};
+				class Item1
+				{
+					position[]={9610.5869,139.98311,10045.553};
+					id=259;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_APC1_G";
+					description="BLUFOR APC 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={9613.3174,139.98311,10045.316};
+					id=260;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_APC1_D";
+					description="BLUFOR APC 1 Driver";
+				};
+			};
+		};
+		class Item77
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9621.0635,139.98311,10044.432};
+					id=261;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_APC2_C";
+					description="BLUFOR APC 2 Commander";
+				};
+				class Item1
+				{
+					position[]={9623.0439,139.98311,10041.932};
+					id=262;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_APC2_G";
+					description="BLUFOR APC 2 Gunner";
+				};
+				class Item2
+				{
+					position[]={9625.7764,139.98311,10041.697};
+					id=263;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_APC2_D";
+					description="BLUFOR APC 2 Driver";
+				};
+			};
+		};
+		class Item78
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9636.7236,139.98311,10047.938};
+					id=264;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_APC3_C";
+					description="BLUFOR APC 3 Commander";
+				};
+				class Item1
+				{
+					position[]={9638.7041,139.98311,10045.441};
+					id=265;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_APC3_G";
+					description="BLUFOR APC 3 Gunner";
+				};
+				class Item2
+				{
+					position[]={9641.4346,139.98311,10045.205};
+					id=266;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_APC3_D";
+					description="BLUFOR APC 3 Driver";
+				};
+			};
+		};
+		class Item79
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9649.1807,139.98311,10044.318};
+					id=267;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_APC4_C";
+					description="BLUFOR APC 4 Commander";
+				};
+				class Item1
+				{
+					position[]={9651.1611,139.98311,10041.822};
+					id=268;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_APC4_G";
+					description="BLUFOR APC 4 Gunner";
+				};
+				class Item2
+				{
+					position[]={9653.8936,139.98311,10041.584};
+					id=269;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_APC4_D";
+					description="BLUFOR APC 4 Driver";
+				};
+			};
+		};
+		class Item80
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9530.4814,139.98311,10046.254};
+					id=270;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_TNK1_C";
+					description="BLUFOR Tank 1 Commander";
+				};
+				class Item1
+				{
+					position[]={9532.4619,139.98311,10043.756};
+					id=271;
+					side="WEST";
+					vehicle="B_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_TNK1_G";
+					description="BLUFOR Tank 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={9535.1924,139.98311,10043.518};
+					id=272;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_TNK1_D";
+					description="BLUFOR Tank 1 Driver";
+				};
+			};
+		};
+		class Item81
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9944.377,139.98311,10054.408};
+					id=273;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV1_C";
+					description="OPFOR IFV 1 Commander";
+				};
+				class Item1
+				{
+					position[]={9947.3867,139.98311,10052.508};
+					id=274;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV1_G";
+					description="OPFOR IFV 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={9949.9121,139.98311,10052.297};
+					id=275;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV1_D";
+					description="OPFOR IFV 1 Driver";
+				};
+			};
+		};
+		class Item82
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9955.2344,139.98311,10047.32};
+					id=276;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV2_C";
+					description="OPFOR IFV 2 Commander";
+				};
+				class Item1
+				{
+					position[]={9958.2422,139.98311,10045.426};
+					id=277;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV2_G";
+					description="OPFOR IFV 2 Gunner";
+				};
+				class Item2
+				{
+					position[]={9960.7695,139.98311,10045.211};
+					id=278;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV2_D";
+					description="OPFOR IFV 2 Driver";
+				};
+			};
+		};
+		class Item83
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9971.0332,139.98311,10054.068};
+					id=279;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV3_C";
+					description="OPFOR IFV 3 Commander";
+				};
+				class Item1
+				{
+					position[]={9974.043,139.98311,10052.172};
+					id=280;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV3_G";
+					description="OPFOR IFV 3 Gunner";
+				};
+				class Item2
+				{
+					position[]={9976.5664,139.98311,10051.957};
+					id=281;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV3_D";
+					description="OPFOR IFV 3 Driver";
+				};
+			};
+		};
+		class Item84
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9981.8867,139.98311,10046.984};
+					id=282;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV4_C";
+					description="OPFOR IFV 4 Commander";
+				};
+				class Item1
+				{
+					position[]={9984.8984,139.98311,10045.09};
+					id=283;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV4_G";
+					description="OPFOR IFV 4 Gunner";
+				};
+				class Item2
+				{
+					position[]={9987.4219,139.98311,10044.875};
+					id=284;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_IFV4_D";
+					description="OPFOR IFV 4 Driver";
+				};
+			};
+		};
+		class Item85
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9996.3711,139.98311,10053.518};
+					id=285;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_APC1_C";
+					description="OPFOR APC 1 Commander";
+				};
+				class Item1
+				{
+					position[]={9999.3789,139.98311,10051.621};
+					id=286;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_APC1_G";
+					description="OPFOR APC 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={10001.904,139.98311,10051.406};
+					id=287;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_APC1_D";
+					description="OPFOR APC 1 Driver";
+				};
+			};
+		};
+		class Item86
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={10007.227,139.98311,10046.434};
+					id=288;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_APC2_C";
+					description="OPFOR APC 2 Commander";
+				};
+				class Item1
+				{
+					position[]={10010.238,139.98311,10044.539};
+					id=289;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_APC2_G";
+					description="OPFOR APC 2 Gunner";
+				};
+				class Item2
+				{
+					position[]={10012.762,139.98311,10044.324};
+					id=290;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_APC2_D";
+					description="OPFOR APC 2 Driver";
+				};
+			};
+		};
+		class Item87
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={10023.023,139.98311,10053.182};
+					id=291;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_APC3_C";
+					description="OPFOR APC 3 Commander";
+				};
+				class Item1
+				{
+					position[]={10026.035,139.98311,10051.285};
+					id=292;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_APC3_G";
+					description="OPFOR APC 3 Gunner";
+				};
+				class Item2
+				{
+					position[]={10028.559,139.98311,10051.07};
+					id=293;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_APC3_D";
+					description="OPFOR APC 3 Driver";
+				};
+			};
+		};
+		class Item88
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={10033.879,139.98311,10046.098};
+					id=294;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_APC4_C";
+					description="OPFOR APC 4 Commander";
+				};
+				class Item1
+				{
+					position[]={10036.891,139.98311,10044.199};
+					id=295;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_APC4_G";
+					description="OPFOR APC 4 Gunner";
+				};
+				class Item2
+				{
+					position[]={10039.414,139.98311,10043.984};
+					id=296;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_APC4_D";
+					description="OPFOR APC 4 Driver";
+				};
+			};
+		};
+		class Item89
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9916.1201,139.98311,10048.852};
+					id=297;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_TNK1_C";
+					description="OPFOR Tank 1 Commander";
+				};
+				class Item1
+				{
+					position[]={9919.1289,139.98311,10046.957};
+					id=298;
+					side="EAST";
+					vehicle="O_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_TNK1_G";
+					description="OPFOR Tank 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={9921.6563,139.98311,10046.742};
+					id=299;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_TNK1_D";
+					description="OPFOR Tank 1 Driver";
+				};
+			};
+		};
+		class Item90
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9752.3242,139.98311,10041.864};
+					id=300;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_IFV1_C";
+					description="INDFOR IFV 1 Commander";
+				};
+				class Item1
+				{
+					position[]={9754.1602,139.98311,10039.532};
+					id=301;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_IFV1_G";
+					description="INDFOR IFV 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={9756.8594,139.98311,10039.47};
+					id=302;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_IFV1_D";
+					description="INDFOR IFV 1 Driver";
+				};
+			};
+		};
+		class Item91
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9765.1328,139.98311,10039.278};
+					id=303;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_IFV2_C";
+					description="INDFOR IFV 2 Commander";
+				};
+				class Item1
+				{
+					position[]={9766.793,139.98311,10037.103};
+					id=304;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_IFV2_G";
+					description="INDFOR IFV 2 Gunner";
+				};
+				class Item2
+				{
+					position[]={9769.4805,139.98311,10036.903};
+					id=305;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_IFV2_D";
+					description="INDFOR IFV 2 Driver";
+				};
+			};
+		};
+		class Item92
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9780.0898,139.98311,10041.571};
+					id=306;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_IFV3_C";
+					description="INDFOR IFV 3 Commander";
+				};
+				class Item1
+				{
+					position[]={9781.75,139.98311,10039.396};
+					id=307;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_IFV3_G";
+					description="INDFOR IFV 3 Gunner";
+				};
+				class Item2
+				{
+					position[]={9784.5586,139.98311,10039.114};
+					id=308;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_IFV3_D";
+					description="INDFOR IFV 3 Driver";
+				};
+			};
+		};
+		class Item93
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9793.4688,139.98311,10038.696};
+					id=309;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_IFV4_C";
+					description="INDFOR IFV 4 Commander";
+				};
+				class Item1
+				{
+					position[]={9795.125,139.98311,10036.521};
+					id=310;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_IFV4_G";
+					description="INDFOR IFV 4 Gunner";
+				};
+				class Item2
+				{
+					position[]={9797.9922,139.98311,10036.294};
+					id=311;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_IFV4_D";
+					description="INDFOR IFV 4 Driver";
+				};
+			};
+		};
+		class Item94
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9807.6221,139.98311,10042.224};
+					id=312;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_APC1_C";
+					description="INDFOR APC 1 Commander";
+				};
+				class Item1
+				{
+					position[]={9809.2773,139.98311,10040.046};
+					id=313;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_APC1_G";
+					description="INDFOR APC 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={9811.8633,139.98311,10039.837};
+					id=314;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_APC1_D";
+					description="INDFOR APC 1 Driver";
+				};
+			};
+		};
+		class Item95
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9819.7617,139.98311,10039.931};
+					id=315;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_APC2_C";
+					description="INDFOR APC 2 Commander";
+				};
+				class Item1
+				{
+					position[]={9821.418,139.98311,10037.755};
+					id=316;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_APC2_G";
+					description="INDFOR APC 2 Gunner";
+				};
+				class Item2
+				{
+					position[]={9823.8633,139.98311,10037.606};
+					id=317;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_APC2_D";
+					description="INDFOR APC 2 Driver";
+				};
+			};
+		};
+		class Item96
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9835.1973,139.98311,10042.052};
+					id=318;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_APC3_C";
+					description="INDFOR APC 3 Commander";
+				};
+				class Item1
+				{
+					position[]={9836.8555,139.98311,10039.876};
+					id=319;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_APC3_G";
+					description="INDFOR APC 3 Gunner";
+				};
+				class Item2
+				{
+					position[]={9839.3008,139.98311,10039.728};
+					id=320;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_APC3_D";
+					description="INDFOR APC 3 Driver";
+				};
+			};
+		};
+		class Item97
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9847.5313,139.98311,10039.79};
+					id=321;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_APC4_C";
+					description="INDFOR APC 4 Commander";
+				};
+				class Item1
+				{
+					position[]={9849.1875,139.98311,10037.614};
+					id=322;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_APC4_G";
+					description="INDFOR APC 4 Gunner";
+				};
+				class Item2
+				{
+					position[]={9851.9258,139.98311,10037.513};
+					id=323;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_APC4_D";
+					description="INDFOR APC 4 Driver";
+				};
+			};
+		};
+		class Item98
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9725.3223,139.98311,10036.538};
+					id=324;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_TNK1_C";
+					description="INDFOR Tank 1 Commander";
+				};
+				class Item1
+				{
+					position[]={9727.0254,139.98311,10033.991};
+					id=325;
+					side="GUER";
+					vehicle="I_crew_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_TNK1_G";
+					description="INDFOR Tank 1 Gunner";
+				};
+				class Item2
+				{
+					position[]={9729.7227,139.98311,10033.929};
+					id=326;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_TNK1_D";
+					description="INDFOR Tank 1 Driver";
+				};
+			};
+		};
+		class Item99
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={10064.586,139.98311,10165.023};
+					id=327;
+					side="EAST";
+					vehicle="O_Soldier_A_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_MMG1_AG";
+					description="OPFOR Medium MG Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={10067.195,139.98311,10163.059};
+					id=328;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_MMG1_G";
+					description="OPFOR Medium MG Team 1 Gunner";
+				};
+			};
+		};
+		class Item100
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={10064.463,139.98311,10153.869};
+					id=329;
+					side="EAST";
+					vehicle="O_support_AMG_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_HMG1_AG";
+					description="OPFOR Heavy MG Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={10067.576,139.98311,10152.025};
+					id=330;
+					side="EAST";
+					vehicle="O_support_MG_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_HMG1_G";
+					description="OPFOR Heavy MG Team 1 Gunner";
+				};
+			};
+		};
+		class Item101
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={10064.826,139.98311,10141.799};
+					id=331;
+					side="EAST";
+					vehicle="O_Soldier_AAT_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_MAT1_AG";
+					description="OPFOR Medium AT Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={10067.596,139.98311,10140.443};
+					id=332;
+					side="EAST";
+					vehicle="O_Soldier_AT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_MAT1_G";
+					description="OPFOR Medium AT Team 1 Gunner";
+				};
+			};
+		};
+		class Item102
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={10064.627,139.98311,10129.73};
+					id=333;
+					side="EAST";
+					vehicle="O_Soldier_AAT_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_HAT1_AG";
+					description="OPFOR Heavy AT Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={10067.396,139.98311,10128.375};
+					id=334;
+					side="EAST";
+					vehicle="O_Soldier_AT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_HAT1_G";
+					description="OPFOR Heavy AT Team 1 Gunner";
+				};
+			};
+		};
+		class Item103
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={10064.666,139.98311,10117.803};
+					id=335;
+					side="EAST";
+					vehicle="O_support_AMort_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_MTR1_AG";
+					description="OPFOR Mortar Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={10067.436,139.98311,10116.447};
+					id=336;
+					side="EAST";
+					vehicle="O_support_Mort_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_MTR1_G";
+					description="OPFOR Mortar Team 1 Gunner";
+				};
+			};
+		};
+		class Item104
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={10065.127,139.98311,10105.885};
+					id=337;
+					side="EAST";
+					vehicle="O_Soldier_AAA_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_MSAM1_AG";
+					description="OPFOR Medium SAM Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={10067.896,139.98311,10104.529};
+					id=338;
+					side="EAST";
+					vehicle="O_Soldier_AA_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_MSAM1_G";
+					description="OPFOR Medium SAM Team 1 Gunner";
+				};
+			};
+		};
+		class Item105
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={10064.986,139.98311,10092.561};
+					id=339;
+					side="EAST";
+					vehicle="O_Soldier_AAA_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_HSAM1_AG";
+					description="OPFOR Heavy SAM Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={10067.756,139.98311,10091.203};
+					id=340;
+					side="EAST";
+					vehicle="O_Soldier_AA_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_HSAM1_G";
+					description="OPFOR Heavy SAM Team 1 Gunner";
+				};
+			};
+		};
+		class Item106
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={10064.859,139.98311,10081.525};
+					id=341;
+					side="EAST";
+					vehicle="O_spotter_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_ST1_SP";
+					description="OPFOR Sniper Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={10067.629,139.98311,10080.168};
+					id=342;
+					side="EAST";
+					vehicle="O_sniper_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_ST1_SN";
+					description="OPFOR Sniper Team 1 Sniper";
+				};
+			};
+		};
+		class Item107
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10065.309,139.98311,10068.754};
+					id=343;
+					side="EAST";
+					vehicle="O_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_ENG1_FTL";
+					description="OPFOR Engineer Team 1 Leader (Demo)";
+				};
+				class Item1
+				{
+					position[]={10068.285,139.98311,10067.359};
+					id=344;
+					side="EAST";
+					vehicle="O_engineer_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_ENG1_A1";
+					description="OPFOR Engineer Team 1 Assistant (Demo)";
+				};
+				class Item2
+				{
+					position[]={10071.811,139.98311,10067.359};
+					id=345;
+					side="EAST";
+					vehicle="O_engineer_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_ENG1_A2";
+					description="OPFOR Engineer Team 1 Assistant (Mines)";
+				};
+				class Item3
+				{
+					position[]={10075.336,139.98311,10067.234};
+					id=346;
+					side="EAST";
+					vehicle="O_engineer_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitOPFOR_ENG1_A3";
+					description="OPFOR Engineer Team 1 Assistant (Mines)";
+				};
+			};
+		};
+		class Item108
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10064.729,139.98311,10055.646};
+					id=347;
+					side="EAST";
+					vehicle="O_diver_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitOPFOR_DT1_TL";
+					description="OPFOR Diver Team 1 Team Leader";
+				};
+				class Item1
+				{
+					position[]={10067.498,139.98311,10054.006};
+					id=348;
+					side="EAST";
+					vehicle="O_diver_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_DT1_D1";
+					description="OPFOR Diver Team 1 Diver";
+				};
+				class Item2
+				{
+					position[]={10071.002,139.98311,10053.963};
+					id=349;
+					side="EAST";
+					vehicle="O_diver_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_DT1_D2";
+					description="OPFOR Diver Team 1 Diver";
+				};
+				class Item3
+				{
+					position[]={10074.42,139.98311,10053.893};
+					id=350;
+					side="EAST";
+					vehicle="O_diver_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitOPFOR_DT1_D3";
+					description="OPFOR Diver Team 1 Diver";
+				};
+			};
+		};
+		class Item109
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10066.231,139.98311,10036.348};
+					id=351;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="OPFOR Join In Progress";
+				};
+				class Item1
+				{
+					position[]={10068.224,139.98311,10033.953};
+					id=352;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="OPFOR Join In Progress";
+				};
+				class Item2
+				{
+					position[]={10071.13,139.98311,10033.953};
+					id=353;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="OPFOR Join In Progress";
+				};
+				class Item3
+				{
+					position[]={10073.978,139.98311,10034.012};
+					id=354;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="OPFOR Join In Progress";
+				};
+			};
+		};
+		class Item110
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9677.0488,139.98311,10173.176};
+					id=355;
+					side="WEST";
+					vehicle="B_Soldier_A_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_MMG1_AG";
+					description="BLUFOR Medium MG Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9679.627,139.98311,10171.199};
+					id=356;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_MMG1_G";
+					description="BLUFOR Medium MG Team 1 Gunner";
+				};
+			};
+		};
+		class Item111
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9677.1328,139.98311,10162.002};
+					id=357;
+					side="WEST";
+					vehicle="B_support_AMG_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_HMG1_AG";
+					description="BLUFOR Heavy MG Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9679.7109,139.98311,10160.025};
+					id=358;
+					side="WEST";
+					vehicle="B_support_MG_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_HMG1_G";
+					description="BLUFOR Heavy MG Team 1 Gunner";
+				};
+			};
+		};
+		class Item112
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9677.4443,139.98311,10150.465};
+					id=359;
+					side="WEST";
+					vehicle="B_soldier_AAT_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_MAT1_AG";
+					description="BLUFOR Medium AT Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9679.8486,139.98311,10148.707};
+					id=360;
+					side="WEST";
+					vehicle="B_soldier_AT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					health=0.99000001;
+					text="UnitNATO_MAT1_G";
+					description="BLUFOR Medium AT Team 1 Gunner";
+				};
+			};
+		};
+		class Item113
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9677.0459,139.98311,10138.096};
+					id=361;
+					side="WEST";
+					vehicle="B_soldier_AAT_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_HAT1_AG";
+					description="BLUFOR Heavy AT Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9679.4502,139.98311,10136.338};
+					id=362;
+					side="WEST";
+					vehicle="B_soldier_AT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					health=0.99000001;
+					text="UnitNATO_HAT1_G";
+					description="BLUFOR Heavy AT Team 1 Gunner";
+				};
+			};
+		};
+		class Item114
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9677.3418,139.98311,10126.223};
+					id=363;
+					side="WEST";
+					vehicle="B_support_AMort_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_MTR1_AG";
+					description="BLUFOR Mortar Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9679.7461,139.98311,10124.467};
+					id=364;
+					side="WEST";
+					vehicle="B_support_Mort_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					health=0.99000001;
+					text="UnitNATO_MTR1_G";
+					description="BLUFOR Mortar Team 1 Gunner";
+				};
+			};
+		};
+		class Item115
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9677.667,139.98311,10114.387};
+					id=365;
+					side="WEST";
+					vehicle="B_soldier_AAA_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_MSAM1_AG";
+					description="BLUFOR Medium SAM Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9680.0713,139.98311,10112.631};
+					id=366;
+					side="WEST";
+					vehicle="B_soldier_AA_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					health=0.99000001;
+					text="UnitNATO_MSAM1_G";
+					description="BLUFOR Medium SAM Team 1 Gunner";
+				};
+			};
+		};
+		class Item116
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9677.3545,139.98311,10101.283};
+					id=367;
+					side="WEST";
+					vehicle="B_soldier_AAA_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_HSAM1_AG";
+					description="BLUFOR Heavy SAM Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9679.7588,139.98311,10099.527};
+					id=368;
+					side="WEST";
+					vehicle="B_soldier_AA_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					health=0.99000001;
+					text="UnitNATO_HSAM1_G";
+					description="BLUFOR Heavy SAM Team 1 Gunner";
+				};
+			};
+		};
+		class Item117
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9677.3545,139.98311,10090.209};
+					id=369;
+					side="WEST";
+					vehicle="B_spotter_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_ST1_SP";
+					description="BLUFOR Sniper Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9679.7588,139.98311,10088.451};
+					id=370;
+					side="WEST";
+					vehicle="B_sniper_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					health=0.99000001;
+					text="UnitNATO_ST1_SN";
+					description="BLUFOR Sniper Team 1 Sniper";
+				};
+			};
+		};
+		class Item118
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9677.0283,139.98311,10077.939};
+					id=371;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_ENG1_FTL";
+					description="BLUFOR Engineer Team 1 Leader (Demo)";
+				};
+				class Item1
+				{
+					position[]={9679.7344,139.98311,10076.143};
+					id=372;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_ENG1_A1";
+					description="BLUFOR Engineer Team 1 Assistant (Demo)";
+				};
+				class Item2
+				{
+					position[]={9682.5811,139.98311,10075.977};
+					id=373;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_ENG1_A2";
+					description="BLUFOR Engineer Team 1 Assistant (Mines)";
+				};
+				class Item3
+				{
+					position[]={9685.6533,139.98311,10075.922};
+					id=374;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_ENG1_A3";
+					description="BLUFOR Engineer Team 1 Assistant (Mines)";
+				};
+			};
+		};
+		class Item119
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9676.7158,139.98311,10063.77};
+					id=375;
+					side="WEST";
+					vehicle="B_diver_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitNATO_DT1_TL";
+					description="BLUFOR Diver Team 1 Team Leader";
+				};
+				class Item1
+				{
+					position[]={9679.626,139.98311,10061.627};
+					id=376;
+					side="WEST";
+					vehicle="B_diver_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_DT1_D1";
+					description="BLUFOR Diver Team 1 Diver";
+				};
+				class Item2
+				{
+					position[]={9682.5322,139.98311,10061.564};
+					id=377;
+					side="WEST";
+					vehicle="B_diver_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_DT1_D2";
+					description="BLUFOR Diver Team 1 Diver";
+				};
+				class Item3
+				{
+					position[]={9685.4971,139.98311,10061.506};
+					id=378;
+					side="WEST";
+					vehicle="B_diver_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_DT1_D3";
+					description="BLUFOR Diver Team 1 Diver";
+				};
+			};
+		};
+		class Item120
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9676.3672,139.98311,10044.791};
+					id=379;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="BLUFOR Join In Progress";
+				};
+				class Item1
+				{
+					position[]={9679.292,139.98311,10042.85};
+					id=380;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="BLUFOR Join In Progress";
+				};
+				class Item2
+				{
+					position[]={9682.625,139.98311,10042.889};
+					id=381;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="BLUFOR Join In Progress";
+				};
+				class Item3
+				{
+					position[]={9685.9766,139.98311,10042.99};
+					id=382;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="BLUFOR Join In Progress";
+				};
+			};
+		};
+		class Item121
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9866.0566,139.98311,10175.009};
+					azimut=1.77231;
+					id=383;
+					side="GUER";
+					vehicle="I_Soldier_A_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_MMG1_AG";
+					description="INDFOR Medium MG Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9869.0996,139.98311,10173.464};
+					id=384;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_MMG1_G";
+					description="INDFOR Medium MG Team 1 Gunner";
+				};
+			};
+		};
+		class Item122
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9865.8027,139.98311,10163.345};
+					azimut=1.77231;
+					id=385;
+					side="GUER";
+					vehicle="I_support_AMG_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_HMG1_AG";
+					description="INDFOR Heavy MG Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9868.8457,139.98311,10161.798};
+					id=386;
+					side="GUER";
+					vehicle="I_support_MG_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_HMG1_G";
+					description="INDFOR Heavy MG Team 1 Gunner";
+				};
+			};
+		};
+		class Item123
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9866.2227,139.98311,10151.808};
+					id=387;
+					side="GUER";
+					vehicle="I_Soldier_AAT_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_MAT1_AG";
+					description="INDFOR Medium AT Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9868.7617,139.98311,10150.519};
+					id=388;
+					side="GUER";
+					vehicle="I_Soldier_AT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_MAT1_G";
+					description="INDFOR Medium AT Team 1 Gunner";
+				};
+			};
+		};
+		class Item124
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9866.3809,139.98311,10139.491};
+					id=389;
+					side="GUER";
+					vehicle="I_Soldier_AAT_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_HAT1_AG";
+					description="INDFOR Heavy AT Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9868.9199,139.98311,10138.202};
+					id=390;
+					side="GUER";
+					vehicle="I_Soldier_AT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_HAT1_G";
+					description="INDFOR Heavy AT Team 1 Gunner";
+				};
+			};
+		};
+		class Item125
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9866.3828,139.98311,10127.372};
+					id=391;
+					side="GUER";
+					vehicle="I_support_AMort_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_MTR1_AG";
+					description="INDFOR Mortar Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9868.9219,139.98311,10126.083};
+					id=392;
+					side="GUER";
+					vehicle="I_support_Mort_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_MTR1_G";
+					description="INDFOR Mortar Team 1 Gunner";
+				};
+			};
+		};
+		class Item126
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9866.1719,139.98311,10115.372};
+					id=393;
+					side="GUER";
+					vehicle="I_Soldier_AAA_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_MSAM1_AG";
+					description="INDFOR Medium SAM Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9868.7109,139.98311,10114.083};
+					id=394;
+					side="GUER";
+					vehicle="I_Soldier_AA_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_MSAM1_G";
+					description="INDFOR Medium SAM Team 1 Gunner";
+				};
+			};
+		};
+		class Item127
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9866.3477,139.98311,10102.19};
+					id=395;
+					side="GUER";
+					vehicle="I_Soldier_AAA_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_HSAM1_AG";
+					description="INDFOR Heavy SAM Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9868.8867,139.98311,10100.901};
+					id=396;
+					side="GUER";
+					vehicle="I_Soldier_AA_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_HSAM1_G";
+					description="INDFOR Heavy SAM Team 1 Gunner";
+				};
+			};
+		};
+		class Item128
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9866.7012,139.98311,10091.134};
+					id=397;
+					side="GUER";
+					vehicle="I_Spotter_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_ST1_SP";
+					description="INDFOR Sniper Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={9869.2402,139.98311,10089.845};
+					id=398;
+					side="GUER";
+					vehicle="I_Sniper_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_ST1_SN";
+					description="INDFOR Sniper Team 1 Sniper";
+				};
+			};
+		};
+		class Item129
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9867.1152,139.98311,10078.003};
+					id=399;
+					side="GUER";
+					vehicle="I_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitIND_ENG1_FTL";
+					description="INDFOR Engineer Team 1 Leader (Demo)";
+				};
+				class Item1
+				{
+					position[]={9869.8809,139.98311,10076.085};
+					id=400;
+					side="GUER";
+					vehicle="I_engineer_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_ENG1_A1";
+					description="INDFOR Engineer Team 1 Assistant (Demo)";
+				};
+				class Item2
+				{
+					position[]={9872.1934,139.98311,10076.028};
+					id=401;
+					side="GUER";
+					vehicle="I_engineer_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_ENG1_A2";
+					description="INDFOR Engineer Team 1 Assistant (Mines)";
+				};
+				class Item3
+				{
+					position[]={9874.4727,139.98311,10076.03};
+					id=402;
+					side="GUER";
+					vehicle="I_engineer_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_ENG1_A3";
+					description="INDFOR Engineer Team 1 Assistant (Mines)";
+				};
+			};
+		};
+		class Item130
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9867.7227,139.98311,10065.163};
+					id=403;
+					side="GUER";
+					vehicle="I_diver_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_DT1_TL";
+					description="INDFOR Diver Team 1 Team Leader";
+				};
+				class Item1
+				{
+					position[]={9870.043,139.98311,10063.782};
+					id=404;
+					side="GUER";
+					vehicle="I_diver_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_DT1_D1";
+					description="INDFOR Diver Team 1 Diver";
+				};
+				class Item2
+				{
+					position[]={9872.6211,139.98311,10063.747};
+					id=405;
+					side="GUER";
+					vehicle="I_diver_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_DT1_D2";
+					description="INDFOR Diver Team 1 Diver";
+				};
+				class Item3
+				{
+					position[]={9874.8066,139.98311,10063.622};
+					id=406;
+					side="GUER";
+					vehicle="I_diver_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_DT1_D3";
+					description="INDFOR Diver Team 1 Diver";
+				};
+			};
+		};
+		class Item131
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9868.4141,139.98311,10041.581};
+					id=407;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="INDFOR Join In Progress";
+				};
+				class Item1
+				{
+					position[]={9873.5664,139.98311,10039.562};
+					id=408;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="INDFOR Join In Progress";
+				};
+				class Item2
+				{
+					position[]={9876.2109,139.98311,10039.562};
+					id=409;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="INDFOR Join In Progress";
+				};
+				class Item3
+				{
+					position[]={9870.9922,139.98311,10039.562};
+					id=410;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="INDFOR Join In Progress";
+				};
+			};
+		};
+		class Item132
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9676.3672,139.98311,10034.322};
+					id=411;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="BLUFOR Join In Progress";
+				};
+				class Item1
+				{
+					position[]={9679.292,139.98311,10032.381};
+					id=412;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="BLUFOR Join In Progress";
+				};
+				class Item2
+				{
+					position[]={9682.625,139.98311,10032.42};
+					id=413;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="BLUFOR Join In Progress";
+				};
+				class Item3
+				{
+					position[]={9685.9766,139.98311,10032.521};
+					id=414;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="BLUFOR Join In Progress";
+				};
+			};
+		};
+		class Item133
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9868.2031,139.98311,10030.556};
+					id=415;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="INDFOR Join In Progress";
+				};
+				class Item1
+				{
+					position[]={9873.3555,139.98311,10028.536};
+					id=416;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="INDFOR Join In Progress";
+				};
+				class Item2
+				{
+					position[]={9876,139.98311,10028.536};
+					id=417;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="INDFOR Join In Progress";
+				};
+				class Item3
+				{
+					position[]={9870.7813,139.98311,10028.536};
+					id=418;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="INDFOR Join In Progress";
+				};
+			};
+		};
+		class Item134
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10065.75,139.98311,10025.297};
+					id=419;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="OPFOR Join In Progress";
+				};
+				class Item1
+				{
+					position[]={10067.742,139.98311,10022.902};
+					id=420;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="OPFOR Join In Progress";
+				};
+				class Item2
+				{
+					position[]={10070.648,139.98311,10022.902};
+					id=421;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="OPFOR Join In Progress";
+				};
+				class Item3
+				{
+					position[]={10073.496,139.98311,10022.961};
+					id=422;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="OPFOR Join In Progress";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"map_vr",
+		"smd_sahrani_a3"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a3"
+	};
+	randomSeed=8428644;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"map_vr",
+		"smd_sahrani_a3"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a3"
+	};
+	randomSeed=4674277;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"map_vr",
+		"smd_sahrani_a3"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a3"
+	};
+	randomSeed=6586695;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
