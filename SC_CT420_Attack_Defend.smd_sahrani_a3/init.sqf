@@ -1,3 +1,9 @@
+0 = [] spawn {
+	if (isServer) then {
+		[] execVM "bsmrk_ADscripts\bsmrk_ADinit.sqf";
+	};
+};
+
 // All things marked F3 come from F3 code. All things marked otherwise come from that source.
 // ====================================================================================
 

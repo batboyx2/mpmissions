@@ -246,8 +246,188 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-
-
+	class bsmrk_param_spacer0
+	{
+		title = "";
+		values[]={0,0};
+		texts[]={"",""};
+		default = 0;
+	};
+	class bsmrk_param_spacer1
+	{
+		title = "= = = = = = = = = = = = = =";
+		values[]={0,0};
+		texts[]={"",""};
+		default = 0;
+	};
+	
+	class bsmrk_param_section1
+	{
+		title = "= Mission Options";
+		values[]={0,0};
+		texts[]={"",""};
+		default = 0;
+	};
+	
+	class bsmrk_param_spacer2
+	{
+		title = "= = = = = = = = = = = = = =";
+		values[]={0,0};
+		texts[]={"",""};
+		default = 0;
+	};
+	
+	class bsmrk_param_gameType
+	{
+		title = "Game Type";
+		values[] = {1,2,3};
+		texts[] = {"Adversarial", "Cooperative Defense", "Cooperative Attack"};
+		default = 1;
+		isGlobal = 1;
+ 		code = "bsmrk_param_gameType = %1";
+	};
+	
+	class bsmrk_param_defendingSide1
+	{
+		title = "Defending Side 1";
+		values[] = {1,2,3};
+		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
+		default = 2;
+		isGlobal = 1;
+ 		code = "bsmrk_param_defendingSide1 = %1";
+	};
+	
+	class bsmrk_param_defendingSide2
+	{
+		title = "Defending Side 2";
+		values[] = {1,2,3};
+		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
+		default = 2;
+		isGlobal = 1;
+ 		code = "bsmrk_param_defendingSide2 = %1";
+	};
+	
+	class bsmrk_param_attackingSide1
+	{
+		title = "Attacking Side 1";
+		values[] = {1,2,3};
+		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
+		default = 1;
+		isGlobal = 1;
+ 		code = "bsmrk_param_attackingSide1 = %1";
+	};
+	
+	class bsmrk_param_attackingSide2
+	{
+		title = "Attacking Side 2";
+		values[] = {1,2,3};
+		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
+		default = 1;
+		isGlobal = 1;
+ 		code = "bsmrk_param_attackingSide2 = %1";
+	};
+	
+	class bsmrk_param_zoneRadius
+	{
+		title = "Zone Radius";
+		values[] = {100,200,300,400,500};
+		texts[] = {"100","200","300","400","500"};
+		default = 200;
+		isGlobal = 1;
+ 		code = "bsmrk_param_zoneRadius = %1";
+	};
+	
+	class bsmrk_param_bluforFaction
+	{
+		title = "BLUFOR Faction";
+		values[] = {1,2,3,4,5,6,7,8};
+		texts[] = {"NATO","CTRG","FIA","CDF","US ARMY UCP","US ARMY OCP","USMC DESERT","USMC WOODLAND"};
+		default = 6;
+		isGlobal = 1;
+ 		code = "bsmrk_param_bluforFaction = %1";
+	};
+	
+	class bsmrk_param_opforFaction
+	{
+		title = "OPFOR Faction";
+		values[] = {1,2,3,4,5};
+		texts[] = {"CSAT","VDV EMR","VDV FLORA","VDV MOUNTAIN FLOR","SLA"};
+		default = 3;
+		isGlobal = 1;
+ 		code = "bsmrk_param_opforFaction = %1";
+	};
+	
+	class bsmrk_param_indFaction
+	{
+		title = "INDFOR Faction";
+		values[] = {1,2,3,4,5,6};
+		texts[] = {"AAF","AFGHAN MILITIA","AFRICAN MILITIA","CONTRACTORS","INSURGENTS","PLA"};
+		default = 5;
+		isGlobal = 1;
+ 		code = "bsmrk_param_indFaction = %1";
+	};
+	
+	
+	class bsmrk_param_spacer00
+	{
+		title = "";
+		values[]={0,0};
+		texts[]={"",""};
+		default = 0;
+	};
+	class bsmrk_param_spacer11
+	{
+		title = "= = = = = = = = = = = = = =";
+		values[]={0,0};
+		texts[]={"",""};
+		default = 0;
+	};
+	
+	class bsmrk_param_section11
+	{
+		title = "= Asset Options";
+		values[]={0,0};
+		texts[]={"",""};
+		default = 0;
+	};
+	
+	class bsmrk_param_spacer22
+	{
+		title = "= = = = = = = = = = = = = =";
+		values[]={0,0};
+		texts[]={"",""};
+		default = 0;
+	};
+	
+	class bsmrk_param_bluforAssets
+	{
+		title = "BLUFOR Assets";
+		values[] = {6,5,4,3,2,1};
+		texts[] = {"Very Many", "Many", "Not Very Many", "Few", "Very Few", "None"};
+		default = 4;
+		isGlobal = 1;
+ 		code = "bsmrk_param_bluforAssets = %1";
+	};
+	
+	class bsmrk_param_opforAssets
+	{
+		title = "OPFOR Assets";
+		values[] = {6,5,4,3,2,1};
+		texts[] = {"Very Many", "Many", "Not Very Many", "Few", "Very Few", "None"};
+		default = 4;
+		isGlobal = 1;
+ 		code = "bsmrk_param_opforAssets = %1";
+	};
+	
+	class bsmrk_param_indforAssets
+	{
+		title = "INDFOR Assets";
+		values[] = {6,5,4,3,2,1};
+		texts[] = {"Very Many", "Many", "Not Very Many", "Few", "Very Few", "None"};
+		default = 4;
+		isGlobal = 1;
+ 		code = "bsmrk_param_indforAssets = %1";
+	};
 // ============================================================================================
 
 // F3 - End of Params code blocks.
