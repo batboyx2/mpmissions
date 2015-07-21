@@ -186,7 +186,7 @@ class Params
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
 
-    class f_param_debugMode
+    class f_param_debugMode //0
     {
             title = "$STR_f_param_debugMode";
             values[] = {0,1};
@@ -200,7 +200,7 @@ class Params
 // F3 - Radio Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-    class f_param_radios
+    class f_param_radios //1
     {
             title = "Radio System";
             values[] = {0,1,2};
@@ -214,7 +214,7 @@ class Params
 // F3 - Mission Conditions Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-	class f_param_weather
+	class f_param_weather //2
 	{
 		title = "$STR_f_param_weather";
 		values[] = {0,1,2,3,4,5,6,7,8};
@@ -225,7 +225,7 @@ class Params
 		code = "f_param_weather = %1";
 	};
 
-	class f_param_fog
+	class f_param_fog //3
 	{
 		title = "Fog";
 		values[] = {0,1,2};
@@ -236,7 +236,7 @@ class Params
 		code = "f_param_fog = %1";
 	};
 
-    class f_param_timeOfDay
+    class f_param_timeOfDay //4
 	{
 		title = "$STR_f_param_timeOfDay";
 		values[] = {0,1,2,3,4,5,6,7};
@@ -246,14 +246,14 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-	class bsmrk_param_spacer0
+	class bsmrk_param_spacer0 //5
 	{
 		title = "";
 		values[]={0,0};
 		texts[]={"",""};
 		default = 0;
 	};
-	class bsmrk_param_spacer1
+	class bsmrk_param_spacer1 //6
 	{
 		title = "= = = = = = = = = = = = = =";
 		values[]={0,0};
@@ -261,7 +261,7 @@ class Params
 		default = 0;
 	};
 	
-	class bsmrk_param_section1
+	class bsmrk_param_section1 //7
 	{
 		title = "= Mission Options";
 		values[]={0,0};
@@ -269,7 +269,7 @@ class Params
 		default = 0;
 	};
 	
-	class bsmrk_param_spacer2
+	class bsmrk_param_spacer2 //8
 	{
 		title = "= = = = = = = = = = = = = =";
 		values[]={0,0};
@@ -277,54 +277,54 @@ class Params
 		default = 0;
 	};
 	
-	class bsmrk_param_gameType
+	class bsmrk_param_gameType //9
 	{
 		title = "Game Type";
 		values[] = {1,2,3};
 		texts[] = {"Adversarial", "Cooperative Defense", "Cooperative Attack"};
 		default = 1;
 		isGlobal = 1;
- 		code = "bsmrk_param_gameType = %1";
+ 		code = "bsmrk_param_gameTypeP = %1";
 	};
 	
-	class bsmrk_param_defendingSide1
+	class bsmrk_param_defendingSide1 //10
 	{
 		title = "Defending Side 1";
-		values[] = {1,2,3};
+		values[] = {east, west, resistance};
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
 		default = 2;
 		isGlobal = 1;
- 		code = "bsmrk_param_defendingSide1 = %1";
+ 		code = "bsmrk_param_defendingSide1P = %1";
 	};
 	
-	class bsmrk_param_defendingSide2
+	class bsmrk_param_defendingSide2 //11
 	{
 		title = "Defending Side 2";
-		values[] = {1,2,3};
+		values[] = {east, west, resistance};
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
 		default = 2;
 		isGlobal = 1;
- 		code = "bsmrk_param_defendingSide2 = %1";
+ 		code = "bsmrk_param_defendingSide2P = %1";
 	};
 	
-	class bsmrk_param_attackingSide1
+	class bsmrk_param_attackingSide1 //12
 	{
 		title = "Attacking Side 1";
-		values[] = {1,2,3};
+		values[] = {east, west, resistance};
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
 		default = 1;
 		isGlobal = 1;
- 		code = "bsmrk_param_attackingSide1 = %1";
+ 		code = "bsmrk_param_attackingSide1P = %1";
 	};
 	
-	class bsmrk_param_attackingSide2
+	class bsmrk_param_attackingSide2 //13
 	{
 		title = "Attacking Side 2";
-		values[] = {1,2,3};
+		values[] = {east, west, resistance};
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
 		default = 1;
 		isGlobal = 1;
- 		code = "bsmrk_param_attackingSide2 = %1";
+ 		code = "bsmrk_param_attackingSide2P = %1";
 	};
 	
 	class bsmrk_param_zoneRadius
