@@ -290,9 +290,9 @@ class Params
 	class bsmrk_param_defendingSide1 //10
 	{
 		title = "Defending Side 1";
-		values[] = {"east","west","resistance"};
+		values[] = {1,2,3};
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
-		default = "west";
+		default = 2;
 		isGlobal = 1;
  		code = "bsmrk_param_defendingSide1P = %1";
 	};
@@ -300,9 +300,9 @@ class Params
 	class bsmrk_param_defendingSide2 //11
 	{
 		title = "Defending Side 2";
-		values[] = {"east","west","resistance"};
+		values[] = {1,2,3};
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
-		default = "west";
+		default = 2;
 		isGlobal = 1;
  		code = "bsmrk_param_defendingSide2P = %1";
 	};
@@ -310,9 +310,9 @@ class Params
 	class bsmrk_param_attackingSide1 //12
 	{
 		title = "Attacking Side 1";
-		values[] = {"east","west","resistance"};
+		values[] = {1,2,3};
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
-		default = "east";
+		default = 1;
 		isGlobal = 1;
  		code = "bsmrk_param_attackingSide1P = %1";
 	};
@@ -320,9 +320,9 @@ class Params
 	class bsmrk_param_attackingSide2 //13
 	{
 		title = "Attacking Side 2";
-		values[] = {"east","west","resistance"};
+		values[] = {1,2,3};
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
-		default = "east";
+		default = 1;
 		isGlobal = 1;
  		code = "bsmrk_param_attackingSide2P = %1";
 	};

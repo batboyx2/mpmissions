@@ -24,9 +24,9 @@ _eastLeader = "UnitOPFOR_PLT";
 _indLeader = "UnitIND_PLT";
 
 _defenderLeader = switch (_defenders select 0) do {
-	case "west": {"UnitNATO_PLT"};
-	case "east": {"UnitOPFOR_PLT"};
-	case "resistance": {"UnitIND_PLT"};
+	case 1: {"UnitNATO_PLT"};
+	case 2: {"UnitOPFOR_PLT"};
+	case 3: {"UnitIND_PLT"};
 };
 
 globalVarDebug = [_defenderLeader, _attackers, _defenders];
