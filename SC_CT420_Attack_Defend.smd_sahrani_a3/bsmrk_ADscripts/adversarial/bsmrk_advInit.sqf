@@ -1,5 +1,15 @@
 // ========================================================
-// First block finds which sides are defending and attacking
+// This block takes changes the sides from numbers to side variables
+{
+	_x = switch (_x) do {
+		case 1: {east};
+		case 2: {west};
+		case 3: {resistance};
+	};
+} forEach [bsmrk_param_attackingSide1P, bsmrk_param_attackingSide2P, bsmrk_param_defendingSide1P, bsmrk_param_defendingSide2P];
+
+// ========================================================
+// This block finds which sides are defending and attacking
 private ["_attackers","_defenders","_westLeader","_eastLeader","_indLeader"];
 _attackers = [];
 _attackers = _attackers + [bsmrk_param_attackingSide1P];
@@ -31,3 +41,4 @@ _defenderLeader = switch (_defenders select 0) do {
 
 globalVarDebug = [_defenderLeader, _attackers, _defenders];
 publicVariable "globalVarDebug";
+
