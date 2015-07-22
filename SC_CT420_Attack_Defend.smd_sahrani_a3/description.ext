@@ -351,7 +351,7 @@ class Params
 	{
 		title = "OPFOR Faction";
 		values[] = {1,2,3,4,5};
-		texts[] = {"CSAT","VDV EMR","VDV FLORA","VDV MOUNTAIN FLORA","SLA"};
+		texts[] = {"CSAT","VDV EMR","VDV FLORA","VDV MOUNTAIN FLOR","SLA"};
 		default = 3;
 		isGlobal = 1;
  		code = "bsmrk_param_opforFactionP = %1";
