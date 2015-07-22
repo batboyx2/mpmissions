@@ -32,3 +32,8 @@ _defenderLeader execVM "bsmrk_ADscripts\adversarial\bsmrk_advZones.sqf";
 waitUntil {gv_confirmedMarker};
 _defenders execVM "bsmrk_ADscripts\adversarial\bsmrk_defenseTeleport.sqf";
 
+// ========================================================
+// This script finds all of the leaders on the attacking team(s) and then gives them the teleportation action.
+waitUntil {(!isNil "PABST_ADMIN_SAFESTART_public_isSafe" && {!PABST_ADMIN_SAFESTART_public_isSafe})};
+_attackers execVM "bsmrk_ADscripts\adversarial\bsmrk_attackTeleport.sqf";
+
