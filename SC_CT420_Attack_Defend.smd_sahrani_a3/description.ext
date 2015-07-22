@@ -283,7 +283,7 @@ class Params
 		title = "Game Type";
 		values[] = {1,2,3};
 		texts[] = {"Adversarial", "Cooperative Defense", "Cooperative Attack"};
-		default = 1;
+		default = 2;
 		isGlobal = 1;
  		code = "bsmrk_param_gameTypeP = %1";
 	};

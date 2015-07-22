@@ -23,13 +23,6 @@ _defendingLeaders = [];
 
 
 
-
-
-
-
-
-
-
 bsmrk_fnc_doTeleportUpper = {
 	private ["_time","_pos","_target","_units"];
 	_time = time;
