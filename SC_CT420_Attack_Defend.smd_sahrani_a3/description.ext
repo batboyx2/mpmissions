@@ -331,9 +331,9 @@ class Params
 	class bsmrk_param_zoneRadius //14
 	{
 		title = "Zone Radius";
-		values[] = {100,200,300,400,500};
-		texts[] = {"100","200","300","400","500"};
-		default = 200;
+		values[] = {25,50,75,100,150,200,250,300,500};
+		texts[] = {"25","50","75","100","150","200","250","300","500"};
+		default = 75;
 		isGlobal = 1;
  		code = "bsmrk_param_zoneRadiusP = %1";
 	};
