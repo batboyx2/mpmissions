@@ -16,7 +16,14 @@ _loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
     #include "f_assignInsignia.sqf"
 };*/
 
-_path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+_side = switch (side _unit) do {
+	case west: {["BLUFOR_", bsmrk_param_bluforFactionP]};
+	case east: {["OPFOR_", bsmrk_param_opforFactionP]};
+	case resistance: {["INDFOR_", bsmrk_param_indFactionP]};
+};
+
+_path = missionConfigFile >> "CfgLoadouts" >> format["%1%2", _side select 0, _side select 1] >> _faction >> _loadout;
+
 
 if(!isClass(_path)) exitWith {
     if (isPlayer _unit) then {

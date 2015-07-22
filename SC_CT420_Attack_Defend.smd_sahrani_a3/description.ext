@@ -40,7 +40,8 @@ loadScreen = "loadLogo.jpg";
 // BWMF Gear
 //Credits:headswe, Pabst, Zerith
 
-//#include "CfgLoadouts.hpp"
+#include "CfgLoadouts.hpp"
+//#include "bsmrk_ADscripts\gear\bsmrk_gear.sqf"
 
 // ============================================================================================
 

@@ -16,7 +16,7 @@ if !(bsmrk_param_defendingSide2P in _defenders) then {
 
 // ========================================================
 // This spawns the gear on the units
-[] execVM "bsmrk_ADscripts\gear\bsmrk_gear.sqf";
+//[] execVM "bsmrk_ADscripts\gear\bsmrk_gear.sqf";
 
 // ========================================================
 // This block defines the defender's overall leader.

@@ -226,7 +226,6 @@ class opf_f {
         backpack[] = {"O_Mortar_01_support_F"}; /// randomized
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         linkedItems[] += {"ACE_Vector"};
-        items[] += {"ACRE_PRC148"};	
     };
 	
     class O_spotter_F {// Spotter
