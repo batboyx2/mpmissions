@@ -1,5 +1,6 @@
 // ========================================================
 // This block finds which sides are defending and attacking
+waitUntil {time > 1};
 private ["_attackers","_defenders","_westLeader","_eastLeader","_indLeader"];
 
 _attackers = [];
@@ -15,16 +16,13 @@ if !(bsmrk_param_defendingSide2P in _defenders) then {
 };
 
 // ========================================================
-// This spawns the gear on the units
-//[] execVM "bsmrk_ADscripts\gear\bsmrk_gear.sqf";
-
-// ========================================================
 // This block defines the defender's overall leader.
 _defenderLeader = switch (_defenders select 0) do {
-	case 1: {"UnitOPFOR_PLT"};
-	case 2: {"UnitNATO_PLT"};
-	case 3: {"UnitIND_PLT"};
+	case 1: {UnitOPFOR_PLT};
+	case 2: {UnitNATO_PLT};
+	case 3: {UnitIND_PLT};
 };
 
 // ========================================================
-// 
+// This block gives the defender's leader an action menu option to pick a starting point
+_defenderLeader execVM "bsmrk_ADscripts\adversarial\bsmrk_advZones.sqf";
