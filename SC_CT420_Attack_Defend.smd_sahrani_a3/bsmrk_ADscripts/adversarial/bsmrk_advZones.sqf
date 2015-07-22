@@ -1,6 +1,7 @@
 // ========================================================
 // These functions serve to add the option to create a defense zone to a defender leader &
 // process those requests
+gv_confirmedMarker = false; publicVariable "gv_confirmedMarker";
 bsmrk_fnc_createMarker = {
 	_pos = _this;
 	
@@ -38,6 +39,7 @@ bsmrk_fnc_createDefenseZone = {
 					"Yes",
 					{
 						[(_this select 0), "removeAllActions", _this select 0] call BIS_fnc_MP;
+						gv_confirmedMarker = true; publicVariable "gv_confirmedMarker";
 					},
 					nil,
 					1.5,

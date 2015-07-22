@@ -24,5 +24,11 @@ _defenderLeader = switch (_defenders select 0) do {
 };
 
 // ========================================================
-// This block gives the defender's leader an action menu option to pick a starting point
+// This script gives the defender's leader an action menu option to pick a starting point
 _defenderLeader execVM "bsmrk_ADscripts\adversarial\bsmrk_advZones.sqf";
+
+// ========================================================
+// This script finds all of the leaders on the defending team(s) and then gives them the teleportation action.
+waitUntil {gv_confirmedMarker};
+_defenders execVM "bsmrk_ADscripts\adversarial\bsmrk_defenseTeleport.sqf";
+
