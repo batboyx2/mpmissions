@@ -31,7 +31,7 @@ class Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 onLoadName = "Attack Defend";
-onLoadMission = "Made with Fixer Wave WL";
+onLoadMission = "Get your defense on!";
 author = "Bismarck";
 loadScreen = "loadLogo.jpg";
 
@@ -40,7 +40,7 @@ loadScreen = "loadLogo.jpg";
 // BWMF Gear
 //Credits:headswe, Pabst, Zerith
 
-#include "CfgLoadouts.hpp"
+//#include "CfgLoadouts.hpp"
 
 // ============================================================================================
 
@@ -327,44 +327,44 @@ class Params
  		code = "bsmrk_param_attackingSide2P = %1";
 	};
 	
-	class bsmrk_param_zoneRadius
+	class bsmrk_param_zoneRadius //14
 	{
 		title = "Zone Radius";
 		values[] = {100,200,300,400,500};
 		texts[] = {"100","200","300","400","500"};
 		default = 200;
 		isGlobal = 1;
- 		code = "bsmrk_param_zoneRadius = %1";
+ 		code = "bsmrk_param_zoneRadiusP = %1";
 	};
 	
-	class bsmrk_param_bluforFaction
+	class bsmrk_param_bluforFaction //15
 	{
 		title = "BLUFOR Faction";
 		values[] = {1,2,3,4,5,6,7,8};
 		texts[] = {"NATO","CTRG","FIA","CDF","US ARMY UCP","US ARMY OCP","USMC DESERT","USMC WOODLAND"};
 		default = 6;
 		isGlobal = 1;
- 		code = "bsmrk_param_bluforFaction = %1";
+ 		code = "bsmrk_param_bluforFactionP = %1";
 	};
 	
-	class bsmrk_param_opforFaction
+	class bsmrk_param_opforFaction //16
 	{
 		title = "OPFOR Faction";
 		values[] = {1,2,3,4,5};
-		texts[] = {"CSAT","VDV EMR","VDV FLORA","VDV MOUNTAIN FLOR","SLA"};
+		texts[] = {"CSAT","VDV EMR","VDV FLORA","VDV MOUNTAIN FLORA","SLA"};
 		default = 3;
 		isGlobal = 1;
- 		code = "bsmrk_param_opforFaction = %1";
+ 		code = "bsmrk_param_opforFactionP = %1";
 	};
 	
-	class bsmrk_param_indFaction
+	class bsmrk_param_indFaction //17
 	{
 		title = "INDFOR Faction";
 		values[] = {1,2,3,4,5,6};
 		texts[] = {"AAF","AFGHAN MILITIA","AFRICAN MILITIA","CONTRACTORS","INSURGENTS","PLA"};
 		default = 5;
 		isGlobal = 1;
- 		code = "bsmrk_param_indFaction = %1";
+ 		code = "bsmrk_param_indFactionP = %1";
 	};
 	
 	

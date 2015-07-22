@@ -1,6 +1,7 @@
 // ========================================================
 // This block finds which sides are defending and attacking
 private ["_attackers","_defenders","_westLeader","_eastLeader","_indLeader"];
+
 _attackers = [];
 _attackers = _attackers + [bsmrk_param_attackingSide1P];
 if !(bsmrk_param_attackingSide2P in _attackers) then {
@@ -25,6 +26,5 @@ _defenderLeader = switch (_defenders select 0) do {
 	case 3: {"UnitIND_PLT"};
 };
 
-globalVarDebug = [_defenderLeader, _attackers, _defenders];
-publicVariable "globalVarDebug";
-
+// ========================================================
+// 

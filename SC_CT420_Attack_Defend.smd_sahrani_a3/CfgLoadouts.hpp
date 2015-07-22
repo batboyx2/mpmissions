@@ -16,8 +16,7 @@ class CfgLoadouts {
 
     //RUSSIAN FACTIONS:
     #include "Loadouts\russian_standard.hpp" //Our standard "commy" loadout
-    // #include "Loadouts\russian_sov-sweedish.hpp" //Soviet's "sweedish" loadout
-
+    
 
 
     //Bonus example civilian loadouts:
