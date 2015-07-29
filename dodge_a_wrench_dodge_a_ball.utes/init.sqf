@@ -1,5 +1,9 @@
 waitUntil {time > 1};
+
+setTerrainGrid 50;
+
 player setVariable ["bsmrk_hasDodgeBall", false, true];
+
 
 if (isServer) then {
 	[] execVM "dodgeAWrenchDodgeABall.sqf";

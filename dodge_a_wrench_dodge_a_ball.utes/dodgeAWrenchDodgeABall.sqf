@@ -5,11 +5,16 @@ bsmrk_standingThrow = {
 	_ball = _this getVariable "bsmrk_whichDodgeball";
 	_time = time;
 	
+	waitUntil {time > (_time + 1.17)};
 	_vectorN = ([(positionCameraToWorld [0,0,0]), (positionCameraToWorld [0,0,1])] call BIS_fnc_vectorDiff);
 	_vectorM = _vectorN vectorMultiply 75;
-	
-	waitUntil {time > (_time + 1.17)};
-	_pos = getPos _ball;
+	_pos = getPos _this;
+	_dir = getDir _this;
+	_dir = 0 - _dir;
+	_mag = 0.5;
+	_xOffset = _mag * cos (_dir);
+	_yOffset =  _mag * sin (_dir);
+	_pos = _pos vectorAdd [_xOffset, _yOffset, 2];
 	detach _ball;
 	_hitter = createVehicle ["B_45ACP_Ball", [0,0,1], [], 0, "NONE"];
 	_hitter setPos _pos;
@@ -54,19 +59,21 @@ bsmrk_pickupAndHold = {
 	_ball = _this select 0;
 	_player = _this select 1;
 	_ID = _this select 2;
-	[
+	if !(_player getVariable "bsmrk_hasDodgeBall") then {
 		[
-			_ball,
-			_ID
-		],
-		"removeAction",
-		true,
-		false,
-		false
-	] call BIS_fnc_MP;
-	_ball attachTo [_player, [0,0,0], "RightHand"];
-	_player setVariable ["bsmrk_hasDodgeBall", true, true];
-	_player setVariable ["bsmrk_whichDodgeball", _ball, true];
+			[
+				_ball,
+				_ID
+			],
+			"removeAction",
+			true,
+			false,
+			false
+		] call BIS_fnc_MP;
+		_ball attachTo [_player, [0,0,0], "RightHand"];
+		_player setVariable ["bsmrk_hasDodgeBall", true, true];
+		_player setVariable ["bsmrk_whichDodgeball", _ball, true];
+	};
 	
 };
 
@@ -95,8 +102,35 @@ bsmrk_createBallGround = {
 	] call BIS_fnc_MP;
 };
 
-{(getMarkerPos _x) call bsmrk_createBallGround} forEach ["mrk_ball", "mrk_ball_1", "mrk_ball_2"];
+//{(getMarkerPos _x) call bsmrk_createBallGround} forEach ["mrk_ball", "mrk_ball_1", "mrk_ball_2"];
 
+for "_i2" from 0 to 7.3 step 3.65 do {
+	for "_i" from 2 to 360 step 2 do {
+		_radius = 57;
+		_angle = _i;
+		_xVar = _radius * cos (_angle);
+		_yVar = _radius * sin (_angle);
+		_markerPos = getMarkerPos "circleCenter";
+		_pos = _markerPos vectorAdd [_xVar, _yVar, _i2];
+		_blah = createVehicle ["Land_Shoot_House_Wall_F", _pos, [], 0, "NONE"];
+		_blah setPos _pos;
+		_blah setDir (270 - _i);
+	};
+};
+
+for "_i" from 0 to (56 * 2) do {
+	_markerPos = getMarkerPos "circleCenter";
+	_pos = _markerPos vectorAdd [(_i - 56), 0, 0];
+	_pos call bsmrk_createBallGround;
+};
+
+for "_i" from 1 to 20 do {
+	_markerPos = getMarkerPos "circleCenter";
+	_posBlu = _markerPos vectorAdd [(_i - 10.5), -50, 0];
+	_posRed = _markerPos vectorAdd [(_i - 10.5), 50, 0];
+	call compile format["blu_%1 setPos %2; blu_%1 setDir 0;", _i, _posBlu];
+	call compile format["red_%1 setPos %2; red_%1 setDir 180;", _i, _posRed];
+};
 //display eventhandlers for keydown and keyup
 
 //old stuff below, backups incase I want to use it again
