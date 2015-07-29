@@ -12,7 +12,6 @@ class Mission
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
-		"A3_Structures_F_Heli_Items_Sport",
 		"aia_utes_config"
 	};
 	randomSeed=1319517;
@@ -45,7 +44,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3584.0542,19,3615.4932};
+					position[]={3582.4905,19,3613.645};
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -64,27 +63,39 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3583.9956,19,3624.3911};
+					position[]={3583.792,19,3639.572};
+					azimut=181.409;
 					id=1;
 					side="WEST";
 					vehicle="B_soldier_M_F";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					text="unit_2";
 				};
 			};
 		};
 	};
-	class Vehicles
+	class Markers
 	{
-		items=1;
+		items=3;
 		class Item0
 		{
-			position[]={3583.8857,19,3617.9041};
-			id=2;
-			side="EMPTY";
-			vehicle="Land_Basketball_01_F";
-			skill=0.60000002;
-			text="ball_1";
+			position[]={3574.3821,19,3625.8171};
+			name="mrk_ball";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={3583.1252,19,3625.8167};
+			name="mrk_ball_1";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={3592.2949,19,3625.8167};
+			name="mrk_ball_2";
+			type="Empty";
 		};
 	};
 };
