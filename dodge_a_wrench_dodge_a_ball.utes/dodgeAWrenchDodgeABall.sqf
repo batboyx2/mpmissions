@@ -16,6 +16,23 @@ bsmrk_standingThrow = {
 	_hitter setVelocity _vectorM;
 	_ball setPos _pos;
 	_ball setVelocity _vectorM;
+	[
+		[
+			_ball,
+			[
+				"Pickup Ball",
+				bsmrk_pickupAndHold,
+				nil,
+				100,
+				true,
+				true
+			]
+		],
+		"addAction",
+		true,
+		false,
+		false
+	] call BIS_fnc_MP;
 };
 
 bsmrk_crouchingThrow = {
