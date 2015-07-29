@@ -11,8 +11,14 @@ if (!isDedicated) then {
 		"KeyDown",
 		{
 			if (((_this select 1) in (actionKeys "Throw")) && (player getVariable "bsmrk_hasDodgeBall")) then {
-				player spawn bsmrk_parseThrow; //don't call me, because I will yell at you if you put me on hold
-				diag_log format["%1 call bsmrk_parseThrow", player];
+				//player spawn bsmrk_parseThrow; //don't call me, because I will yell at you if you put me on hold
+				[
+					player,
+					"bsmrk_parseThrow",
+					false,
+					false,
+					false
+				] call BIS_fnc_MP;
 				true
 			};
 		}
