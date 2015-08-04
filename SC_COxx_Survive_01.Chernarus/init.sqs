@@ -1,0 +1,195 @@
+;Zombie mission init script by Celery
+
+;Init variables
+?isNil "CLY_hordetrigger":CLY_hordetrigger=""
+?isNil "CLY_playerstates":CLY_playerstates=[]
+?isNil "CLY_deadcharacters":CLY_deadcharacters=[]
+?isNil "CLY_alldead":CLY_alldead=false
+?isNil "CLY_cutscene":CLY_cutscene=false
+CLY_playerrating=rating player
+CLY_noises_bark=["dog_bark01","dog_bark02","dog_bark03","dog_bark04","dog_bark05"]
+CLY_noises_yelp=["dog_yelp01","dog_yelp02","dog_yelp03"]
+
+;Determine game version
+CLY_game=""
+?isClass (configFile/"CfgPatches"/"Chernarus"):CLY_game="A2"
+?isClass (configFile/"CfgPatches"/"CA_E"):CLY_game="OA"
+?isClass (configFile/"CfgPatches"/"Chernarus") and isClass (configFile/"CfgPatches"/"CA_E"):CLY_game="CO"
+
+@isDedicated or !isNull player
+
+;Fade sound
+[] spawn {0 fadeSound 0;sleep 2.5;5 fadeSound 1}
+
+;Make markers invisible
+?isServer:{_x setMarkerAlpha 0} forEach ["respawn_civilian"]
+
+;Character specific equipment
+removeAllItems player
+?CLY_game!="A2":call compile "removeBackpack player"
+_addweapon=[]
+?typeOf player=="CDF_Soldier_Officer" and !isMultiplayer:_addweapon=if (CLY_game=="CO") then {[["M1014",3,1],["glock17_EP1",3],"ItemGPS"]} else {[["M1014",4],["Makarov",7],"ItemGPS"]}
+?typeOf player=="CDF_Soldier_Officer" and isMultiplayer:_addweapon=[if (CLY_game=="CO") then {["M1014",4,1]} else {["M1014",6]},"ItemGPS"]
+?typeOf player=="CDF_Soldier":_addweapon=[if (CLY_game=="CO") then {["glock17_EP1",4]} else {["M9",5]}]
+?{typeOf player in _x} count CLY_playerstates==0:[player,"ItemRadio","ItemCompass","ItemWatch","ItemMap"]+_addweapon execVM "cly_addweapon.sqf";_addweapon spawn {sleep 0.1;[player,"ItemRadio","ItemCompass","ItemWatch","ItemMap"]+_this execVM "cly_addweapon.sqf"}
+
+
+
+;Briefing
+?!isMultiplayer:player createDiaryRecord ["Diary",["Credits","<br/>Apocalypse series concept:<br/>Zipper5 and Celery<br/><br/>Dawn of the Apocalypse mission and scripts:<br/>Celery<br/><br/>Voices from:<br/>Thief II: The Metal Age and freesound.org"]]
+?!isMultiplayer and typeOf player=="CDF_Soldier_Officer":player createDiaryRecord ["Diary",["Letter to wife","<br/>If someone should find this on my body, please send this to my wife:<br/><br/>Aneta Orelova<br/>Revolucni 19 A 4<br/>Novigrad<br/><br/><br/>My love,<br/><br/>I'm sorry I couldn't return home. I had to do my part in protecting our motherland and it seems that it was the last thing I would do. I wish it didn't turn out this way. Give my regards to Adolf, Alexej and Alena. Thank you for the years of happiness that you have shared with me. I love you, honey.<br/><br/>Your faithful husband,<br/>Oleg"]]
+?!isMultiplayer and typeOf player=="CDF_Soldier_Officer":player createDiaryRecord ["Diary",["Diary","<br/>I don't know what to say. I wish I could mourn the loss of my men but my mind is completely numb. Even so, there is a job to be done and I intend to carry it out, for the sake of my family."]]
+?!isMultiplayer:player createDiaryRecord ["Diary",["Briefing","<br/>A part of South Zagoria has been overrun in the cover of a Sunday night's darkness. Your company was taken by surprise and every man is either dead or hiding. There is no way to get south so you have to alert the rest of the country by broadcasting a warning at the <marker name='obj1'>Green Mountain broadcasting tower</marker>."]]
+?isMultiplayer:player createDiaryRecord ["Diary",["Briefing","<br/>A part of South Zagoria has been overrun in the cover of a Sunday night's darkness. Your company was taken by surprise and every man is either dead or hiding. There is no way to get south so you have to alert the rest of the country by broadcasting a warning at the <marker name='obj1'>Green Mountain broadcasting tower</marker>."]]
+?isMultiplayer and typeOf player=="CDF_Soldier_Officer":player createDiaryRecord ["Diary",["Diary","<br/>I don't know what to say. I wish I could mourn the loss of my men but my mind is completely numb. Even so, there is a job to be done and I intend to carry it out, for the sake of my family."]]
+?isMultiplayer and typeOf player=="CDF_Soldier_Officer":player createDiaryRecord ["Diary",["Letter to wife","<br/>If someone should find this on my body, please send this to my wife:<br/><br/>Aneta Orelova<br/>Revolucni 19 A 4<br/>Novigrad<br/><br/><br/>My love,<br/><br/>I'm sorry I couldn't return home. I had to do my part in protecting our motherland and it seems that it was the last thing I would do. I wish it didn't turn out this way. Give my regards to Adolf, Alexej and Alena. Thank you for the years of happiness that you have shared with me. I love you, honey.<br/><br/>Your faithful husband,<br/>Oleg"]]
+?isMultiplayer:player createDiaryRecord ["Diary",["Credits","<br/>Apocalypse series concept:<br/>Zipper5 and Celery<br/><br/>Dawn of the Apocalypse mission and scripts:<br/>Celery<br/><br/>Voices from:<br/>Thief II: The Metal Age and freesound.org"]]
+
+;Task
+obj1=player createSimpleTask [""]
+obj1 setSimpleTaskDescription ["<br/>Get to the <marker name='obj1'>Green Mountain broadcasting tower</marker> and have it broadcast an emergency announcement on all frequencies.","Broadcast emergency transmission",""]
+player setCurrentTask obj1
+
+
+
+;;;;;;;;;;Serverside only;;;;;;;;;;
+?!isServer:exit
+
+;No conversations
+{_x setVariable ["BIS_noCoreConversations",true,true]} forEach allUnits
+
+;Create HQs for all sides in case the mission doesn't do it
+_hqwest=createCenter west
+_hqeast=createCenter east
+_hqres=createCenter resistance
+_hqciv=createCenter civilian
+
+;Make everyone friendly. Important both for survivor cooperation and proper zombie behavior.
+{_x setFriend [west,1]} forEach [west,east,resistance,civilian]
+{_x setFriend [east,1]} forEach [west,east,resistance,civilian]
+{_x setFriend [resistance,1]} forEach [west,east,resistance,civilian]
+{_x setFriend [civilian,1]} forEach [west,east,resistance,civilian]
+
+;Zombie aggro radius (random between min and max)
+CLY_minaggroradius=20
+CLY_maxaggroradius=120
+
+;Max aggro radius if spawned within one of the triggers in the array
+CLY_altmaxaggroradius=30
+CLY_altmaxaggroradiustriggers=[]
+
+;At what range from a player zombies can spawn and despawn
+CLY_minspawndist=150
+CLY_maxspawndist=750
+CLY_despawndist=CLY_maxspawndist+50
+
+;Triggers that prevent zombies from spawning within their area
+CLY_nospawntriggers=[]
+
+;Distance from victim at which a non-horde zombie gives up the chase
+CLY_chasegiveupdist=400
+
+;Zombie will pick a random victim within this radius from the nearest target
+;Value of 1 or below is multiplier of aggro radius, 0 disables randomization
+CLY_randomvictimradius=0.333
+
+;Motorized vehicle aggro radius multiplier
+CLY_vehicleaggromultiplier=2
+
+;Unarmed aggro radius multiplier
+CLY_unarmedaggromultiplier=0.2
+
+;Default zombies per km^2
+CLY_defaultdensity=30
+?isMultiplayer:CLY_defaultdensity=50
+
+;Minimum and maximum interval between spawning random hordes
+CLY_randomhordemininterval=240
+CLY_randomhordemaxinterval=480
+
+;Minimum and maximum random horde spawning distance from player group
+CLY_randomhordeminspawndist=800
+CLY_randomhordemaxspawndist=1000
+
+;Minimum and maximum number of zombies in a random horde
+CLY_randomhordeminamount=4
+CLY_randomhordemaxamount=8
+
+;Groups reserved for hordes - allows hordes to spawn in very crowded areas
+CLY_hordereservedgroups=80
+
+;Zombie types and their % of automatically generated zombies (must total 100)
+;normal		makes noise when idle, runs to victim when one is spotted
+;surprise		runs to victim when one is spotted, silent until close
+;passive		runs to victim when one is spotted, silent until close, waits still
+;crawler		crawls, silent until very close, aggro radius always maximum
+;passive crawler	crawls, silent until very close, waits still
+;sneaker		crawls, silent until very close, starts running when close, aggro radius always maximum
+;ambusher		crawls, silent until very close, waits still, starts running when victim is in aggro range
+;armored		runs to victim when one is spotted, silent until close, withstands lots of damage
+;slow armored	walks to victim when one is spotted, silent until close, withstands lots of damage
+CLY_zombietypes=[["normal",62],["surprise",30],["passive",0],["crawler",8],["passive crawler",0],["sneaker",0],["ambusher",0],["armored",0],["slow armored",0]]
+
+;Chance of zombie spawning with a lootable bandage
+CLY_zombiebandagechance=0.06*0
+
+;Chance of zombie dropping a random magazine
+CLY_zombiemagazinechance=0.1*0
+
+;Magazines that a zombie can drop
+CLY_zombiemagazines=["17Rnd_9x19_glock17","8Rnd_B_Beneli_Pellets"]
+
+;Debug mode - show markers for prepared positions and active zombies
+CLY_debug=false
+
+;Disable ACE stamina
+ACE_NoStaminaEffects=true
+publicVariable "ACE_NoStaminaEffects"
+
+;Sound arrays
+CLY_noises_idle=["idle1","idle2","idle3","idle4","idle5","idle6","idle7","idle8"]
+CLY_noises_chase=["chase1","chase2","chase3","chase4","chase5","chase6","chase7","chase8"]
+CLY_noises_attack=["attack1","attack2","attack3","attack4"]
+CLY_noises_die=["die1","die2"]
+CLY_noises_scream=["scream1","scream2","scream3"]
+
+;Unit classes that can be used as zombies
+;Make subarrays for a group of similar units to make the whole group have the same chance to appear as a single unit
+?CLY_game=="CO":CLY_zombieclasses=[["Citizen1","Citizen2","Citizen3","Citizen4"],["Profiteer1","Profiteer2","Profiteer3","Profiteer4"],["Rocker1","Rocker2","Rocker3","Rocker4"],["Ins_Villager3","Ins_Villager4"],["Ins_Woodlander1","Ins_Woodlander2","Ins_Woodlander3"],["Ins_Worker2"],["Ins_Lopotev","Assistant","Doctor","Pilot_EP1","Policeman","Priest","SchoolTeacher","TK_CIV_Worker01_EP1","TK_CIV_Worker02_EP1"],["Ins_Soldier_1","Ins_Soldier_CO","Ins_Bardak",["Ins_Soldier_Crew","Ins_Lopotev"]],"CDF_Soldier","CDF_Soldier_Militia","CDF_Soldier_TL","CDF_Soldier_Light",["CDF_Soldier_Crew","CDF_Soldier_Officer"]]
+?CLY_game=="A2":CLY_zombieclasses=["Ins_Villager3","Ins_Woodlander3","Ins_Woodlander2","Ins_Worker2","Ins_Villager4","Ins_Woodlander1","Ins_Lopotev",["Ins_Soldier_1","Ins_Soldier_Crew","Ins_Soldier_CO","Ins_Bardak"],"CDF_Soldier","CDF_Soldier_Militia","CDF_Soldier_Crew","CDF_Soldier_Light"]
+
+;Armored zombie classes
+CLY_armoredzombieclasses=["MVD_Soldier"]
+
+;What classes can have which faces (a = Asian, b = African, c = European, d = Arab/Persian)
+CLY_zombieclasses_a=[]
+CLY_zombieclasses_b=[]
+CLY_zombieclasses_c=[]
+CLY_zombieclasses_d=[]
+
+;Zombie faces
+CLY_faces=[]
+CLY_faces_a=["Face58_camo1"]
+CLY_faces_b=[]
+CLY_faces_c=[]
+CLY_faces_d=[]
+for "_x" from 1 to 107 do {_0=if (_x<10) then {"0"} else {""};_face=format ["Face%1%2_camo1",_0,_x];CLY_faces=CLY_faces+[_face]}
+for "_x" from 1 to 20 do {_0=if (_x<10) then {"0"} else {""};_face=format ["Face%1%2_camo1_EP1",_0,_x];CLY_faces=CLY_faces+[_face];CLY_faces_d=CLY_faces_d+[_face]}
+for "_x" from 108 to 124 do {_face=format ["Face%1_camo1_PMC",_x];CLY_faces=CLY_faces+[_face];CLY_faces_a=CLY_faces_a+[_face]}
+for "_x" from 26 to 40 do {_face=format ["Face%1_camo1",_x];CLY_faces_b=CLY_faces_b+[_face]}
+for "_x" from 78 to 86 do {_face=format ["Face%1_camo1",_x];if (_face!="Face85_camo1") then {CLY_faces_b=CLY_faces_b+[_face]}}
+for "_x" from 1 to 107 do {_0=if (_x<10) then {"0"} else {""};_face=format ["Face%1%2_camo1",_0,_x];if (_face!="Face58_camo1" and !(_face in CLY_faces_b)) then {CLY_faces_c=CLY_faces_c+[_face]}}
+
+;Default face type for uncategorized classes
+CLY_faces_default=CLY_faces_c
+
+;Alternate textures
+CLY_z_alttexturemodels=["\ca\characters2\civil\Worker\Worker","\ca\characters2\civil\Woodlander\Woodlander","\ca\characters2\civil\Villager\Villager"]
+CLY_z_alttextures=[["\ca\characters2\civil\worker\data\worker_co.paa","\ca\characters2\civil\worker\data\Worker_v2_CO.paa","\ca\characters2\civil\worker\data\Worker_v3_CO.paa","\ca\characters2\civil\worker\data\Worker_v4_CO.paa"],["\ca\characters2\civil\woodlander\data\woodlander_co.paa","\ca\characters2\civil\woodlander\data\woodlander_v2_co.paa","\ca\characters2\civil\woodlander\data\woodlander_v3_co.paa","\ca\characters2\civil\woodlander\data\woodlander_v4_co.paa"],["\ca\characters2\civil\villager\data\villager_co.paa","\ca\characters2\civil\villager\data\villager_v2_co.paa","\ca\characters2\civil\villager\data\villager_v3_co.paa","\ca\characters2\civil\villager\data\villager_v4_co.paa"]]
+
+execVM "zombie_scripts\cly_z_unitupdate.sqf"
+execVM "cly_playerstates.sqf"
+[] exec "zombie_scripts\cly_z_randomhorde.sqs"
+[] exec "jipresumepos.sqs"
+
+exit
