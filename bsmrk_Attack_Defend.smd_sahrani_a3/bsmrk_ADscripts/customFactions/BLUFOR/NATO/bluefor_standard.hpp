@@ -98,7 +98,7 @@ class blu_f {
         vest[] = {"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"}; /// randomized
         headgear[] = {"H_HelmetB","H_HelmetSpecB"}; /// randomized
         backpack[] = {"B_AssaultPack_mcamo"}; /// randomized
-        backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
+        backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item"};
         weapons[] = {WEST_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
         handguns[] = {}; /// randomized
@@ -122,7 +122,7 @@ class blu_f {
     class B_Soldier_SL_F: B_Officer_F {// SL
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","Binocular"};
         items[] = {"ACE_MapTools","ACRE_PRC148", "ACRE_PRC343"};
-        backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
+        backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item"};
     };
 	
     class B_soldier_UAV_F: B_Soldier_F {
@@ -190,14 +190,14 @@ class blu_f {
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
         launchers[] = {WEST_MAT}; /// randomized
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine"};
         backpackItems[] = {WEST_MAT_MAG};
     };
 	
     class B_Soldier_AAT_F: B_Soldier_F {// MAT Spotter/Ammo Bearer
         backpackItems[] = {WEST_MAT_MAG};
         linkedItems[] += {"ACE_Vector"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACRE_PRC148"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
     };
 	
     class B_soldier_AA_F: B_Soldier_F {// SAM Gunner
@@ -216,14 +216,14 @@ class blu_f {
     class B_support_Mort_F: B_Soldier_F {// Mortar Gunner
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine"};
         backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
     };
 	
     class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
         backpack[] = {"B_Mortar_01_support_F"}; /// randomized
         linkedItems[] += {"ACE_Vector"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACRE_PRC148"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
     };
 	
     class B_spotter_F {// Spotter
@@ -232,7 +232,7 @@ class blu_f {
         headgear[] = {"H_Watchcap_camo"}; /// randomized
         weapons[] = {WEST_SPOTTER}; /// randomized
         magazines[] = {WEST_SPOTTER_MAG,WEST_SMOKE_WHITE,WEST_GRENADE};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS","LaserDesignator"};
         attachments[] = {"optic_Holosight","acc_pointer_IR"};
     };
@@ -243,7 +243,7 @@ class blu_f {
         headgear[] = {"H_Watchcap_camo"}; /// randomized
         weapons[] = {WEST_SNIPER}; /// randomized
         magazines[] = {WEST_SNIPER_MAG,WEST_SMOKE_WHITE,WEST_GRENADE};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS"};
         attachments[] = {"optic_SOS","acc_pointer_IR"};
     };
@@ -259,7 +259,7 @@ class blu_f {
         weapons[] = {WEST_SMG}; /// randomized
         magazines[] = {WEST_SMG_MAG,WEST_SMOKE_WHITE};
         backpackItems[] += {"ACE_key_west","ACRE_PRC117F"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","NVgoggles"};
     };
 	
@@ -279,7 +279,7 @@ class blu_f {
         backpack[] = {"B_Carryall_mcamo"};
         weapons[] = {WEST_CARBINE}; /// randomized
         magazines[] = {WEST_CARBINE_MAG,WEST_SMOKE_WHITE};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine"};
         backpackItems[] += {"ACE_key_west","ACRE_PRC148","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS"};
     };
