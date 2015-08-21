@@ -5,25 +5,28 @@ class Mission
 	{
 		"lop_faction_aa",
 		"aia_takistan_config",
-		"lop_faction_tak_civ"
+		"lop_faction_tak_civ",
+		"A3_Modules_F_Curator_Curator",
+		"MNP_INDE_Config"
 	};
 	addOnsAuto[]=
 	{
 		"lop_faction_aa",
 		"lop_faction_tak_civ",
+		"A3_Modules_F_Curator_Curator",
+		"MNP_INDE_Config",
 		"aia_takistan_config"
 	};
 	randomSeed=9299583;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.40000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.40000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		startWeather=0;
+		startWind=0;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0;
+		wavesForced=1;
+		windForced=1;
 		year=2009;
 		day=28;
 		hour=16;
@@ -33,7 +36,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=25;
+		items=27;
 		class Item0
 		{
 			side="WEST";
@@ -43,7 +46,7 @@ class Mission
 				class Item0
 				{
 					position[]={2623.1436,197.71078,5103.0449};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					id=0;
 					side="WEST";
 					vehicle="LOP_AA_Police_TL";
@@ -51,6 +54,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="blu_pol_1_1";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_03"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_CableTie"";};  this addItemToUniform ""rhs_mag_mk3a2"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_MilCap_blue"";  this addWeapon ""hgun_P07_F"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this setFace ""PersianHead_A3_02"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Police Commander";
 				};
 			};
@@ -64,7 +68,7 @@ class Mission
 				class Item0
 				{
 					position[]={2623.1343,197.80544,5100.9521};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=1;
 					side="WEST";
@@ -73,12 +77,13 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="blu_pol_2_1";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_03"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_CableTie"";};  this addItemToUniform ""rhs_mag_mk3a2"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_MilCap_blue"";  this addWeapon ""hgun_P07_F"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this setFace ""PersianHead_A3_02"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Police Officer [Team 1]";
 				};
 				class Item1
 				{
 					position[]={2624.9841,197.66895,5101.9795};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=2;
 					side="WEST";
@@ -86,6 +91,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="blu_pol_2_2";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_03"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_CableTie"";};  this addItemToUniform ""rhs_mag_mk3a2"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_MilCap_blue"";  this addWeapon ""hgun_P07_F"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this setFace ""PersianHead_A3_02"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Police Officer [Team 1]";
 				};
 			};
@@ -99,7 +105,7 @@ class Mission
 				class Item0
 				{
 					position[]={2624.0898,197.84103,5099.1641};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=3;
 					side="WEST";
@@ -108,12 +114,13 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="blu_pol_3_1";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_03"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_CableTie"";};  this addItemToUniform ""rhs_mag_mk3a2"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_MilCap_blue"";  this addWeapon ""hgun_P07_F"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this setFace ""PersianHead_A3_02"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Police Officer [Team 2]";
 				};
 				class Item1
 				{
 					position[]={2625.9392,197.70441,5100.1943};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=4;
 					side="WEST";
@@ -121,6 +128,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="blu_pol_3_2";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_03"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_CableTie"";};  this addItemToUniform ""rhs_mag_mk3a2"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_MilCap_blue"";  this addWeapon ""hgun_P07_F"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this setFace ""PersianHead_A3_02"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Police Officer [Team 2]";
 				};
 			};
@@ -134,7 +142,7 @@ class Mission
 				class Item0
 				{
 					position[]={2625.1409,197.86546,5097.5815};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=5;
 					side="WEST";
@@ -143,12 +151,13 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="blu_pol_4_1";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_03"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_CableTie"";};  this addItemToUniform ""rhs_mag_mk3a2"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_MilCap_blue"";  this addWeapon ""hgun_P07_F"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this setFace ""PersianHead_A3_02"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Police Officer [Team 3]";
 				};
 				class Item1
 				{
 					position[]={2626.99,197.72861,5098.5977};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=6;
 					side="WEST";
@@ -156,6 +165,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="blu_pol_4_2";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_03"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_CableTie"";};  this addItemToUniform ""rhs_mag_mk3a2"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_MilCap_blue"";  this addWeapon ""hgun_P07_F"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this setFace ""PersianHead_A3_02"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Police Officer [Team 3]";
 				};
 			};
@@ -169,7 +179,7 @@ class Mission
 				class Item0
 				{
 					position[]={2626.0942,197.90309,5095.7847};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=7;
 					side="WEST";
@@ -178,12 +188,13 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="blu_pol_5_1";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_03"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_CableTie"";};  this addItemToUniform ""rhs_mag_mk3a2"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_MilCap_blue"";  this addWeapon ""hgun_P07_F"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this setFace ""PersianHead_A3_02"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Police Officer [Team 4]";
 				};
 				class Item1
 				{
 					position[]={2627.9426,197.76671,5096.8115};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=8;
 					side="WEST";
@@ -191,6 +202,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="blu_pol_5_2";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_03"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_CableTie"";};  this addItemToUniform ""rhs_mag_mk3a2"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_MilCap_blue"";  this addWeapon ""hgun_P07_F"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this setFace ""PersianHead_A3_02"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Police Officer [Team 4]";
 				};
 			};
@@ -204,7 +216,7 @@ class Mission
 				class Item0
 				{
 					position[]={2628.0137,197.43651,5103.7021};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=9;
 					side="WEST";
@@ -213,12 +225,13 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="blu_com_1_1";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_01"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""hlc_30Rnd_545x39_B_AK"";};  this addVest ""LOP_V_CarrierRig_OLV"";  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""hlc_30Rnd_545x39_B_AK"";};  this addHeadgear ""ibr_mol_redberet"";  this addGoggles ""TRYK_kio_balaclava_ESS"";  this addWeapon ""hlc_rifle_aku12"";  this addPrimaryWeaponItem ""hlc_muzzle_545SUP_AK"";  this addPrimaryWeaponItem ""acc_flashlight"";  this addWeapon ""Binocular"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ACRE_PRC152"";  this setFace ""PersianHead_A3_01"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Commando";
 				};
 				class Item1
 				{
 					position[]={2629.6128,197.38699,5102.9702};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=10;
 					side="WEST";
@@ -226,12 +239,13 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="blu_com_1_2";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_01"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""hlc_30Rnd_545x39_B_AK"";};  this addVest ""LOP_V_CarrierRig_OLV"";  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""hlc_30Rnd_545x39_B_AK"";};  this addHeadgear ""ibr_mol_redberet"";  this addGoggles ""TRYK_kio_balaclava_ESS"";  this addWeapon ""hlc_rifle_aku12"";  this addPrimaryWeaponItem ""hlc_muzzle_545SUP_AK"";  this addPrimaryWeaponItem ""acc_flashlight"";  this addWeapon ""Binocular"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ACRE_PRC152"";  this setFace ""PersianHead_A3_01"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Commando";
 				};
 				class Item2
 				{
 					position[]={2629.7739,197.29124,5104.6689};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=11;
 					side="WEST";
@@ -239,12 +253,13 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="blu_com_1_3";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_01"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""hlc_30Rnd_545x39_B_AK"";};  this addVest ""LOP_V_CarrierRig_OLV"";  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""hlc_30Rnd_545x39_B_AK"";};  this addHeadgear ""ibr_mol_redberet"";  this addGoggles ""TRYK_kio_balaclava_ESS"";  this addWeapon ""hlc_rifle_aku12"";  this addPrimaryWeaponItem ""hlc_muzzle_545SUP_AK"";  this addPrimaryWeaponItem ""acc_flashlight"";  this addWeapon ""Binocular"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ACRE_PRC152"";  this setFace ""PersianHead_A3_01"";  this setSpeaker ""Male03PER"";";
 					description="Afghani Commando";
 				};
 				class Item3
 				{
 					position[]={2631.3735,197.24284,5103.9385};
-					azimut=-28.968231;
+					azimut=-28.968201;
 					special="NONE";
 					id=12;
 					side="WEST";
@@ -252,7 +267,8 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="blu_com_1_4";
-					description="Afghani Commando";
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""LOP_U_AA_Fatigue_01"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""rhsusf_5Rnd_300winmag_xm2010"";};  this addVest ""LOP_V_CarrierRig_OLV"";  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  for ""_i"" from 1 to 2 do {this addItemToVest ""HandGrenade"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhsusf_5Rnd_300winmag_xm2010"";};  this addBackpack ""B_AssaultPack_blk"";  for ""_i"" from 1 to 10 do {this addItemToBackpack ""ACE_morphine"";};  for ""_i"" from 1 to 20 do {this addItemToBackpack ""ACE_fieldDressing"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""ACE_epinephrine"";};  for ""_i"" from 1 to 2 do {this addItemToBackpack ""ACE_bloodIV_250"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""ACE_CableTie"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""rhsusf_5Rnd_300winmag_xm2010"";};  this addHeadgear ""ibr_mol_redberet"";  this addGoggles ""TRYK_kio_balaclava_ESS"";  this addWeapon ""rhs_weap_XM2010"";  this addPrimaryWeaponItem ""rhsusf_acc_M2010S"";  this addPrimaryWeaponItem ""acc_flashlight"";  this addPrimaryWeaponItem ""optic_DMS"";  this addWeapon ""Binocular"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ACRE_PRC152"";  this setFace ""PersianHead_A3_01"";  this setSpeaker ""Male03PER"";";
+					description="Afghani Commando Marksman";
 				};
 			};
 		};
@@ -671,6 +687,240 @@ class Mission
 					skill=0.60000002;
 					text="civ_18";
 					description="Civilian";
+				};
+			};
+		};
+		class Item25
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2637.8118,196.43343,5122.0674};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="76561198015013044";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=32;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="cur_zeus";
+				};
+			};
+		};
+		class Item26
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={1454.0171,237.85851,5776.4941};
+					azimut=29.7777;
+					id=33;
+					side="GUER";
+					vehicle="MNP_ASA_Soldier_O";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="0 = this spawn {sleep 5; removeAllWeapons _this;  removeAllItems _this;  removeAllAssignedItems _this;  removeUniform _this;  removeVest _this;  removeBackpack _this;  removeHeadgear _this;  removeGoggles _this;  _this forceAddUniform ""ibr_afr_cop_uniform"";  for ""_i"" from 1 to 2 do {_this addItemToUniform ""30Rnd_556x45_Stanag"";};  _this addVest ""TRYK_V_Bulletproof_BL"";  _this addHeadgear ""MNP_Helmet_PAGST_UN"";  _this addWeapon ""hlc_rifle_Colt727"";  _this linkItem ""ItemMap"";  _this linkItem ""ItemCompass"";  _this linkItem ""ItemWatch"";  _this linkItem ""ItemRadio"";};";
+				};
+				class Item1
+				{
+					position[]={1449.1737,238.14906,5778.1099};
+					azimut=29.7777;
+					id=34;
+					side="GUER";
+					vehicle="MNP_ASA_Soldier_AR";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="0 = this spawn {sleep 5; removeAllWeapons _this;  removeAllItems _this;  removeAllAssignedItems _this;  removeUniform _this;  removeVest _this;  removeBackpack _this;  removeHeadgear _this;  removeGoggles _this;  _this forceAddUniform ""ibr_afr_cop_uniform"";  for ""_i"" from 1 to 2 do {_this addItemToUniform ""30Rnd_556x45_Stanag"";};  _this addVest ""TRYK_V_Bulletproof_BL"";  _this addHeadgear ""MNP_Helmet_PAGST_UN"";  _this addWeapon ""hlc_rifle_Colt727"";  _this linkItem ""ItemMap"";  _this linkItem ""ItemCompass"";  _this linkItem ""ItemWatch"";  _this linkItem ""ItemRadio"";};";
+				};
+				class Item2
+				{
+					position[]={1457.8566,237.50447,5773.1431};
+					azimut=29.7777;
+					id=35;
+					side="GUER";
+					vehicle="MNP_ASA_Soldier_AT";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="0 = this spawn {sleep 5; removeAllWeapons _this;  removeAllItems _this;  removeAllAssignedItems _this;  removeUniform _this;  removeVest _this;  removeBackpack _this;  removeHeadgear _this;  removeGoggles _this;  _this forceAddUniform ""ibr_afr_cop_uniform"";  for ""_i"" from 1 to 2 do {_this addItemToUniform ""30Rnd_556x45_Stanag"";};  _this addVest ""TRYK_V_Bulletproof_BL"";  _this addHeadgear ""MNP_Helmet_PAGST_UN"";  _this addWeapon ""hlc_rifle_Colt727"";  _this linkItem ""ItemMap"";  _this linkItem ""ItemCompass"";  _this linkItem ""ItemWatch"";  _this linkItem ""ItemRadio"";};";
+				};
+				class Item3
+				{
+					position[]={1444.3395,238.41609,5779.7241};
+					azimut=29.7777;
+					id=36;
+					side="GUER";
+					vehicle="MNP_ASA_Soldier_AT";
+					skill=0.40000001;
+					init="0 = this spawn {sleep 5; removeAllWeapons _this;  removeAllItems _this;  removeAllAssignedItems _this;  removeUniform _this;  removeVest _this;  removeBackpack _this;  removeHeadgear _this;  removeGoggles _this;  _this forceAddUniform ""ibr_afr_cop_uniform"";  for ""_i"" from 1 to 2 do {_this addItemToUniform ""30Rnd_556x45_Stanag"";};  _this addVest ""TRYK_V_Bulletproof_BL"";  _this addHeadgear ""MNP_Helmet_PAGST_UN"";  _this addWeapon ""hlc_rifle_Colt727"";  _this linkItem ""ItemMap"";  _this linkItem ""ItemCompass"";  _this linkItem ""ItemWatch"";  _this linkItem ""ItemRadio"";};";
+				};
+				class Item4
+				{
+					position[]={1461.7026,237.18121,5769.7866};
+					azimut=29.7777;
+					id=37;
+					side="GUER";
+					vehicle="MNP_ASA_Soldier_F";
+					skill=0.40000001;
+					init="0 = this spawn {sleep 5; removeAllWeapons _this;  removeAllItems _this;  removeAllAssignedItems _this;  removeUniform _this;  removeVest _this;  removeBackpack _this;  removeHeadgear _this;  removeGoggles _this;  _this forceAddUniform ""ibr_afr_cop_uniform"";  for ""_i"" from 1 to 2 do {_this addItemToUniform ""30Rnd_556x45_Stanag"";};  _this addVest ""TRYK_V_Bulletproof_BL"";  _this addHeadgear ""MNP_Helmet_PAGST_UN"";  _this addWeapon ""hlc_rifle_Colt727"";  _this linkItem ""ItemMap"";  _this linkItem ""ItemCompass"";  _this linkItem ""ItemWatch"";  _this linkItem ""ItemRadio"";};";
+				};
+			};
+			class Waypoints
+			{
+				items=13;
+				class Item0
+				{
+					position[]={1454.0167,237.85548,5776.4497};
+					completitionRadius=10;
+					formation="COLUMN";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={1479.7802,247.64729,5844.2495};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={1475.9133,255.72832,5919.9937};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={1480.6058,247.64508,5844.2007};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={1455.198,237.87112,5777.1348};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item5
+				{
+					position[]={1602.7628,231.27379,5699.437};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item6
+				{
+					position[]={1508.5396,244.42178,5550.7188};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item7
+				{
+					position[]={1601.3621,231.3476,5700.377};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item8
+				{
+					position[]={1681.2062,228.36879,5674.1118};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item9
+				{
+					position[]={1777.8619,227.90091,5670.043};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item10
+				{
+					position[]={1679.3844,228.37653,5673.4873};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item11
+				{
+					position[]={1598.788,231.43143,5701.0796};
+					completitionRadius=10;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item12
+				{
+					position[]={1454.0171,237.85851,5776.4941};
+					id=33;
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
