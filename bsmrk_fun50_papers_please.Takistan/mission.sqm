@@ -1,0 +1,765 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"lop_faction_aa",
+		"aia_takistan_config",
+		"lop_faction_tak_civ"
+	};
+	addOnsAuto[]=
+	{
+		"lop_faction_aa",
+		"lop_faction_tak_civ",
+		"aia_takistan_config"
+	};
+	randomSeed=9299583;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.40000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.40000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=25;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2623.1436,197.71078,5103.0449};
+					azimut=-28.968231;
+					id=0;
+					side="WEST";
+					vehicle="LOP_AA_Police_TL";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="blu_pol_1_1";
+					description="Afghani Police Commander";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={2623.1343,197.80544,5100.9521};
+					azimut=-28.968231;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="LOP_AA_Police_TL";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="blu_pol_2_1";
+					description="Afghani Police Officer [Team 1]";
+				};
+				class Item1
+				{
+					position[]={2624.9841,197.66895,5101.9795};
+					azimut=-28.968231;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="LOP_AA_Police_Rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="blu_pol_2_2";
+					description="Afghani Police Officer [Team 1]";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={2624.0898,197.84103,5099.1641};
+					azimut=-28.968231;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="LOP_AA_Police_TL";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="blu_pol_3_1";
+					description="Afghani Police Officer [Team 2]";
+				};
+				class Item1
+				{
+					position[]={2625.9392,197.70441,5100.1943};
+					azimut=-28.968231;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="LOP_AA_Police_Rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="blu_pol_3_2";
+					description="Afghani Police Officer [Team 2]";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={2625.1409,197.86546,5097.5815};
+					azimut=-28.968231;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="LOP_AA_Police_TL";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="blu_pol_4_1";
+					description="Afghani Police Officer [Team 3]";
+				};
+				class Item1
+				{
+					position[]={2626.99,197.72861,5098.5977};
+					azimut=-28.968231;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="LOP_AA_Police_Rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="blu_pol_4_2";
+					description="Afghani Police Officer [Team 3]";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={2626.0942,197.90309,5095.7847};
+					azimut=-28.968231;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="LOP_AA_Police_TL";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="blu_pol_5_1";
+					description="Afghani Police Officer [Team 4]";
+				};
+				class Item1
+				{
+					position[]={2627.9426,197.76671,5096.8115};
+					azimut=-28.968231;
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="LOP_AA_Police_Rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="blu_pol_5_2";
+					description="Afghani Police Officer [Team 4]";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={2628.0137,197.43651,5103.7021};
+					azimut=-28.968231;
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="LOP_AA_Infantry_TL";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="blu_com_1_1";
+					description="Afghani Commando";
+				};
+				class Item1
+				{
+					position[]={2629.6128,197.38699,5102.9702};
+					azimut=-28.968231;
+					special="NONE";
+					id=10;
+					side="WEST";
+					vehicle="LOP_AA_Infantry_Rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="blu_com_1_2";
+					description="Afghani Commando";
+				};
+				class Item2
+				{
+					position[]={2629.7739,197.29124,5104.6689};
+					azimut=-28.968231;
+					special="NONE";
+					id=11;
+					side="WEST";
+					vehicle="LOP_AA_Infantry_Rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="blu_com_1_3";
+					description="Afghani Commando";
+				};
+				class Item3
+				{
+					position[]={2631.3735,197.24284,5103.9385};
+					azimut=-28.968231;
+					special="NONE";
+					id=12;
+					side="WEST";
+					vehicle="LOP_AA_Infantry_Marksman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="blu_com_1_4";
+					description="Afghani Commando";
+				};
+			};
+		};
+		class Item6
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1481.5908,241.69081,5803.4023};
+					azimut=-27.517174;
+					special="NONE";
+					id=13;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_01";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_1";
+					description="Civilian";
+				};
+			};
+		};
+		class Item7
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1485.9795,237.09802,5771.5107};
+					azimut=-109.739;
+					special="NONE";
+					id=14;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_02";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_2";
+					description="Civilian";
+				};
+			};
+		};
+		class Item8
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1504.8997,236.16402,5761.3682};
+					azimut=-180.028;
+					special="NONE";
+					id=15;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_04";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_3";
+					description="Civilian";
+				};
+			};
+		};
+		class Item9
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1514.9448,239.83812,5783.2144};
+					azimut=57.214401;
+					special="NONE";
+					id=16;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_01";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_4";
+					description="Civilian";
+				};
+			};
+		};
+		class Item10
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1455.8435,237.77774,5776.1929};
+					azimut=-27.5172;
+					special="NONE";
+					id=17;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_01";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ";
+					description="Civilian";
+				};
+			};
+		};
+		class Item11
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1534.5477,234.81703,5752.397};
+					azimut=-259.37656;
+					special="NONE";
+					id=18;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_02";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_5";
+					description="Civilian";
+				};
+			};
+		};
+		class Item12
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1509.9709,234.93993,5734.1592};
+					azimut=85.805496;
+					special="NONE";
+					id=19;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_04";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_6";
+					description="Civilian";
+				};
+			};
+		};
+		class Item13
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1455.3446,236.57469,5753.2813};
+					azimut=81.615303;
+					special="NONE";
+					id=20;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_01";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_7";
+					description="Civilian";
+				};
+			};
+		};
+		class Item14
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1407.1094,240.96268,5786.5806};
+					azimut=-79.634903;
+					special="NONE";
+					id=21;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_02";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_8";
+					description="Civilian";
+				};
+			};
+		};
+		class Item15
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1524.6279,232.49901,5697.9346};
+					azimut=-226.616;
+					special="NONE";
+					id=22;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_04";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_9";
+					description="Civilian";
+				};
+			};
+		};
+		class Item16
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1559.4125,231.88734,5701.3296};
+					azimut=16.4403;
+					special="NONE";
+					id=23;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_02";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_10";
+					description="Civilian";
+				};
+			};
+		};
+		class Item17
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1580.8622,231.92331,5733.6641};
+					azimut=-164.16701;
+					special="NONE";
+					id=24;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_02";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_11";
+					description="Civilian";
+				};
+			};
+		};
+		class Item18
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1603.2695,231.63696,5707.4121};
+					azimut=-222.16901;
+					special="NONE";
+					id=25;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_04";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_12";
+					description="Civilian";
+				};
+			};
+		};
+		class Item19
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1576.1189,230.53157,5681.1128};
+					azimut=-27.5172;
+					special="NONE";
+					id=26;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_01";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_13";
+					description="Civilian";
+				};
+			};
+		};
+		class Item20
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1542.115,229.84227,5652.3726};
+					azimut=-126.455;
+					special="NONE";
+					id=27;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_02";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_14";
+					description="Civilian";
+				};
+			};
+		};
+		class Item21
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1536.4565,234.08234,5611.7544};
+					azimut=53.1521;
+					special="NONE";
+					id=28;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_04";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_15";
+					description="Civilian";
+				};
+			};
+		};
+		class Item22
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1635.4526,229.43782,5704.1655};
+					azimut=-27.5172;
+					special="NONE";
+					id=29;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_01";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_16";
+					description="Civilian";
+				};
+			};
+		};
+		class Item23
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1657.1038,228.85895,5690.8052};
+					azimut=91.268799;
+					special="NONE";
+					id=30;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_02";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_17";
+					description="Civilian";
+				};
+			};
+		};
+		class Item24
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1601.3184,228.90695,5634.9219};
+					azimut=-209.29582;
+					special="NONE";
+					id=31;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_04";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_18";
+					description="Civilian";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"aia_takistan_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_takistan_config"
+	};
+	randomSeed=13917011;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.40000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.40000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"aia_takistan_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_takistan_config"
+	};
+	randomSeed=15190609;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.40000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.40000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"aia_takistan_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_takistan_config"
+	};
+	randomSeed=4061525;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.40000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.40000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

@@ -1,0 +1,231 @@
+
+// ============================================================================================
+
+// TAW Tonic - View Distance Script
+// Credits: TAW Tonic
+
+#include "taw_vd\dialog.hpp"
+
+// ============================================================================================
+
+//  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off)
+// MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. <- That legacy code.
+
+forceRotorLibSimulation = 0;
+
+// ============================================================================================
+
+// F3 - Mission Header
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 457;
+};
+
+// ============================================================================================
+
+// F3 - Loading Screen
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+onLoadName = "Papers Please";
+onLoadMission = "Sprechen sie Deutsch?";
+author = "Bismarck";
+loadScreen = "loadLogo.jpg";
+
+// ============================================================================================
+
+// BWMF Gear
+//Credits:headswe, Pabst, Zerith
+
+//#include "CfgLoadouts.hpp"
+
+// ============================================================================================
+
+//Extended Event Handlers:
+
+
+// ============================================================================================
+
+// F3 - Debug Console
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+enableDebugConsole = 1;
+
+// ============================================================================================
+
+// F3 - Respawn Settings
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+// Group respawn test
+respawn = 1;
+respawndelay = 3;
+respawnOnStart = 0;
+respawnTemplates[] = {"Seagull","f_spectator","f_JIP"};
+
+
+// ============================================================================================
+
+// F3 - Start of Params code blocks.
+// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+
+class Params
+{
+
+// ============================================================================================
+
+// F3 - Debug Mode
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// WARNING: DO NOT DISABLE THIS COMPONENT
+
+    class f_param_debugMode
+    {
+            title = "$STR_f_param_debugMode";
+            values[] = {0,1};
+            texts[] = {"Off","On"};
+            default = 0;
+            code = "f_var_debugMode = %1";
+    };
+
+// ============================================================================================
+
+// F3 - Radio Systems Support
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+    class f_param_radios
+    {
+            title = "Radio System";
+            values[] = {0,1,2};
+            texts[] = {"Off","ACRE2","TFR"};
+            default = 1;
+            code = "f_var_radios = %1";
+    };
+
+// ============================================================================================
+
+// F3 - End of Params code blocks.
+// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+
+};
+
+// ============================================================================================
+
+// F3 - Briefing Template
+// Credits: BIS - Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Game Over";
+		subtitle = "";
+		description = "The mission has ended.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End2
+	{
+		title = "Game Over";
+		subtitle = "";
+		description = "The mission has ended.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End3
+	{
+		title = "Game Over";
+		subtitle = "";
+		description = "The mission has ended.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End4
+	{
+		title = "Game Over";
+		subtitle = "";
+		description = "The mission has ended.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End5
+	{
+		title = "Game Over";
+		subtitle = "";
+		description = "The mission has ended.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End6
+	{
+		title = "Game Over";
+		subtitle = "";
+		description = "The mission has ended.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+};
+
+// ============================================================================================
+
+// F3 - Respawn Templates
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+class CfgRespawnTemplates
+{
+	// F3 Spectator Script
+	class f_Spectator
+	{
+		onPlayerRespawn = "f_fnc_CamInit";
+	};
+  	//Overwrite Vanilla Seagull
+    class Seagull
+    {
+        onPlayerRespawn = "";
+    };
+	// F3 JIP Menu
+	class f_JIP
+	{
+		onPlayerRespawn = "f\JIP\f_JIP_playerRespawn.sqf";
+	};
+};
+
+// ============================================================================================
+
+// F3 - Menu components
+// DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
+
+// Menu components for the JIP Menu
+//#include "f\JIP\f_JIP_kitpicker.h"
+//#include "f\JIP\f_JIP_grppicker.h"
+
+// Menu components for the Spectator Script
+#include "f\spect\config.hpp"
+
+// ============================================================================================
+
+// F3 - Functions
+// DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
+// Cleaned up. All the functions are located in f\config.hpp. Don't go looking.
+
+class CfgFunctions
+{
+	#include "ws_fnc\config.hpp"
+	#include "taw_vd\CfgFunctions.hpp"
+
+
+	#include "f\config.hpp"
+};

@@ -1,1 +1,0 @@
-[] execVM "bsmrk_tacview\bsmrk_tacInit.sqf";
