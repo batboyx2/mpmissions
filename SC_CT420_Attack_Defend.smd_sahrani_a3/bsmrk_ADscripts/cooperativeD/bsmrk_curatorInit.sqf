@@ -61,18 +61,18 @@ cur_defender addCuratorAddons [
 
 _overall assignCurator cur_defender;
 
+//openCuratorInterface;
 [
 	{openCuratorInterface},
 	"BIS_fnc_spawn",
 	_overall
 ] call BIS_fnc_MP;
-//openCuratorInterface;
 
 
-[format["%1, press your Zeus key and place defenses and/or vehicles. You have three minutes.", name _overall], "systemChat", _overall] call BIS_fnc_MP;
-_time = time;
-waitUntil {time > (_time + 10)};
 
+waitUntil {(!isNil "PABST_ADMIN_SAFESTART_public_isSafe" && {!PABST_ADMIN_SAFESTART_public_isSafe})};
+
+//closeCuratorInterface;
 [
 	{findDisplay 312 closeDisplay 2;},
 	"BIS_fnc_spawn",
