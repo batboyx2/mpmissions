@@ -32,7 +32,6 @@ _defenderLeader execVM "bsmrk_ADscripts\cooperativeD\bsmrk_coopdefZones.sqf";
 waitUntil {!isNil "gv_confirmedMarker"};
 waitUntil {gv_confirmedMarker};
 _defenders execVM "bsmrk_ADscripts\cooperativeD\bsmrk_defenseTeleport.sqf";
-
 // ========================================================
 // This script initializes the object placement system for the defending side's overall commander
 _defenderLeader execVM "bsmrk_ADscripts\cooperativeD\bsmrk_curatorInit.sqf";
