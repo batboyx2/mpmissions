@@ -20,20 +20,18 @@ bsmrk_fnc_getSpawningPositions = {
 		_startPos = [_origin select 0, _origin select 1, 5];
 		_endPos = [(_origin select 0) + _xOffset, (_origin select 1) + _yOffset, 5];
 		
-		if (((ATLToASL _endPos) select 2) > 0) then {
+		if !(surfaceIsWater _endPos) then {
 			//on land
 			if (terrainIntersect [_startPos, _endPos]) then {
 				//on land, no line-of-sight
 				if (isNil format["mrk_%1", _theta]) then {
 					//on land, no line-of-sight, no other points in this direction
-					
-					_positions = _positions + [[_endPos select 0, _endPos select 1, 0]];
-					
 					_mrk = createMarker [format["mrk_%1", _theta], _endPos];
 					_mrk setMarkerShape "ICON";
 					_mrk setMarkerType "hd_dot";
 					_mrk setMarkerColor "ColorGreen";
-					_mrk setMarkerAlpha 0;
+					_mrk setMarkerAlpha 1;
+					_positions = _positions + [format["mrk_%1", _theta]];
 				};
 			};
 		};
@@ -82,7 +80,7 @@ _posArray = [] call bsmrk_fnc_getSpawningPositions;
 _interval = 60;
 
 while {true} do {
-	_pos = _posArray select (floor (random (count _posArray)));
+	_pos = getMarkerPos (_posArray select (floor (random (count _posArray))));
 	[_pos, [bsmrk_param_attackingSide1P, bsmrk_param_attackingSide2P]] call bsmrk_fnc_spawnGroup;
 	sleep _interval;
 };
