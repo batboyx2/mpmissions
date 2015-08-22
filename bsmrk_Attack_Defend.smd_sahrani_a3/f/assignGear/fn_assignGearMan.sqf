@@ -1,4 +1,4 @@
-
+waitUntil {!isNil "bsmrk_param_bluforFactionP"};
 // F3 - F3 Folk ARPS Assign Gear
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================

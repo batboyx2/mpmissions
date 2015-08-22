@@ -285,7 +285,7 @@ class Params
 		texts[] = {"Adversarial", "Cooperative Defense", "Cooperative Attack"};
 		default = 2;
 		isGlobal = 1;
- 		code = "bsmrk_param_gameTypeP = %1";
+ 		code = "bsmrk_param_gameTypeP = %1; publicVariable ""bsmrk_param_gameTypeP"";";
 	};
 	
 	class bsmrk_param_defendingSide1 //10
@@ -295,7 +295,7 @@ class Params
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
 		default = 2;
 		isGlobal = 1;
- 		code = "bsmrk_param_defendingSide1P = %1";
+ 		code = "bsmrk_param_defendingSide1P = %1; publicVariable ""bsmrk_param_defendingSide1P"";";
 	};
 	
 	class bsmrk_param_defendingSide2 //11
@@ -305,7 +305,7 @@ class Params
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
 		default = 2;
 		isGlobal = 1;
- 		code = "bsmrk_param_defendingSide2P = %1";
+ 		code = "bsmrk_param_defendingSide2P = %1; publicVariable ""bsmrk_param_defendingSide2P"";";
 	};
 	
 	class bsmrk_param_attackingSide1 //12
@@ -315,7 +315,7 @@ class Params
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
 		default = 1;
 		isGlobal = 1;
- 		code = "bsmrk_param_attackingSide1P = %1";
+ 		code = "bsmrk_param_attackingSide1P = %1; publicVariable ""bsmrk_param_attackingSide1P"";";
 	};
 	
 	class bsmrk_param_attackingSide2 //13
@@ -325,7 +325,7 @@ class Params
 		texts[] = {"OPFOR", "BLUFOR", "INDFOR"};
 		default = 1;
 		isGlobal = 1;
- 		code = "bsmrk_param_attackingSide2P = %1";
+ 		code = "bsmrk_param_attackingSide2P = %1; publicVariable ""bsmrk_param_attackingSide2P"";";
 	};
 	
 	class bsmrk_param_zoneRadius //14
@@ -335,7 +335,7 @@ class Params
 		texts[] = {"25","50","75","100","150","200","250","300","500"};
 		default = 75;
 		isGlobal = 1;
- 		code = "bsmrk_param_zoneRadiusP = %1";
+ 		code = "bsmrk_param_zoneRadiusP = %1; publicVariable ""bsmrk_param_zoneRadiusP"";";
 	};
 	
 	class bsmrk_param_bluforFaction //15
@@ -345,7 +345,7 @@ class Params
 		texts[] = {"NATO","CTRG","FIA","CDF","US ARMY UCP","US ARMY OCP","USMC DESERT","USMC WOODLAND"};
 		default = 6;
 		isGlobal = 1;
- 		code = "bsmrk_param_bluforFactionP = %1";
+ 		code = "bsmrk_param_bluforFactionP = %1; publicVariable ""bsmrk_param_bluforFactionP"";";
 	};
 	
 	class bsmrk_param_opforFaction //16
@@ -355,7 +355,7 @@ class Params
 		texts[] = {"CSAT","VDV EMR","VDV FLORA","VDV MOUNTAIN FLOR","SLA"};
 		default = 3;
 		isGlobal = 1;
- 		code = "bsmrk_param_opforFactionP = %1";
+ 		code = "bsmrk_param_opforFactionP = %1; publicVariable ""bsmrk_param_opforFactionP"";";
 	};
 	
 	class bsmrk_param_indFaction //17
@@ -365,7 +365,7 @@ class Params
 		texts[] = {"AAF","AFGHAN MILITIA","AFRICAN MILITIA","CONTRACTORS","INSURGENTS","PLA"};
 		default = 5;
 		isGlobal = 1;
- 		code = "bsmrk_param_indFactionP = %1";
+ 		code = "bsmrk_param_indFactionP = %1; publicVariable ""bsmrk_param_indFactionP"";";
 	};
 	
 	
@@ -407,7 +407,7 @@ class Params
 		texts[] = {"Very Many", "Many", "Not Very Many", "Few", "Very Few", "None"};
 		default = 4;
 		isGlobal = 1;
- 		code = "bsmrk_param_bluforAssets = %1";
+ 		code = "bsmrk_param_bluforAssetsP = %1; publicVariable ""bsmrk_param_bluforAssetsP"";";
 	};
 	
 	class bsmrk_param_opforAssets
@@ -417,7 +417,7 @@ class Params
 		texts[] = {"Very Many", "Many", "Not Very Many", "Few", "Very Few", "None"};
 		default = 4;
 		isGlobal = 1;
- 		code = "bsmrk_param_opforAssets = %1";
+ 		code = "bsmrk_param_opforAssetsP = %1; publicVariable ""bsmrk_param_opforAssetsP"";";
 	};
 	
 	class bsmrk_param_indforAssets
@@ -427,7 +427,7 @@ class Params
 		texts[] = {"Very Many", "Many", "Not Very Many", "Few", "Very Few", "None"};
 		default = 4;
 		isGlobal = 1;
- 		code = "bsmrk_param_indforAssets = %1";
+ 		code = "bsmrk_param_indforAssetsP = %1; publicVariable ""bsmrk_param_indforAssetsP"";";
 	};
 // ============================================================================================
 
