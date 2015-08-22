@@ -97,4 +97,4 @@ bsmrk_fnc_createZoneAction = {
 	] call BIS_fnc_MP;
 };
 
-_this call bsmrk_fnc_createZoneAction;
+(_this select 0) call bsmrk_fnc_createZoneAction;

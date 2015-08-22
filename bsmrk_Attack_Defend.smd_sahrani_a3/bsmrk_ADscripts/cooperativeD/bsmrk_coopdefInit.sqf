@@ -25,7 +25,7 @@ _defenderLeader = switch (_defenders select 0) do {
 
 // ========================================================
 // This script gives the defender's leader an action menu option to pick a starting point
-_defenderLeader execVM "bsmrk_ADscripts\cooperativeD\bsmrk_coopdefZones.sqf";
+[[[_defenderLeader], "bsmrk_ADscripts\cooperativeD\bsmrk_coopdefZones.sqf"], "BIS_fnc_execVM", _defenderLeader] call BIS_fnc_MP;
 
 // ========================================================
 // This script finds all of the leaders on the defending team(s) and then gives them the teleportation action.
