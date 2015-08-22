@@ -22,7 +22,7 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="SC CT420 ATTACK DEFEND";
+		briefingName="BSMRK ATTACK DEFEND";
 		resistanceWest=0;
 		startWeather=0;
 		startWind=0;
