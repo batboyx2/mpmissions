@@ -8,7 +8,8 @@ class Mission
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
 		"A3_Characters_F_EPC",
-		"smd_sahrani_a3"
+		"smd_sahrani_a3",
+		"A3_Modules_F_Curator_Curator"
 	};
 	addOnsAuto[]=
 	{
@@ -17,6 +18,7 @@ class Mission
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
 		"A3_Characters_F_EPC",
+		"A3_Modules_F_Curator_Curator",
 		"smd_sahrani_a3"
 	};
 	randomSeed=11823142;
@@ -39,7 +41,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=135;
+		items=136;
 		class Item0
 		{
 			side="WEST";
@@ -6205,6 +6207,53 @@ class Mission
 					skill=0.60000002;
 					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR Join In Progress";
+				};
+			};
+		};
+		class Item135
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10121.023,139.98311,10123.41};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="76561198015013044";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=423;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="cur_zeus";
 				};
 			};
 		};
