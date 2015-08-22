@@ -17,8 +17,8 @@ bsmrk_fnc_getSpawningPositions = {
 		_xOffset = _searchRange * (cos _theta);
 		_yOffset = _searchRange * (sin _theta);
 		
-		_startPos = [_origin select 0, _origin select 1, 10];
-		_endPos = [(_origin select 0) + _xOffset, (_origin select 1) + _yOffset, 10];
+		_startPos = [_origin select 0, _origin select 1, 5];
+		_endPos = [(_origin select 0) + _xOffset, (_origin select 1) + _yOffset, 5];
 		
 		if (((ATLToASL _endPos) select 2) > 0) then {
 			//on land
@@ -69,6 +69,11 @@ bsmrk_fnc_spawnGroup = {
 	for "_i" from 1 to _grpSize do {
 		_unit = _grp createUnit [((_sideClasses select (_side - 1)) select (floor (random (count (_sideClasses select (_side - 1)))))), _pos, [], 0, "FORM"];
 	};
+	_wp = _grp addWaypoint [getMarkerPos "mrk_defenseZone", 0];
+	_wp setWaypointType "MOVE";
+	_wp setWaypointBehaviour "AWARE";
+	_wp setWaypointFormation "LINE";
+	_wp setWaypointSpeed "FULL";
 };
 
 
