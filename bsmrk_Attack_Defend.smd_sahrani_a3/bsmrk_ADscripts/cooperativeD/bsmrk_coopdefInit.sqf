@@ -38,8 +38,11 @@ _defenderLeader execVM "bsmrk_ADscripts\cooperativeD\bsmrk_curatorInit.sqf";
 
 waitUntil {(!isNil "PABST_ADMIN_SAFESTART_public_isSafe" && {!PABST_ADMIN_SAFESTART_public_isSafe})};
 
-[] execVM "bsmrk_ADscripts\cooperativeD\bsmrk_coopdefAI.sqf";
-
+if !(isDedicated) then {
+	[] execVM "bsmrk_ADscripts\cooperativeD\bsmrk_coopdefAI.sqf";
+} else {
+	[[[], "bsmrk_ADscripts\cooperativeD\bsmrk_coopdefAI.sqf"], "BIS_fnc_execVM", HC] call BIS_fnc_MP;
+};
 
 
 
