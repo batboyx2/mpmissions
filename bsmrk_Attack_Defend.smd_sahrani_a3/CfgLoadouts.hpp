@@ -60,8 +60,4 @@ class CfgLoadouts {
 	class INDFOR_6 {
 		#include "bsmrk_ADscripts\customFactions\INDEPENDENT\People's Liberation Army (Modern)\indfor_standard.hpp"
 	};
-	
-	
-    //Bonus example civilian loadouts:
-   
 };
