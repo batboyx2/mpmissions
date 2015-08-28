@@ -26,9 +26,11 @@ bsmrk_fnc_createDefenseZone = {
 	_id = _this select 2;
 	if (_target == _caller) then {
 		[[_target, _id], "removeAction", _target] call BIS_fnc_MP;
-		[format["%1, please open your map and left-click the area you wish to defend.", name _target], "systemChat", _target] call BIS_fnc_MP;
+		[format["%1, left-click the area you wish to defend.", name _target], "systemChat", _target] call BIS_fnc_MP;
+		openMap true;
 		onMapSingleClick {_pos call bsmrk_fnc_createMarker};
 		waitUntil {!isNil "mrk_bufferZone"};
+		openMap false;
 		onMapSingleClick "";
 		[format["%1, does this look correct?", name _target], "systemChat", _target] call BIS_fnc_MP;
 		

@@ -23,10 +23,12 @@ bsmrk_fnc_doTeleport = {
 	_id = _this select 2;
 	if (_target == _caller) then {
 		[[_target, _id], "removeAction", _target] call BIS_fnc_MP;
-		[format["%1, please open your map and left-click the point you wish to teleport your group to.", name _target], "systemChat", _target] call BIS_fnc_MP;
+		[format["%1, left-click the point you wish to teleport your group to.", name _target], "systemChat", _target] call BIS_fnc_MP;
+		openMap true;
 		_target onMapSingleClick {[_pos, _this] spawn bsmrk_fnc_doTeleportUpper};
 		gv_teleported = false;
 		waitUntil {gv_teleported};
+		openMap false;
 		onMapSingleClick "";
 		[format["%1, are you at the right point?", name _target], "systemChat", _target] call BIS_fnc_MP;
 		
