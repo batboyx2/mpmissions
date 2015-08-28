@@ -341,8 +341,8 @@ class Params
 	class bsmrk_param_bluforFaction //15
 	{
 		title = "BLUFOR Faction";
-		values[] = {1,2,3,4,5,6,7,8};
-		texts[] = {"NATO","CTRG","FIA","CDF","US ARMY UCP","US ARMY OCP","USMC DESERT","USMC WOODLAND"};
+		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+		texts[] = {"NATO","CTRG","FIA","CDF","US ARMY UCP","US ARMY OCP","USMC DESERT","USMC WOODLAND", "BUNDESWEHR", "FUTURE ARMY", "GHOST RECON", "IDF ARMY", "NORWEGIAN SF", "US ARMY (KOREA)", "US ARMY 10TH MOUNTAIN", "US ARMY DELTA"};
 		default = 6;
 		isGlobal = 1;
  		code = "bsmrk_param_bluforFactionP = %1; publicVariable ""bsmrk_param_bluforFactionP"";";
@@ -351,8 +351,8 @@ class Params
 	class bsmrk_param_opforFaction //16
 	{
 		title = "OPFOR Faction";
-		values[] = {1,2,3,4,5};
-		texts[] = {"CSAT","VDV EMR","VDV FLORA","VDV MOUNTAIN FLOR","SLA"};
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"CSAT","VDV EMR","VDV FLORA","VDV MOUNTAIN FLOR","SLA","PLA","Russian Air Assault","SAA Syrian Army","Soviet Desert","Soviet Jungle SF"};
 		default = 3;
 		isGlobal = 1;
  		code = "bsmrk_param_opforFactionP = %1; publicVariable ""bsmrk_param_opforFactionP"";";
