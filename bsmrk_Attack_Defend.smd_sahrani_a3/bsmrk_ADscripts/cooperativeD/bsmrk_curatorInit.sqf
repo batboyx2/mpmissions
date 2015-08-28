@@ -1,4 +1,4 @@
-private ["_overall"];
+private ["_overall", "_coef"];
 _overall = _this;
 
 _curCenter = createCenter sideLogic;
@@ -17,11 +17,16 @@ cur_defender addCuratorAddons [
 	"A3_Structures_F_Mil_Cargo",
 	"A3_Structures_F_Mil_Fortification"
 ];
-
+if ((side _overall) == west) then {_coef = (1 / bsmrk_param_bluforAssetsP) * 6;};
+if ((side _overall) == east) then {_coef = (1 / bsmrk_param_opforAssetsP) * 6;};
+if ((side _overall) == resistance) then {_coef = (1 / bsmrk_param_indforAssetsP) * 6;};
+cur_defender setCuratorCoef ["place", ((-1) * _coef)];
+cur_defender setCuratorCoef ["delete", _coef];
 [
 	[
 		cur_defender,
 		{
+			private ["_changedCosts"];
 			_classes = _this select 1;
 			_changedCosts = [
 				["Land_BagBunker_Large_F", [true, 0.1]],
@@ -41,6 +46,7 @@ cur_defender addCuratorAddons [
 				["Land_HBarrierWall6_F", [true, 0.06]],
 				["Land_Razorwire_F", [true, 0.025]]
 			];
+			
 			_classesNew = [];
 			{
 				_classesNew = _classesNew + [toLower _x];
