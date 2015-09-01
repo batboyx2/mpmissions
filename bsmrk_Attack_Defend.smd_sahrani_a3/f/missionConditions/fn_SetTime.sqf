@@ -24,7 +24,7 @@ _timeOfDay = _this select 0;
 
 _year = 2030;
 _month = 6;
-_day = 16;
+_day = 15;
 _hour = 0;
 _minute = 0;
 
@@ -38,20 +38,20 @@ switch (_timeOfDay) do
 // Dawn
 	case 0:
 	{
-		_hour = 4;
-		_minute = 50;
+		_hour = 6;
+		_minute = 30;
 	};
 // Early Morning
 	case 1:
 	{
-		_hour = 5;
-		_minute = 20;
+		_hour = 7;
+		_minute = 25;
 	};
 // Morning
 	case 2:
 	{
-		_hour = 9;
-		_minute = 20;
+		_hour = 8;
+		_minute = 0;
 	};
 // Noon
 	case 3:
@@ -65,23 +65,41 @@ switch (_timeOfDay) do
 		_hour = 15;
 		_minute = 30;
 	};
-// Evening
+// Sunset
 	case 5:
 	{
-		_hour = 18;
-		_minute = 40;
+		_hour = 16;
+		_minute = 35;
 	};
 // Dusk
 	case 6:
 	{
-		_hour = 19;
-		_minute = 10;
+		_hour = 17;
+		_minute = 0;
 	};
-// Night
+// Night (Full Moon)
 	case 7:
 	{
 		_hour = 0;
 		_minute = 0;
+		_month = 7;
+		_day = 15;
+	};
+// Night (Half Moon)
+	case 9:
+	{
+		_hour = 0;
+		_minute = 0;
+		_month = 9;
+		_day = 7;
+	};
+// Night (New Moon)
+	case 11:
+	{
+		_hour = 0;
+		_minute = 0;
+		_month = 7;
+		_day = 30;
 	};
 };
 
