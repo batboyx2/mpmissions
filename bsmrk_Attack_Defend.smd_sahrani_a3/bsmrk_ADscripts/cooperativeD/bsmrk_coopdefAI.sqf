@@ -30,7 +30,7 @@ bsmrk_fnc_getSpawningPositions = {
 					_mrk setMarkerShape "ICON";
 					_mrk setMarkerType "hd_dot";
 					_mrk setMarkerColor "ColorGreen";
-					_mrk setMarkerAlpha 1;
+					_mrk setMarkerAlpha 0;
 					_positions = _positions + [format["mrk_%1", _theta]];
 				};
 			};
