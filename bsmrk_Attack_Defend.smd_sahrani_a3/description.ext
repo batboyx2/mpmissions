@@ -187,7 +187,7 @@ class Params
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
 
-    class f_param_debugMode //0
+    class f_param_debugMode
     {
             title = "$STR_f_param_debugMode";
             values[] = {0,1};
@@ -201,7 +201,7 @@ class Params
 // F3 - Radio Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-    class f_param_radios //1
+    class f_param_radios
     {
             title = "Radio System";
             values[] = {0,1,2};
@@ -215,7 +215,7 @@ class Params
 // F3 - Mission Conditions Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-	class f_param_weather //2
+	class f_param_weather
 	{
 		title = "$STR_f_param_weather";
 		values[] = {0,1,2,3,4,5,6,7,8};
@@ -226,7 +226,7 @@ class Params
 		code = "f_param_weather = %1";
 	};
 
-	class f_param_fog //3
+	class f_param_fog
 	{
 		title = "Fog";
 		values[] = {0,1,2};
@@ -237,7 +237,7 @@ class Params
 		code = "f_param_fog = %1";
 	};
 
-    class f_param_timeOfDay //4
+    class f_param_timeOfDay
 	{
 		title = "$STR_f_param_timeOfDay";
 		values[] = {0,1,2,3,4,5,6,7,8,9};
@@ -247,14 +247,14 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-	class bsmrk_param_spacer0 //5
+	class bsmrk_param_spacer0
 	{
 		title = "";
 		values[]={0,0};
 		texts[]={"",""};
 		default = 0;
 	};
-	class bsmrk_param_spacer1 //6
+	class bsmrk_param_spacer1
 	{
 		title = "= = = = = = = = = = = = = =";
 		values[]={0,0};
@@ -262,7 +262,7 @@ class Params
 		default = 0;
 	};
 	
-	class bsmrk_param_section1 //7
+	class bsmrk_param_section1
 	{
 		title = "= Mission Options";
 		values[]={0,0};
@@ -270,7 +270,7 @@ class Params
 		default = 0;
 	};
 	
-	class bsmrk_param_spacer2 //8
+	class bsmrk_param_spacer2
 	{
 		title = "= = = = = = = = = = = = = =";
 		values[]={0,0};
@@ -278,7 +278,7 @@ class Params
 		default = 0;
 	};
 	
-	class bsmrk_param_gameType //9
+	class bsmrk_param_gameType
 	{
 		title = "Game Type";
 		values[] = {1,2,3};
@@ -288,7 +288,7 @@ class Params
  		code = "bsmrk_param_gameTypeP = %1; publicVariable ""bsmrk_param_gameTypeP"";";
 	};
 	
-	class bsmrk_param_defendingSide1 //10
+	class bsmrk_param_defendingSide1
 	{
 		title = "Defending Side 1";
 		values[] = {1,2,3};
@@ -298,7 +298,7 @@ class Params
  		code = "bsmrk_param_defendingSide1P = %1; publicVariable ""bsmrk_param_defendingSide1P"";";
 	};
 	
-	class bsmrk_param_defendingSide2 //11
+	class bsmrk_param_defendingSide2
 	{
 		title = "Defending Side 2";
 		values[] = {1,2,3};
@@ -308,7 +308,7 @@ class Params
  		code = "bsmrk_param_defendingSide2P = %1; publicVariable ""bsmrk_param_defendingSide2P"";";
 	};
 	
-	class bsmrk_param_attackingSide1 //12
+	class bsmrk_param_attackingSide1
 	{
 		title = "Attacking Side 1";
 		values[] = {1,2,3};
@@ -318,7 +318,7 @@ class Params
  		code = "bsmrk_param_attackingSide1P = %1; publicVariable ""bsmrk_param_attackingSide1P"";";
 	};
 	
-	class bsmrk_param_attackingSide2 //13
+	class bsmrk_param_attackingSide2
 	{
 		title = "Attacking Side 2";
 		values[] = {1,2,3};
@@ -328,7 +328,7 @@ class Params
  		code = "bsmrk_param_attackingSide2P = %1; publicVariable ""bsmrk_param_attackingSide2P"";";
 	};
 	
-	class bsmrk_param_zoneRadius //14
+	class bsmrk_param_zoneRadius
 	{
 		title = "Zone Radius";
 		values[] = {25,50,75,100,150,200,250,300,500};
@@ -338,7 +338,7 @@ class Params
  		code = "bsmrk_param_zoneRadiusP = %1; publicVariable ""bsmrk_param_zoneRadiusP"";";
 	};
 	
-	class bsmrk_param_bluforFaction //15
+	class bsmrk_param_bluforFaction
 	{
 		title = "BLUFOR Faction";
 		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
@@ -348,7 +348,7 @@ class Params
  		code = "bsmrk_param_bluforFactionP = %1; publicVariable ""bsmrk_param_bluforFactionP"";";
 	};
 	
-	class bsmrk_param_opforFaction //16
+	class bsmrk_param_opforFaction
 	{
 		title = "OPFOR Faction";
 		values[] = {1,2,3,4,5,6,7,8,9,10};
@@ -358,7 +358,7 @@ class Params
  		code = "bsmrk_param_opforFactionP = %1; publicVariable ""bsmrk_param_opforFactionP"";";
 	};
 	
-	class bsmrk_param_indFaction //17
+	class bsmrk_param_indFaction
 	{
 		title = "INDFOR Faction";
 		values[] = {1,2,3,4,5,6};
