@@ -22,12 +22,12 @@ _defender2 = switch (bsmrk_param_defendingSide2P) do {
 	case "IND": {resistance};
 };
 
-if !(_attacker1 == _attacker2) then {
+if !(bsmrk_param_attackingSide1P == bsmrk_param_attackingSide2P) then {
 	_attacker1 setFriend [_attacker2, 1];
 	_attacker2 setFriend [_attacker1, 1];
 };
 
-if !(_defender1 == _defender2) then {
+if !(bsmrk_param_defendingSide1P == bsmrk_param_defendingSide2P) then {
 	_defender1 setFriend [_defender2, 1];
 	_defender2 setFriend [_defender1, 1];
 };
