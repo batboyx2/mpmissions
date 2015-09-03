@@ -16,7 +16,7 @@ if !(bsmrk_param_defendingSide2P in _defenders) then {
 };
 // ========================================================
 // This script establishes the side relations such that they make sense based upon the currently defending and attacking sides.
-[] execVM "bsmrk_ADscripts\cooperativeD\bsmrk_sideRelation.sqf";
+[] execVM "bsmrk_ADscripts\cooperativeD\bsmrk_sideRelations.sqf";
 
 // ========================================================
 // This block defines the defender's overall leader.
