@@ -21,10 +21,9 @@ _side = switch (side _unit) do {
 	case east: {["OPFOR_", bsmrk_param_opforFactionP]};
 	case resistance: {["INDFOR_", bsmrk_param_indFactionP]};
 };
-
+_pathS = missionConfigFile >> "CfgLoadouts" >> format["%1%2", _side select 0, _side select 1] >> _faction;
 _path = missionConfigFile >> "CfgLoadouts" >> format["%1%2", _side select 0, _side select 1] >> _faction >> _loadout;
-_rifle = missionConfigFile >> "CfgLoadouts" >> format["%1%2", _side select 0, _side select 1] >> _faction >> format["%1_RIFLE", toUpper str (side _unit)];
-copyToClipboard str _rifle;
+
 if(!isClass(_path)) exitWith {
     if (isPlayer _unit) then {
         // _unit setVariable ["f_var_assignGear_done", true, true];
@@ -45,7 +44,31 @@ _magazines = getArray(_path >> "magazines");
 _items = getArray(_path >> "items");
 _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
-
+if (!isNil "gv_confirmedWeapons") then {if (gv_confirmedWeapons) then {
+	//array that defines the weapons to be replaced and what they're to be replaced with
+	_weaponsReplace = [
+		[getArray (_pathS >> format["%1_rifle", side _unit]), 		gv_riflemanWeapon],
+		[getArray (_pathS >> format["%_ar", side _unit]), 				gv_autoriflemanWeapon],
+		[getArray (_pathS >> format["%1_glrifle", side _unit]), 		gv_grenadeWeapon],
+		[getArray (_pathS >> format["%1_carbine", side _unit]), 	gv_carbineWeapon]
+	];
+	//replace the weapons as above
+	{
+		_weaponsEntry = _x;
+		{
+			_weaponsReplaceEntry = _x;
+			{
+				if (_x in _weapons) then {
+					_weapons = _weapons - [_x];
+					_weapons = _weapons + [(_weaponsReplaceEntry select 1)];
+				};
+			} forEach (_weaponsReplaceEntry select 0);
+		} forEach _weaponsReplace;
+	} forEach _weapons;
+	
+	_magazines = getArray(_path >> "magazines");
+	_handguns = getArray(_path >> "handguns");
+};};
 
 
 removeAllWeapons _unit;
