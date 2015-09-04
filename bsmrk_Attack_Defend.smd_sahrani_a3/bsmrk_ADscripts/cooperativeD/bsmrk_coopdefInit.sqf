@@ -27,13 +27,18 @@ _defenderLeader = switch (_defenders select 0) do {
 };
 
 // ========================================================
+// This script allows the defense leader to choose the primary weaponry for his team.
+[[[_defenderLeader], "bsmrk_ADscripts\cooperativeD\bsmrk_weaponrySelector.sqf"], "BIS_fnc_execVM", _defenderLeader] call BIS_fnc_MP;
+waitUntil {!isNil "gv_confirmedWeapons"};
+waitUntil {gv_confirmedWeapons};
+// ========================================================
 // This script gives the defender's leader an action menu option to pick a starting point
 [[[_defenderLeader], "bsmrk_ADscripts\cooperativeD\bsmrk_coopdefZones.sqf"], "BIS_fnc_execVM", _defenderLeader] call BIS_fnc_MP;
+waitUntil {!isNil "gv_confirmedMarker"};
+waitUntil {gv_confirmedMarker};
 
 // ========================================================
 // This script finds all of the leaders on the defending team(s) and then gives them the teleportation action.
-waitUntil {!isNil "gv_confirmedMarker"};
-waitUntil {gv_confirmedMarker};
 _defenders execVM "bsmrk_ADscripts\cooperativeD\bsmrk_defenseTeleport.sqf";
 // ========================================================
 // This script initializes the object placement system for the defending side's overall commander

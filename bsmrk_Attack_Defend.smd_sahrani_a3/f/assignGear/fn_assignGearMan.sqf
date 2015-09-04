@@ -23,8 +23,8 @@ _side = switch (side _unit) do {
 };
 
 _path = missionConfigFile >> "CfgLoadouts" >> format["%1%2", _side select 0, _side select 1] >> _faction >> _loadout;
-
-
+_rifle = missionConfigFile >> "CfgLoadouts" >> format["%1%2", _side select 0, _side select 1] >> _faction >> format["%1_RIFLE", toUpper str (side _unit)];
+copyToClipboard str _rifle;
 if(!isClass(_path)) exitWith {
     if (isPlayer _unit) then {
         // _unit setVariable ["f_var_assignGear_done", true, true];
@@ -45,6 +45,8 @@ _magazines = getArray(_path >> "magazines");
 _items = getArray(_path >> "items");
 _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
+
+
 
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
