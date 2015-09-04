@@ -59,7 +59,17 @@ class ind_f {
     #define IND_SMOKE_WHITE "rhs_mag_an_m8hc:2"
     #define IND_SMOKE_GREEN "rhs_mag_m18_green"
     #define IND_SMOKE_RED "rhs_mag_m18_red"
-
+	
+	resistance_rifle[] = {IND_RIFLE};
+	resistance_rifle_mag[] = {IND_RIFLE_MAG};
+	resistance_glrifle[] = {IND_GLRIFLE};
+	resistance_glrifle_mag[] = {IND_GLRIFLE_MAG};
+	resistance_carbine[] = {IND_CARBINE};
+	resistance_carbine_mag[] = {IND_CARBINE_MAG};
+	resistance_ar[] = {IND_AR};
+	resistance_ar_mag[] = {IND_AR_MAG};
+	resistance_ar_mag2[] = {IND_AR_MAG2};
+	resistance_pistol[] = {IND_PISTOL};
 
 // ====================================================================================
 

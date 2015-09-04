@@ -58,7 +58,16 @@ class opf_f {
     #define EAST_SMOKE_WHITE "rhs_mag_an_m8hc:2"
     #define EAST_SMOKE_GREEN "rhs_mag_m18_green"
     #define EAST_SMOKE_RED "rhs_mag_m18_red"
-
+	east_rifle[] = {EAST_RIFLE};
+	east_rifle_mag[] = {EAST_RIFLE_MAG};
+	east_glrifle[] = {EAST_GLRIFLE};
+	east_glrifle_mag[] = {EAST_GLRIFLE_MAG};
+	east_carbine[] = {EAST_CARBINE};
+	east_carbine_mag[] = {EAST_CARBINE_MAG};
+	east_ar[] = {EAST_AR};
+	east_ar_mag[] = {EAST_AR_MAG};
+	east_ar_mag2[] = {EAST_AR_MAG2};
+	east_pistol[] = {EAST_PISTOL};
 
 // ====================================================================================
 

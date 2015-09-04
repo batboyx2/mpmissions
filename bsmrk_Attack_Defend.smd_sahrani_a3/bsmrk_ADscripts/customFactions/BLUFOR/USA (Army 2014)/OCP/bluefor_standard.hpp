@@ -42,7 +42,17 @@ class blu_f {
     // Pistol
     #define WEST_PISTOL "rhsusf_weap_m1911a1"
     #define WEST_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:4"
-
+	west_rifle[] = {WEST_RIFLE};
+	west_rifle_mag[] = {WEST_RIFLE_MAG};
+	west_glrifle[] = {WEST_GLRIFLE};
+	west_glrifle_mag[] = {WEST_GLRIFLE_MAG};
+	west_carbine[] = {WEST_CARBINE};
+	west_carbine_mag[] = {WEST_CARBINE_MAG};
+	west_ar[] = {WEST_AR};
+	west_ar_mag[] = {WEST_AR_MAG};
+	west_ar_mag2[] = {WEST_AR_MAG2};
+	west_pistol[] = {WEST_PISTOL};
+	
     class Car {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
         TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};

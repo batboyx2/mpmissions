@@ -59,8 +59,18 @@ class ind_f {
     #define IND_SMOKE_WHITE "SmokeShell:2"
     #define IND_SMOKE_GREEN "SmokeShellGreen"
     #define IND_SMOKE_RED "SmokeShellRed"
-
-
+	
+	resistance_rifle[] = {IND_RIFLE};
+	resistance_rifle_mag[] = {IND_RIFLE_MAG};
+	resistance_glrifle[] = {IND_GLRIFLE};
+	resistance_glrifle_mag[] = {IND_GLRIFLE_MAG};
+	resistance_carbine[] = {IND_CARBINE};
+	resistance_carbine_mag[] = {IND_CARBINE_MAG};
+	resistance_ar[] = {IND_AR};
+	resistance_ar_mag[] = {IND_AR_MAG};
+	resistance_ar_mag2[] = {IND_AR_MAG2};
+	resistance_pistol[] = {IND_PISTOL};
+	
 // ====================================================================================
 
     class Car {
