@@ -112,7 +112,6 @@ bsmrk_fnc_confirmWeaponry = {
 	_defenseLeader = _this select 3;
 	removeAllActions _defenseLeader;
 	gv_confirmedWeapons = true; publicVariable "gv_confirmedWeapons";
-	hint str [gv_riflemanWeapon, gv_autoriflemanWeapon];
 };
 _defenseLeader addAction [
 	"Confirm Weaponry",
