@@ -1,3 +1,21 @@
+KK_fnc_inString = {
+	//Author: Killzone_Kid
+    private ["_needle","_haystack","_needleLen","_hay","_found"];
+    _needle = [_this, 0, "", [""]] call BIS_fnc_param;
+    _haystack = toArray ([_this, 1, "", [""]] call BIS_fnc_param);
+    _needleLen = count toArray _needle;
+    _hay = +_haystack;
+    _hay resize _needleLen;
+    _found = false;
+    for "_i" from _needleLen to count _haystack do {
+        if (toString _hay == _needle) exitWith {_found = true};
+        _hay set [_needleLen, _haystack select _i];
+        _hay set [0, "x"];
+        _hay = _hay - ["x"]
+    };
+    _found
+};
+
 0 = [] spawn {
 	if (isServer) then {
 		[] execVM "bsmrk_ADscripts\bsmrk_ADinit.sqf";
