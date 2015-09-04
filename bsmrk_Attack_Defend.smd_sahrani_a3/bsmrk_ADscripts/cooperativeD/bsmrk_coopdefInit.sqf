@@ -14,6 +14,7 @@ _defenders = _defenders + [bsmrk_param_defendingSide1P];
 if !(bsmrk_param_defendingSide2P in _defenders) then {
 	_defenders = _defenders + [bsmrk_param_defendingSide2P];
 };
+
 // ========================================================
 // This script establishes the side relations such that they make sense based upon the currently defending and attacking sides.
 [] execVM "bsmrk_ADscripts\cooperativeD\bsmrk_sideRelations.sqf";

@@ -9,15 +9,16 @@ _side = switch (side _defenseLeader) do {
 _faction = toLower (faction _defenseLeader);
 _pathS = (missionConfigFile >> "CfgLoadouts" >> (format["%1%2", _side select 0, _side select 1]) >> _faction);
 
-gv_riflemanWeapon = 		(getArray (_pathS >> (toLower format["%1_rifle", side _defenseLeader]))) select 0;
-gv_autoriflemanWeapon = (getArray (_pathS >> (toLower format["%1_ar", side _defenseLeader]))) select 0;
-gv_grenadeWeapon = 		(getArray (_pathS >> (toLower format["%1_glrifle", side _defenseLeader]))) select 0;
+gv_riflemanWeapon = 			(getArray (_pathS >> (toLower format["%1_rifle", side _defenseLeader]))) select 0;
+gv_autoriflemanWeapon = 	(getArray (_pathS >> (toLower format["%1_ar", side _defenseLeader]))) select 0;
+gv_grenadeWeapon = 			(getArray (_pathS >> (toLower format["%1_glrifle", side _defenseLeader]))) select 0;
 gv_carbineWeapon = 			(getArray (_pathS >> (toLower format["%1_carbine", side _defenseLeader]))) select 0;
-gv_pistolWeapon = 			(getArray (_pathS >> (toLower format["%1_pistol", side _defenseLeader]))) select 0;
+gv_pistolWeapon = 				(getArray (_pathS >> (toLower format["%1_pistol", side _defenseLeader]))) select 0;
 
 gv_confirmedWeapons = false; publicVariable "gv_confirmedWeapons";
 
 //Pistol
+/*
 bsmrk_fnc_pistolWeapon = {
 	_defenseLeader = _this select 3;
 	["Open",true] spawn BIS_fnc_arsenal;
@@ -34,7 +35,7 @@ _defenseLeader addAction [
 	false,
 	true
 ];
-
+*/
 //Carbine
 bsmrk_fnc_carbineWeapon = {
 	_defenseLeader = _this select 3;
@@ -118,6 +119,12 @@ bsmrk_fnc_confirmWeaponry = {
 	publicVariable "gv_carbineWeapon";
 	publicVariable "gv_pistolWeapon";
 	gv_confirmedWeapons = true; publicVariable "gv_confirmedWeapons";
+	[
+		{sleep 2; if !(isServer) then ([player] call F_fnc_assignGearMan)},
+		"BIS_fnc_spawn",
+		true,
+		true
+	] spawn BIS_fnc_MP;
 };
 _defenseLeader addAction [
 	"Confirm Weaponry",

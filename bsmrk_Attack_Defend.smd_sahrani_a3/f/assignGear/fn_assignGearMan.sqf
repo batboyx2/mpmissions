@@ -31,7 +31,7 @@ if(!isClass(_path)) exitWith {
         systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
     };
 };
-private ["_uniforms","_attachments","_linkedItems","_items","_magazines","_handguns","_launchers","_weapons","_backpackItems","_backpack","_headgears","_vests"];
+private ["_uniforms","_attachments","_linkedItems","_items","_magazines","_handguns","_launchers","_weapons","_backpackItems","_backpack","_headgears","_vests","_glHE","_glWP","_glFL"];
 _uniforms = getArray(_path >> "uniform");
 _vests = getArray(_path >> "vest");
 _headgears = getArray(_path >> "headgear");
@@ -71,16 +71,33 @@ if (!isNil "gv_confirmedWeapons") then {if (gv_confirmedWeapons) then {
 	//==================================================================================
 	// MAGAZINES
 	//array that defines the mags to be replaced and what they're to be replaced with
+	_glMuzzle = (getArray (configFile >> "cfgWeapons" >> gv_grenadeWeapon >> "muzzles")) select 1;
+	_glMags = getArray (configFile >> "cfgWeapons" >> gv_grenadeWeapon >> _glMuzzle >> "magazines");
+	diag_log str _glMags;
+	{
+		if (isNil "_glHE") then {_glHE = if ((["HE_", _x] call KK_fnc_inString) || (["_HE", _x] call KK_fnc_inString) || (["VOG25", _x] call KK_fnc_inString)) then {_x};};
+		if (isNil "_glWP") then {_glWP = if ((["SMOKE", _x] call KK_fnc_inString) || (["M714", _x] call KK_fnc_inString) || (["M715", _x] call KK_fnc_inString) || (["M716", _x] call KK_fnc_inString) || (["M713", _x] call KK_fnc_inString) || (["GRD", _x] call KK_fnc_inString)) then {_x};};
+		if (isNil "_glFL") then {_glFL = if ((["FLARE", _x] call KK_fnc_inString) || (["M662", _x] call KK_fnc_inString) || (["M661", _x] call KK_fnc_inString) || (["M585", _x] call KK_fnc_inString) || (["VG40OP", _x] call KK_fnc_inString)) then {_x};};
+	} forEach _glMags;
+	if (isNil "_glHE") then {_glHE = false};
+	if (isNil "_glWP") then {_glWP = false};
+	if (isNil "_glFL") then {_glFL = false};
+	diag_log format["is %1 : %2 : %3", _glHE, _glWP, _glFL];
+	
 	_magsReplace = [
 		[getArray (_pathS >> (toLower format["%1_rifle_mag", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_riflemanWeapon >> "magazines")) select 0],
 		[getArray (_pathS >> (toLower format["%_ar_mag", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_autoriflemanWeapon >> "magazines")) select 0],
 		[getArray (_pathS >> (toLower format["%1_ar_mag2", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_autoriflemanWeapon >> "magazines")) select 1],
 		[getArray (_pathS >> (toLower format["%1_glrifle_mag", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_grenadeWeapon >> "magazines")) select 0],
-		[getArray (_pathS >> (toLower format["%1_carbine_mag", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_carbineWeapon >> "magazines")) select 0]/*,
-		[getArray (_pathS >> format["%1_pistol_mag", side _unit]), (getArray (configFile >> "cfgWeapons" >> gv_pistolWeapon >> "magazines")) select 0]*/
+		[getArray (_pathS >> (toLower format["%1_carbine_mag", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_carbineWeapon >> "magazines")) select 0],
+		
+		[getArray (_pathS >> (toLower format["%1_glrifle_mag_he", side _unit])), 			_glHE],
+		[getArray (_pathS >> (toLower format["%1_glrifle_mag_smoke", side _unit])), 	_glWP],
+		[getArray (_pathS >> (toLower format["%1_glrifle_mag_flare", side _unit])), 		_glFL]
 	];
+	
 	//replace the mags as above
-	diag_log _magazines;
+	diag_log ("BEFORE " + str _magazines);
 	{
 		{
 			_magsReplaceEntry = _x;
@@ -88,16 +105,16 @@ if (!isNil "gv_confirmedWeapons") then {if (gv_confirmedWeapons) then {
 				_magSplit = [_x,":"] call BIS_fnc_splitString;
 				_magType = _magSplit select 0;
 				_magCount = if (count _magSplit > 1) then {parseNumber (_magSplit select 1);} else {1};
-				if (_x in _magazines) then {
-					diag_log ("sub  " + format["%1:%2", _magType, _magCount]);
+				if ((_x in _magazines) && !((typeName (_magsReplaceEntry select 1)) == "BOOL")) then {
+					diag_log ("sub " + str _x);
 					_magazines = _magazines - [_x];
-					diag_log ("add  " + format["%1:%2", (_magsReplaceEntry select 1), _magCount]);
+					diag_log ("add " + format["%1:%2", (_magsReplaceEntry select 1), _magCount]);
 					_magazines = _magazines + [format["%1:%2", (_magsReplaceEntry select 1), _magCount]];
 				};
 			} forEach (_magsReplaceEntry select 0);
 		} forEach _magsReplace;
 	} forEach _magazines;
-	
+	diag_log ("AFTER " + str _magazines);
 	
 	_handguns = getArray(_path >> "handguns");
 };};
