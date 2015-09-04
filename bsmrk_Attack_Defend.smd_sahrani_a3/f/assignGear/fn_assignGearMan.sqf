@@ -31,7 +31,7 @@ if(!isClass(_path)) exitWith {
         systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
     };
 };
-
+private ["_uniforms","_attachments","_linkedItems","_items","_magazines","_handguns","_launchers","_weapons","_backpackItems","_backpack","_headgears","_vests"];
 _uniforms = getArray(_path >> "uniform");
 _vests = getArray(_path >> "vest");
 _headgears = getArray(_path >> "headgear");
@@ -45,12 +45,14 @@ _items = getArray(_path >> "items");
 _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
 if (!isNil "gv_confirmedWeapons") then {if (gv_confirmedWeapons) then {
+	//==================================================================================
+	// WEAPONS
 	//array that defines the weapons to be replaced and what they're to be replaced with
 	_weaponsReplace = [
-		[getArray (_pathS >> format["%1_rifle", side _unit]), 		gv_riflemanWeapon],
-		[getArray (_pathS >> format["%_ar", side _unit]), 				gv_autoriflemanWeapon],
-		[getArray (_pathS >> format["%1_glrifle", side _unit]), 		gv_grenadeWeapon],
-		[getArray (_pathS >> format["%1_carbine", side _unit]), 	gv_carbineWeapon]
+		[getArray (_pathS >> (toLower format["%1_rifle", side _unit])), 			gv_riflemanWeapon],
+		[getArray (_pathS >> (toLower format["%_ar", side _unit])), 				gv_autoriflemanWeapon],
+		[getArray (_pathS >> (toLower format["%1_glrifle", side _unit])), 		gv_grenadeWeapon],
+		[getArray (_pathS >> (toLower format["%1_carbine", side _unit])), 	gv_carbineWeapon]
 	];
 	//replace the weapons as above
 	{
@@ -66,7 +68,37 @@ if (!isNil "gv_confirmedWeapons") then {if (gv_confirmedWeapons) then {
 		} forEach _weaponsReplace;
 	} forEach _weapons;
 	
-	_magazines = getArray(_path >> "magazines");
+	//==================================================================================
+	// MAGAZINES
+	//array that defines the mags to be replaced and what they're to be replaced with
+	_magsReplace = [
+		[getArray (_pathS >> (toLower format["%1_rifle_mag", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_riflemanWeapon >> "magazines")) select 0],
+		[getArray (_pathS >> (toLower format["%_ar_mag", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_autoriflemanWeapon >> "magazines")) select 0],
+		[getArray (_pathS >> (toLower format["%1_ar_mag2", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_autoriflemanWeapon >> "magazines")) select 1],
+		[getArray (_pathS >> (toLower format["%1_glrifle_mag", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_grenadeWeapon >> "magazines")) select 0],
+		[getArray (_pathS >> (toLower format["%1_carbine_mag", side _unit])), (getArray (configFile >> "cfgWeapons" >> gv_carbineWeapon >> "magazines")) select 0]/*,
+		[getArray (_pathS >> format["%1_pistol_mag", side _unit]), (getArray (configFile >> "cfgWeapons" >> gv_pistolWeapon >> "magazines")) select 0]*/
+	];
+	//replace the mags as above
+	diag_log _magazines;
+	{
+		{
+			_magsReplaceEntry = _x;
+			{
+				_magSplit = [_x,":"] call BIS_fnc_splitString;
+				_magType = _magSplit select 0;
+				_magCount = if (count _magSplit > 1) then {parseNumber (_magSplit select 1);} else {1};
+				if (_x in _magazines) then {
+					diag_log ("sub  " + format["%1:%2", _magType, _magCount]);
+					_magazines = _magazines - [_x];
+					diag_log ("add  " + format["%1:%2", (_magsReplaceEntry select 1), _magCount]);
+					_magazines = _magazines + [format["%1:%2", (_magsReplaceEntry select 1), _magCount]];
+				};
+			} forEach (_magsReplaceEntry select 0);
+		} forEach _magsReplace;
+	} forEach _magazines;
+	
+	
 	_handguns = getArray(_path >> "handguns");
 };};
 
