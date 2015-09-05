@@ -4,10 +4,10 @@
 class blu_f {
     //Rifle
     #define WEST_RIFLE "rhs_weap_m4a1_carryhandle_grip2"
-    #define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
+    #define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8
     //GL Rifle
     #define WEST_GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
-    #define WEST_GLRIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
+    #define WEST_GLRIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8"
     #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
     #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:8"
     #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
@@ -52,7 +52,12 @@ class blu_f {
 	west_ar_mag[] = {WEST_AR_MAG};
 	west_ar_mag2[] = {WEST_AR_MAG2};
 	west_pistol[] = {WEST_PISTOL};
-// ====================================================================================	
+	
+	west_glrifle_mag_smoke[] = {WEST_GLRIFLE_MAG_SMOKE};
+	west_glrifle_mag_he[] = {WEST_GLRIFLE_MAG_HE};
+    west_glrifle_mag_flare[] = {WEST_GLRIFLE_MAG_FLARE};
+	
+	// ====================================================================================	
 	
     class Car {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};

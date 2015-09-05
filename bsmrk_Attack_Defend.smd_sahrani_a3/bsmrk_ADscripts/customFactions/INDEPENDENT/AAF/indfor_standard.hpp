@@ -70,7 +70,11 @@ class ind_f {
 	resistance_ar_mag[] = {IND_AR_MAG};
 	resistance_ar_mag2[] = {IND_AR_MAG2};
 	resistance_pistol[] = {IND_PISTOL};
-
+	
+	resistance_glrifle_mag_smoke[] = {IND_GLRIFLE_MAG_SMOKE};
+	resistance_glrifle_mag_he[] = {IND_GLRIFLE_MAG_HE};
+    resistance_glrifle_mag_flare[] = {IND_GLRIFLE_MAG_FLARE};
+	
 // ====================================================================================
 
     class Car {

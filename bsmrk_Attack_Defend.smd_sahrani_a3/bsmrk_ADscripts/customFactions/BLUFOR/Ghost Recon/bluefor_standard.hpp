@@ -79,6 +79,10 @@ class blu_f {
 	west_ar_mag2[] = {WEST_AR_MAG2};
 	west_pistol[] = {WEST_PISTOL};
 	
+	west_glrifle_mag_smoke[] = {WEST_GLRIFLE_MAG_SMOKE};
+	west_glrifle_mag_he[] = {WEST_GLRIFLE_MAG_HE};
+    west_glrifle_mag_flare[] = {WEST_GLRIFLE_MAG_FLARE};
+		
 // ====================================================================================
 
     class Car {

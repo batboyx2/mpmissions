@@ -69,7 +69,11 @@ class opf_f {
 	east_ar_mag[] = {EAST_AR_MAG};
 	east_ar_mag2[] = {EAST_AR_MAG2};
 	east_pistol[] = {EAST_PISTOL};
-
+	
+	east_glrifle_mag_smoke[] = {EAST_GLRIFLE_MAG_SMOKE};
+	east_glrifle_mag_he[] = {EAST_GLRIFLE_MAG_HE};
+    east_glrifle_mag_flare[] = {EAST_GLRIFLE_MAG_FLARE};
+	
 // ====================================================================================
 
     class Car {
