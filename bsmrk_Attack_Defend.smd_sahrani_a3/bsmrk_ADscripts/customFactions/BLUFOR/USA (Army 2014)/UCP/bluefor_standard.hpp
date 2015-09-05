@@ -4,7 +4,7 @@
 class blu_f {
     //Rifle
     #define WEST_RIFLE "rhs_weap_m4a1_carryhandle_grip2"
-    #define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8
+    #define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8"
     //GL Rifle
     #define WEST_GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
     #define WEST_GLRIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8"
