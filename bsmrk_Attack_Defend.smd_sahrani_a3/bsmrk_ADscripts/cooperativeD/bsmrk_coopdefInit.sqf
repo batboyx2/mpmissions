@@ -22,9 +22,9 @@ if !(bsmrk_param_defendingSide2P in _defenders) then {
 // ========================================================
 // This block defines the defender's overall leader.
 _defenderLeader = switch (_defenders select 0) do {
-	case 1: {UnitOPFOR_PLT};
-	case 2: {UnitNATO_PLT};
-	case 3: {UnitIND_PLT};
+	case 1: {if !(isNil "UnitOPFOR_PLT") then {UnitOPFOR_PLT} else {UnitOPFOR_ASL_SL}};
+	case 2: {if !(isNil "UnitNATO_PLT") then {UnitNATO_PLT} else {UnitNATO_ASL_SL}};
+	case 3: {if !(isNil "UnitIND_PLT") then {UnitIND_PLT} else {UnitIND_ASL_SL}};
 };
 
 // ========================================================
